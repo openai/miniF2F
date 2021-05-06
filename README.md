@@ -17,7 +17,7 @@ Each exercise file complies to following system-specific conventions.
 
 ### Lean
 
-Each file contains the problem statement defined as an `example`, optinally with a proof for it as well as the necessary imports.
+Each file contains the problem statement defined as an `example`, optionally with a proof for it as well as the necessary imports. This folder is realeased under the Apache License (Version 2.0).
 
 ### Metamath
 
