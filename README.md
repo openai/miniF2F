@@ -17,12 +17,12 @@ Each exercise file complies to following system-specific conventions.
 
 ### Lean
 
-Each file contains the problem statement defined as an `example`, optionally with a proof for it as well as the necessary imports. This folder is realeased under the Apache License (Version 2.0).
+Each file contains the problem statement defined as an `example`, optionally with a proof for it as well as the necessary imports. This folder is released under the Apache License (Version 2.0).
 
 ### Metamath
 
-Each file contains the problem statement with the same name as the file unique name. The statement is commented if provided without proof.
+Each file contains the problem statement with the same name as the file unique name. The statement is commented if provided without proof. This folder is released under the MIT License.
 
 ### Hol Light
 
-(TODO)
+(WIP)
