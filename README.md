@@ -26,3 +26,11 @@ Each file contains the problem statement with the same name as the file unique n
 ### Hol Light
 
 (WIP)
+
+
+## Statistics
+
+|          | Test | Valid |
+|:--------:|:----:|:-----:|
+|   Lean   |  57  |   65  |
+| Metamath |  58  |  117  |
