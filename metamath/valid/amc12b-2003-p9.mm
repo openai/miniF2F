@@ -8,7 +8,7 @@ ${
   amc12b-2003-p9.2 $e |- ( ph -> A. x e. RR ( F ` x ) = ( ( A x. x ) + B ) ) $.
   amc12b-2003-p9.3 $e |- ( ph -> ( ( F ` 6 ) - ( F ` 2 ) ) = ; 1 2 ) $.
   amc12b-2003-p9.4 $e |- ( ph -> F : RR --> RR ) $.
-  $( (Contributed by , 26-Nov-2020.) $)
+  $( (Contributed by Stanislas Polu, 26-Nov-2020.) $)
   amc12b-2003-p9 $p |- ( ph -> ( ( F ` ; 1 2 ) - ( F ` 2 ) ) = ; 3 0 ) $=
 ( c2 co cmul c3 cc0 cr wceq eqtrd a1i c6 c1 cdc cfv cmin caddc cmpt feqmptd cv 
 r19.21bi mpteq2dva oveq2 oveq1d adantl wcel 1nn0 2nn decnncl nnrei recnd cc 

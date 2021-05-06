@@ -3,7 +3,7 @@ ${
   amc12-2001-p2.1 $e |- ( ph -> B e. ( 0 ... 9 ) ) $.
   amc12-2001-p2.2 $e |- ( ph -> N = ; A B ) $.
   amc12-2001-p2.3 $e |- ( ph -> N = ( ( A x. B ) + ( A + B ) ) ) $.
-  $( (Contributed by , 26-Oct-2020.) $)
+  $( (Contributed by Stanislas Polu, 26-Oct-2020.) $)
   amc12-2001-p2 $p |- ( ph -> B = 9 ) $=
 ( c9 wceq cmul co caddc c1 cc0 wcel oveq1d eqtrd eqcomd a1i cdc cfz syl cn0 cn 
 elfznn nnnn0d nn0cnd elfznn0 mulcomd c10 df-dec dec10 9nn mulcld addassd 

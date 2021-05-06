@@ -2,7 +2,7 @@ ${
   mathd-algebra-192.0 $e |- ( ph -> Q = ( ; 1 1 - ( 5 x. _i ) ) ) $.
   mathd-algebra-192.1 $e |- ( ph -> E = ( ; 1 1 + ( 5 x. _i ) ) ) $.
   mathd-algebra-192.2 $e |- ( ph -> D = ( 2 x. _i ) ) $.
-  $( (Contributed by , 15-Apr-2021.) $)
+  $( (Contributed by Kunhao Zheng, 15-Apr-2021.) $)
   mathd-algebra-192 $p |- ( ph -> ( ( Q x. E ) x. D ) = ( ; ; 2 9 2 x. _i ) ) $=
 ( cmul co c1 cdc c2 ci c5 1nn0 deccl ax-frege54c eqtri 2nn0 cc c4 cmin cexp c6 
 c9 caddc nn0cni sqvali mulid1i 1p1e2 decsuc decm2mma2i 5cn ax-icn sqmuli cneg 

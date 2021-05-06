@@ -4,7 +4,7 @@ ${
   amc12-2000-p11.2 $e |- ( ph -> A =/= 0 ) $.
   amc12-2000-p11.3 $e |- ( ph -> B =/= 0 ) $.
   amc12-2000-p11.4 $e |- ( ph -> ( A x. B ) = ( A - B ) ) $.
-  $( (Contributed by , 26-Oct-2020.) $)
+  $( (Contributed by Stanislas Polu, 26-Oct-2020.) $)
   amc12-2000-p11 $p |- ( ph -> ( ( ( A / B ) + ( B / A ) ) - ( A x. B ) ) = 2 ) 
 $=
 ( cdiv co caddc cmul cmin c2 cexp eqcomd oveq2d eqtrd oveq1d cc0 divmuldivd 

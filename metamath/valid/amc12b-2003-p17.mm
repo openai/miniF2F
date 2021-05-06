@@ -3,7 +3,7 @@ ${
   amc12b-2003-p17.1 $e |- ( ph -> Y e. RR+ ) $.
   amc12b-2003-p17.2 $e |- ( ph -> ( log ` ( X x. ( Y ^ 3 ) ) ) = 1 ) $.
   amc12b-2003-p17.3 $e |- ( ph -> ( log ` ( ( X ^ 2 ) x. Y ) ) = 1 ) $.
-  $( (Contributed by , 26-Nov-2020.) $)
+  $( (Contributed by Stanislas Polu, 26-Nov-2020.) $)
   amc12b-2003-p17 $p |- ( ph -> ( log ` ( X x. Y ) ) = ( 3 / 5 ) ) $=
 ( cmul co clog cfv caddc c3 c5 wcel a1i oveq12d c1 c2 eqtrd relogmuld recnd 
 cdiv relogcld addcld cc 5cn cc0 wne 5pos gt0ne0ii adddird mulcomd eqtr4d c4 5re 

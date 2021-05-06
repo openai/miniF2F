@@ -10,7 +10,7 @@ ${
   mathd-algebra-31.1 $e |- ( ph -> U ~~> 9 ) $.
   mathd-algebra-31.2 $e |- ( ph -> X e. RR+ ) $.
   mathd-algebra-31.3 $e |- ( ph -> U : NN --> RR+ ) $.
-  $( (Contributed by , 15-Apr-2021.) $)
+  $( (Contributed by Kunhao Zheng, 15-Apr-2021.) $)
   mathd-algebra-31 $p |- ( ph -> 9 = ( sqrt ` ( X + 9 ) ) ) $=
 ( vx cn c1 caddc co cfv c9 csqrt wceq cvv wcel crp vk cv cmpt cli nnuz 1zzd wbr 
 nnexALT mptexg mp1i climrel brrelexi syl eqidd simpr fveq2d ax-frege54c wa 

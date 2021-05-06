@@ -2,7 +2,7 @@ ${
   amc12b-2004-p3.0 $e |- ( ph -> X e. NN ) $.
   amc12b-2004-p3.1 $e |- ( ph -> Y e. NN ) $.
   amc12b-2004-p3.2 $e |- ( ph -> ( ( 2 ^ X ) x. ( 3 ^ Y ) ) = ; ; ; 1 2 9 6 ) $.
-  $( (Contributed by , 26-Nov-2020.) $)
+  $( (Contributed by Stanislas Polu, 26-Nov-2020.) $)
   amc12b-2004-p3 $p |- ( ph -> ( X + Y ) = 8 ) $=
 ( caddc co c4 c8 c2 c1 c6 cpc c3 cc0 wcel wceq a1i eqtrd c9 cexp cmul nncnd cdc 
 addid1d eqcomd cprime cz 2prm nnzd pcid sylancr cdvds wbr wn cgcd 2z cn 3nn 
