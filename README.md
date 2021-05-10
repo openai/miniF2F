@@ -5,8 +5,8 @@ exercise statements from olympiads (AMC, AIME, IMO) as well as high-school and u
 classes.
 
 The goal of the project is to provide a shared benchmark to evaluate and directly compare automated
-theorem proving systems based on the formal systems targeted, initially *Lean*, and *Metamath*
-(targeting also *Hol Light* and Isabelle).
+theorem proving systems based on the formal systems targeted, initially **Lean**, and **Metamath**
+(targeting also **Hol Light** and **Isabelle**).
 
 The benchmark (released under permissive licenses (MIT for Metamath, Apache for Lean)) is a work in
 progress and contributions are welcome and encouraged through pull requests. We plan to cut a v1 of
