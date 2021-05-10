@@ -43,7 +43,7 @@ Each exercise file complies to following system-specific conventions.
 
 Each file contains the problem statement defined as an `example`, optionally with a proof for it as
 well as the necessary imports. This folder is released under the Apache License (Version 2.0). There
-must be only on `example` per file corresponding to the problem. Named lemmas can be added for
+must be only one `example` per file corresponding to the problem. Named lemmas can be added for
 ground-truth proofs.
 
 The `lean` folder is released under the Apache License (so that it is aligned with Lean's mathlib
