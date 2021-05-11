@@ -3,14 +3,13 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
+import data.real.basic
+import data.nat.basic
 import data.finset.basic
-import data.nat.parity
 import algebra.big_operators.basic
-import algebra.ring.basic
 open_locale big_operators
-open_locale nat
 
-example : finset.prod (finset.filter (λ x, ¬ even x) (finset.range 10000)) (id : ℕ → ℕ) = (10000!) / ((2^5000) * 5000!) := 
+example (u v : ℕ → ℕ) (h₀ : ∀ n, u n = 2 * n + 2) (h₁ : ∀ n, v n = 2 * n + 1) : ( ∑ k in finset.range(2003), u k ) - ( ∑ k in finset.range(2003), v k ) = 2003 :=
 begin
   sorry
 end
