@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-example : ( 5 ^ 2005 ) % 100 = 25 :=
+theorem mathd_numbertheory_198 : ( 5 ^ 2005 ) % 100 = 25 :=
 begin
   sorry
 end

@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.real.basic
 import data.nat.basic
 
-example (n : ℕ) : 9 ∣( 10 ^ n - 1) :=
+theorem induction_divisibility_9div10tonm1 (n : ℕ) : 9 ∣( 10 ^ n - 1) :=
 begin
   sorry
 end

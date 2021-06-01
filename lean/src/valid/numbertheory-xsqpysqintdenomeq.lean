@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.rat.basic
 import data.int.basic
 
-example (x y : ℚ) (h₀ : (x ^ 2 + y ^ 2).denom = 1) : x.denom = y.denom :=
+theorem numbertheory_xsqpysqintdenomeq (x y : ℚ) (h₀ : (x ^ 2 + y ^ 2).denom = 1) : x.denom = y.denom :=
 begin
   sorry
 end

@@ -5,7 +5,7 @@ Authors: Kunhao Zheng
 -/
 import data.real.basic
 
-example (a b : ℝ) (h₀ : a ≠ 0 ∧ b ≠ 0) (h₁ : ∀ x, x ^ 2 + a * x + b = (x - a) * (x - b)) : a = 1 ∧ b = -2 :=
+theorem amc12b_2002_p6 (a b : ℝ) (h₀ : a ≠ 0 ∧ b ≠ 0) (h₁ : ∀ x, x ^ 2 + a * x + b = (x - a) * (x - b)) : a = 1 ∧ b = -2 :=
 begin
   have h₂ := h₁ a,
   have h₃ := h₁ b,

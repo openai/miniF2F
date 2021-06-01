@@ -5,7 +5,7 @@ Authors: Kunhao Zheng
 -/
 import data.real.basic
 
-example (s : ℕ+ → ℕ+ → ℕ+) (h₀ : ∀ a b, s a b = a ^ (b:ℕ) + b ^ (a:ℕ)) : s 2 6 = 100 :=
+theorem mathd_algebra_15 (s : ℕ+ → ℕ+ → ℕ+) (h₀ : ∀ a b, s a b = a ^ (b:ℕ) + b ^ (a:ℕ)) : s 2 6 = 100 :=
 begin
   rw h₀,
   simp,

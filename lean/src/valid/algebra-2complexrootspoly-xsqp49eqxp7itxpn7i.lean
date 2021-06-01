@@ -6,10 +6,12 @@ Authors: Kunhao Zheng
 import data.complex.basic
 import data.real.basic
 
-example (x : ℂ) : x ^ 2 + 49 = (x + ( 7 * complex.I)) * (x + ( -7 * complex.I)) :=
+theorem algebra_2complexrootspoly_xsqp49eqxp7itxpn7i
+  (x : ℂ) :
+  x^2 + 49 = (x + ( 7 * complex.I)) * (x + ( -7 * complex.I)) :=
 begin
-  ring,
-  ring,
+  ring_nf,
+  ring_nf,
   rw [pow_two, pow_two, complex.I_mul_I],
   ring,
 end

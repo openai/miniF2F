@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.real.basic
 import data.int.basic
 
-example (a : ℤ) : (a ^ 2) % 3 = 0 ∨ (a ^ 2) % 3 = 1 :=
+theorem numbertheory_sqmod3in01d (a : ℤ) : (a ^ 2) % 3 = 0 ∨ (a ^ 2) % 3 = 1 :=
 begin
   sorry
 end

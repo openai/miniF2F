@@ -9,7 +9,7 @@ import data.finset.basic
 import algebra.big_operators.basic
 open_locale big_operators
 
-example (n : ℕ) : ∑ k in ( finset.range n ), 1 / ( (k + 1) * (k + 2) ) = n / (n + 1) :=
+theorem induction_sum_1oktkp1 (n : ℕ) : ∑ k in ( finset.range n ), 1 / ( (k + 1) * (k + 2) ) = n / (n + 1) :=
 begin
   sorry
 end

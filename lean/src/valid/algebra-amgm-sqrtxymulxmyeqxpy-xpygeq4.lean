@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.real.sqrt
 import data.real.basic
 
-example (x y : ℝ) (h₀ : 0 < x ∧ 0 < y) (h₁ : y ≤ x) (h₂ : real.sqrt (x * y) * (x - y) = (x + y)) : x + y ≥ 4 :=
+theorem algebra_amgm_sqrtxymulxmyeqxpy_xpygeq4 (x y : ℝ) (h₀ : 0 < x ∧ 0 < y) (h₁ : y ≤ x) (h₂ : real.sqrt (x * y) * (x - y) = (x + y)) : x + y ≥ 4 :=
 begin
   sorry
 end

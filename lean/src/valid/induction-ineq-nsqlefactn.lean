@@ -7,7 +7,7 @@ import data.nat.parity
 import data.nat.basic
 open_locale nat
 
-example (n : ℕ) (h₀ : 4 ≤ n) : n ^ 2 ≤ n! :=
+theorem induction_ineq_nsqlefactn (n : ℕ) (h₀ : 4 ≤ n) : n ^ 2 ≤ n! :=
 begin
   sorry
 end

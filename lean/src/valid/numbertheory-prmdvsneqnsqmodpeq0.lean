@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.int.basic
 import data.nat.prime
 
-example (n : ℤ) (p : ℕ) (h₀ : nat.prime p) : ↑p ∣ n ↔ ( n ^ 2 ) % p = 0 :=
+theorem numbertheory_prmdvsneqnsqmodpeq0 (n : ℤ) (p : ℕ) (h₀ : nat.prime p) : ↑p ∣ n ↔ ( n ^ 2 ) % p = 0 :=
 begin
   sorry
 end 

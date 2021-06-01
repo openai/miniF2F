@@ -5,7 +5,7 @@ Authors: Kunhao Zheng
 -/
 import data.real.basic
 
-example (a b : ℝ) (h₀ : a ≠ 0 ∧ b ≠ 0) (h₁ : a * b = a - b) : a / b + b / a - a * b = 2 :=
+theorem amc12_2000_p11 (a b : ℝ) (h₀ : a ≠ 0 ∧ b ≠ 0) (h₁ : a * b = a - b) : a / b + b / a - a * b = 2 :=
 begin
   cases h₀ with h₂ h₃,
   calc a / b + b / a - a * b = (a * a) / (a * b) + b / a - (a * b) : by {simp, rwa mul_div_mul_left,}

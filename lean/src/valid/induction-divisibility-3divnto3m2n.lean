@@ -5,7 +5,7 @@ Authors: Kunhao Zheng
 -/
 import data.nat.basic
 
-example (n : ℕ) : 3 ∣ n ^ 3 + 2 * n :=
+theorem induction_divisibility_3divnto3m2n (n : ℕ) : 3 ∣ n ^ 3 + 2 * n :=
 begin
   sorry
 end

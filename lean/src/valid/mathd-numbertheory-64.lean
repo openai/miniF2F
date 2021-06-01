@@ -9,7 +9,7 @@ import data.pnat.basic
 import order.bounds
 
 
-example : is_least { x : ℕ+ | 30 * x ≡ 42 [MOD 47] } 39 :=
+theorem mathd_numbertheory_64 : is_least { x : ℕ+ | 30 * x ≡ 42 [MOD 47] } 39 :=
 begin
   split,
   { -- 39 ∈ { x : ℕ+ | 30 * x ≡ 42 [MOD 47] }

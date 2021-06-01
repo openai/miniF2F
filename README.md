@@ -42,7 +42,7 @@ Each exercise file complies to the following system-specific conventions.
 
 ### Lean
 
-Each file contains the problem statement defined as an theorem whose name must match the problem
+Each file contains the problem statement defined as a theorem whose name must match the problem
 unique name (replacing `-` with `_`), optionally with a proof for it as well as the necessary
 imports.  Named lemmas can be added for ground-truth proofs.
 
@@ -52,7 +52,7 @@ license).
 ### Metamath
 
 Each file contains the problem statement with the same name as the problem unique name. The
-statement is commented if provided without proof.
+statement is commented (using Metamath convention) if provided without proof.
 
 The `metamath` folder is released under the MIT License.
 

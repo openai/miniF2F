@@ -5,7 +5,7 @@ Authors: Kunhao Zheng
 -/
 import data.complex.basic
 
-example (b c d a : ℂ) : ( a - d ) * ( a - c ) * ( a - b ) = ( - ( ( ( a ^ 2 - ( b + c ) * a ) + c * b ) * d ) + ( a ^ 2 - ( b + c ) * a + c * b ) * a ) :=
+theorem algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta (b c d a : ℂ) : ( a - d ) * ( a - c ) * ( a - b ) = ( - ( ( ( a ^ 2 - ( b + c ) * a ) + c * b ) * d ) + ( a ^ 2 - ( b + c ) * a + c * b ) * a ) :=
 begin
   ring,
 end
