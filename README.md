@@ -6,7 +6,8 @@ classes.
 
 The goal of the project is to provide a shared benchmark to evaluate and directly compare automated
 theorem proving systems based on the formal systems targeted, initially **Lean**, and **Metamath**
-(targeting also **Hol Light** and **Isabelle**).
+(targeting also **Hol Light** and
+**Isabelle**).
 
 The benchmark (released under permissive licenses (MIT for Metamath, Apache for Lean)) is a work in
 progress and contributions are welcome and encouraged through pull requests. We plan to cut a v1 of
@@ -32,27 +33,26 @@ associated with it. The benchmark is divided in two splits:
 - `test`: held-out test set reserved for final evaluation.
 
 Naming conventions are still a work in progress. Olympiads problems are generally named after their
-competition, year and problem number (eg. `imo-1990-p3` or `aime-1983-p2`). Problems coming from a
+competition year and problem number (eg. `imo-1990-p3` or `aime-1983-p2`). Problems coming from a
 particular dataset (eg the [MATH](https://arxiv.org/abs/2103.03874) dataset) are named to ease their
 retrieval (eg. `mathd-algebra-125`). Other problems are prefixed by a category hint and a unique
 name in the style of Metamath naming conventions (eg. `induction-11div10tonmn1ton`).
 
-Each exercise file complies to following system-specific conventions.
+Each exercise file complies to the following system-specific conventions.
 
 ### Lean
 
-Each file contains the problem statement defined as an `example`, optionally with a proof for it as
-well as the necessary imports. This folder is released under the Apache License (Version 2.0). There
-must be only one `example` per file corresponding to the problem. Named lemmas can be added for
-ground-truth proofs.
+Each file contains the problem statement defined as an theorem whose name must match the problem
+unique name (replacing `-` with `_`), optionally with a proof for it as well as the necessary
+imports.  Named lemmas can be added for ground-truth proofs.
 
 The `lean` folder is released under the Apache License (so that it is aligned with Lean's mathlib
 license).
 
 ### Metamath
 
-Each file contains the problem statement with the same name as the file unique name. The statement
-is commented if provided without proof.
+Each file contains the problem statement with the same name as the problem unique name. The
+statement is commented if provided without proof.
 
 The `metamath` folder is released under the MIT License.
 

@@ -21,7 +21,8 @@ begin
         finset.sum_range_succ, ←add_assoc, add_comm (f (2 * pn).succ) (f (2 * pn))] },
 end
 
-example (u : ℕ → ℚ)
+theorem aime_1984_p1
+  (u : ℕ → ℚ)
   (h₀ : ∀ n, u (n + 1) = u n + 1)
   (h₁ : ∑ k in finset.range 98, u k.succ = 137) :
   ∑ k in finset.range 49, u (2 * k.succ) = 93 :=
