@@ -42,9 +42,9 @@ Each exercise file complies to the following system-specific conventions.
 
 ### Lean
 
-Each file contains the problem statement defined as a theorem whose name must match the problem
-unique name (replacing `-` with `_`), optionally with a proof for it as well as the necessary
-imports.  Named lemmas can be added for ground-truth proofs.
+Each file (whose name use `_` instead of `-`) contains the problem statement defined as a theorem
+whose name must match the file name, optionally with a proof for it as well as the necessary
+imports. Lemmas can be added to support ground-truth proofs.
 
 The `lean` folder is released under the Apache License (so that it is aligned with Lean's mathlib
 license).
