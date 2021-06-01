@@ -6,7 +6,8 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-theorem mathd_numbertheory_102 : (2 ^ 8) % 5 = 1 :=
+theorem mathd_numbertheory_102 :
+  (2^8) % 5 = 1 :=
 begin
   norm_num,
 end

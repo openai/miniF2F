@@ -5,7 +5,10 @@ Authors: Kunhao Zheng
 -/
 import data.real.basic
 
-theorem mathd_algebra_101 (x : ℝ) (h₀ : x ^ 2 - 5 * x - 4 ≤ 10 ) : x ≥ -2 ∧ x ≤ 7 :=
+theorem mathd_algebra_101 
+  (x : ℝ)
+  (h₀ : x^2 - 5 * x - 4 ≤ 10 ) :
+  x ≥ -2 ∧ x ≤ 7 :=
 begin
   sorry
 end

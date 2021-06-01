@@ -6,7 +6,8 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-theorem mathd_numbertheory_81 : 71 % 3 = 2 :=
+theorem mathd_numbertheory_81 :
+  71 % 3 = 2 :=
 begin
   norm_num,
 end

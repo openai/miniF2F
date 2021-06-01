@@ -6,7 +6,8 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-theorem mathd_numbertheory_45 : ( nat.gcd 6432 132 ) + 11 = 23 :=
+theorem mathd_numbertheory_45 :
+  (nat.gcd 6432 132) + 11 = 23 :=
 begin
   suffices : ( nat.gcd 6432 132 ) = 12, rw this,
   rw nat.gcd_rec,
