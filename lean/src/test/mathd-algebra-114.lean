@@ -8,7 +8,10 @@ import data.real.basic
 import analysis.special_functions.pow
 import data.nat.basic
 
-example (a : ℝ) (h₀ : a = 8) : ( 16 * (a ^ 2) ^ ((1:ℝ) / 3)) ^ ((1:ℝ) / 3) = 4 :=
+theorem mathd_algebra_114
+  (a : ℝ)
+  (h₀ : a = 8) :
+  (16 * (a^2)^((1:ℝ) / 3))^((1:ℝ) / 3) = 4 :=
 begin
   rw h₀,
   have k₁ : 0 ≤ (4:ℝ), linarith,

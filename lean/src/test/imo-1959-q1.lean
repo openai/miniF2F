@@ -5,7 +5,9 @@ Authors: Kunhao Zheng
 -/
 import data.real.basic
 
-example (n : ℕ+) : nat.gcd (21*n + 4) (14*n + 3) = 1 :=
+theorem imo_1959_q1
+  (n : ℕ+) :
+  nat.gcd (21*n + 4) (14*n + 3) = 1 :=
 begin
   sorry
 end

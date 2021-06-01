@@ -8,7 +8,7 @@ import data.real.basic
 import analysis.special_functions.pow
 
 theorem algebra_others_exirrpowirrrat :
-  ∃ a b, irrational a ∧ irrational b ∧ ¬ irrational (a ^ b) :=
+  ∃ a b, irrational a ∧ irrational b ∧ ¬ irrational (a^b) :=
 begin
   sorry
 end

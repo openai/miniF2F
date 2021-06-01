@@ -11,7 +11,12 @@ import data.complex.basic
 import algebra.algebra.basic
 
 
-example (a b : nnreal) (h₀ : 0 < a ∧ 0 < b) (h₁ : (a^2) = 6*b) (h₂ : (a^2) = 54/b) : a = 3 * nnreal.sqrt 2 :=
+theorem mathd_algebra_184
+  (a b : nnreal)
+  (h₀ : 0 < a ∧ 0 < b)
+  (h₁ : (a^2) = 6*b)
+  (h₂ : (a^2) = 54/b) :
+  a = 3 * nnreal.sqrt 2 :=
 begin
   have key₁ : b ≠ 0 := ne_of_gt h₀.2,
   have h₄ : 0 ≤ a, { exact zero_le _ },
@@ -21,11 +26,11 @@ begin
     rw eq_comm,
     have h₅ : 3 * nnreal.sqrt 2 = nnreal.sqrt 18,
     {
-      calc 3 * nnreal.sqrt 2 = ( nnreal.sqrt 9 ) * (nnreal.sqrt 2) : by {rw eq_comm, simp, rw nnreal.sqrt_eq_iff_sqr_eq, left, ring}
+      calc 3 * nnreal.sqrt 2 = ( nnreal.sqrt 9 ) * (nnreal.sqrt 2) : by {rw eq_comm, simp, rw nnreal.sqrt_eq_iff_sq_eq, ring}
                           ...= nnreal.sqrt ( 9 * 2 ): by {rw ← nnreal.sqrt_mul}
                           ...= nnreal.sqrt 18: by{ring},
     },
-    rw [h₅, nnreal.sqrt_eq_iff_sqr_eq],
+    rw [h₅, nnreal.sqrt_eq_iff_sq_eq],
     rw ← this,
     ring,
   },
@@ -51,7 +56,7 @@ begin
           }
           ... = nnreal.sqrt ( 54/6 ): by {rw key₂}
           ... = nnreal.sqrt( 9 ) : by {refine congr_arg ⇑nnreal.sqrt _, refine (div_eq_iff key₅).mpr _, ring,}
-          ... = 3 : by {rw nnreal.sqrt_eq_iff_sqr_eq, ring},
+          ... = 3 : by {rw nnreal.sqrt_eq_iff_sq_eq, ring},
   },
   rw key₃ at h₁,
   rw h₁,

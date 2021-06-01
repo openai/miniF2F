@@ -7,7 +7,7 @@ import data.real.basic
 
 theorem algebra_ineq_nto1onlt2m1on
   (n : ℕ) :
-  n ^ (1 / n) < 2 - 1 / n :=
+  n^(1 / n) < 2 - 1 / n :=
 begin
   sorry
 end

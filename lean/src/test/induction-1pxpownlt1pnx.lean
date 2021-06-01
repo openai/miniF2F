@@ -5,7 +5,11 @@ Authors: Kunhao Zheng
 -/
 import data.real.basic
 
-example (x : ℝ) ( n : ℕ+) (h₀ : -1 < x) : (1 + x) ^ (n:ℕ) ≤ (1 + n*x) :=
+theorem induction_1pxpownlt1pnx
+  (x : ℝ)
+  (n : ℕ+)
+  (h₀ : -1 < x) :
+  (1 + x)^(n:ℕ) ≤ (1 + n*x) :=
 begin
   sorry
 end

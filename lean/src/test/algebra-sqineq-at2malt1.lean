@@ -10,6 +10,6 @@ theorem algebra_sqineq_at2malt1
   a * (2 - a) ≤ 1 :=
 begin
   suffices: 0 ≤ a^2 - 2*a + 1, nlinarith,
-  suffices: 0 ≤ (a - 1) ^ 2, nlinarith,
+  suffices: 0 ≤ (a - 1)^2, nlinarith,
   nlinarith,
 end
