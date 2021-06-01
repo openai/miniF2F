@@ -5,7 +5,9 @@ Authors: Kunhao Zheng
 -/
 import data.real.basic
 
-theorem algebra_binomnegdiscrineq_10alt28asqp1 (a : ℝ) : 10 * a ≤ 28 * a ^ 2 + 1 :=
+theorem algebra_binomnegdiscrineq_10alt28asqp1
+  (a : ℝ) :
+  10 * a ≤ 28 * a^2 + 1 :=
 begin
   sorry
 end

@@ -6,7 +6,8 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-theorem mathd_numbertheory_133 : nat.gcd 180 168 = 12 :=
+theorem mathd_numbertheory_133 :
+  nat.gcd 180 168 = 12 :=
 begin
   norm_num,
 end

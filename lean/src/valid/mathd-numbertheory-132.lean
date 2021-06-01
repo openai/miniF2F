@@ -6,7 +6,8 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-theorem mathd_numbertheory_132 : 2004 % 12 = 0 :=
+theorem mathd_numbertheory_132 :
+  2004 % 12 = 0 :=
 begin
   norm_num,
 end

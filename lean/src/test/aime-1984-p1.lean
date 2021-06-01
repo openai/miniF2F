@@ -14,11 +14,12 @@ open_locale big_operators
 lemma sum_pairs (n : ℕ) (f : ℕ → ℚ) :
   ∑ k in (finset.range (2 * n)), f k = ∑ k in (finset.range n), (f (2 * k) + f (2 * k + 1)) :=
 begin
-  induction n with pn hpn,
-  { simp only [finset.sum_empty, finset.range_zero, mul_zero] },
-  { have hs: (2 * pn.succ) = (2 * pn).succ.succ := rfl,
-    rw [finset.sum_range_succ, ←hpn, hs, finset.sum_range_succ,
-        finset.sum_range_succ, ←add_assoc, add_comm (f (2 * pn).succ) (f (2 * pn))] },
+  -- induction n with pn hpn,
+  -- { simp only [finset.sum_empty, finset.range_zero, mul_zero] },
+  -- { have hs: (2 * pn.succ) = (2 * pn).succ.succ := rfl,
+  --   rw [finset.sum_range_succ, ←hpn, hs, finset.sum_range_succ,
+  --       finset.sum_range_succ, ←add_assoc, add_comm (f (2 * pn).succ) (f (2 * pn))] },
+  sorry,
 end
 
 theorem aime_1984_p1

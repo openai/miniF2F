@@ -9,7 +9,8 @@ import data.real.nnreal
 import analysis.mean_inequalities
 import analysis.special_functions.pow
 
-theorem algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x : ∀ x > 0, 2 - real.sqrt 2 ≥ 2 - x - 1 / ( 2 * x ) :=
+theorem algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x :
+  ∀ x > 0, 2 - real.sqrt 2 ≥ 2 - x - 1 / ( 2 * x ) :=
 begin
   intros x h,
   suffices : real.sqrt 2 ≤ x + 1 / (2 * x), linarith,

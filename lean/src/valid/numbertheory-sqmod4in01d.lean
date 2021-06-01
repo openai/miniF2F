@@ -5,7 +5,9 @@ Authors: Kunhao Zheng
 -/
 import data.int.basic
 
-theorem numbertheory_sqmod4in01d (a : ℤ) : ( a ^ 2 % 4 ) = 0 ∨ ( a ^ 2 % 4 ) = 1 :=
+theorem numbertheory_sqmod4in01d
+  (a : ℤ) :
+  (a^2 % 4) = 0 ∨ (a^2 % 4) = 1 :=
 begin
   sorry
 end

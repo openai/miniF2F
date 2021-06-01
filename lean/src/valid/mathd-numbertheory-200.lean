@@ -6,7 +6,8 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-theorem mathd_numbertheory_200 : 139 % 11 = 7 :=
+theorem mathd_numbertheory_200 :
+  139 % 11 = 7 :=
 begin
   norm_num,
 end

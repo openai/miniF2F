@@ -28,7 +28,7 @@ begin
     {
       calc 3 * nnreal.sqrt 2 = ( nnreal.sqrt 9 ) * (nnreal.sqrt 2) : by {rw eq_comm, simp, rw nnreal.sqrt_eq_iff_sq_eq, ring}
                           ...= nnreal.sqrt ( 9 * 2 ): by {rw ← nnreal.sqrt_mul}
-                          ...= nnreal.sqrt 18: by{ring},
+                          ...= nnreal.sqrt 18: by{ring_nf},
     },
     rw [h₅, nnreal.sqrt_eq_iff_sq_eq],
     rw ← this,
