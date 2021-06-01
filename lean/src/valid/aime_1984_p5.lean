@@ -6,11 +6,10 @@ Authors: Kunhao Zheng
 import data.real.basic
 import analysis.special_functions.exp_log
 
-noncomputable def logb (b x : ℝ) : ℝ := real.log x / real.log b
 theorem aime_1984_p5
   (a b : ℝ)
-  (h₀ : logb 8 a + logb 4 (b^2) = 5)
-  (h₁ : logb 8 b + logb 4 (a^2) = 7) :
+  (h₀ : real.log a / real.log 8 + real.log (b^2) / real.log 4 = 5)
+  (h₁ : real.log b / real.log 8 + real.log (a^2) / real.log 4 = 7) :
   a * b = 512 :=
 begin
   sorry

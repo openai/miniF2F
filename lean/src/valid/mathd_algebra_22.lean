@@ -16,10 +16,8 @@ log_inj_on_pos (set.mem_Ioi.2 h₁) (set.mem_Ioi.2 zero_lt_one) (h₂.trans real
 lemma log_ne_zero_of_pos_of_ne_one {x : ℝ} (hx_pos : 0 < x) (hx : x ≠ 1) : real.log x ≠ 0 :=
 mt (eq_one_of_pos_of_log_eq_zero hx_pos) hx
 
-noncomputable def logb (b x : ℝ) : ℝ := real.log x / real.log b
-theorem mathd_algebra_22 : logb (5^2) (5^4) = 2 :=
+theorem mathd_algebra_22 : real.log (5^4) / real.log (5^2)= 2 :=
 begin
-  rw logb,
   have h₀ : (5:ℝ)^4 = ((5:ℝ)^2)*((5:ℝ)^2), norm_num,
   rw h₀,
   rw real.log_mul,
