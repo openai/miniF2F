@@ -6,7 +6,10 @@ Authors: Kunhao Zheng
 import data.nat.factorial
 import data.real.basic
 
-example (n : ℕ) (h₀ : 3 ≤ n) : nat.factorial n < n ^ (n - 1) :=
+theorem induction_nfactltnexpnm1ngt3
+  (n : ℕ)
+  (h₀ : 3 ≤ n) :
+  nat.factorial n < n^(n - 1) :=
 begin
   sorry
 end 

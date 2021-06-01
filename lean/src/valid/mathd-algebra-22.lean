@@ -17,7 +17,7 @@ lemma log_ne_zero_of_pos_of_ne_one {x : ℝ} (hx_pos : 0 < x) (hx : x ≠ 1) : r
 mt (eq_one_of_pos_of_log_eq_zero hx_pos) hx
 
 noncomputable def logb (b x : ℝ) : ℝ := real.log x / real.log b
-example : logb (5^2) (5^4) = 2 :=
+theorem mathd_algebra_22 : logb (5^2) (5^4) = 2 :=
 begin
   rw logb,
   have h₀ : (5:ℝ)^4 = ((5:ℝ)^2)*((5:ℝ)^2), norm_num,

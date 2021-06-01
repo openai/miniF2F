@@ -6,7 +6,10 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-example (n : ℕ) (h₀ : n ≠ 0) : 2 ∣ 4 ^ n :=
+theorem numbertheory_2dvd4expn
+  (n : ℕ)
+  (h₀ : n ≠ 0) :
+  2 ∣ 4^n :=
 begin
   sorry
 end

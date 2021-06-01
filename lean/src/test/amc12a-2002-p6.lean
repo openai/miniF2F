@@ -6,7 +6,9 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-example (n : ℕ+) : ∃ m, ( m > n ∧ ∃ p, m * p ≤ m + p ) :=
+theorem amc12a_2002_p6
+  (n : ℕ+) :
+  ∃ m, ( m > n ∧ ∃ p, m * p ≤ m + p ) :=
 begin
   sorry
 end 

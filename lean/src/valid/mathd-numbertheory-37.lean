@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.real.basic
 import data.nat.basic
 
-example : ( nat.lcm 9999 100001 ) = 90900909 :=
+theorem mathd_numbertheory_37 : ( nat.lcm 9999 100001 ) = 90900909 :=
 begin
   sorry
 end

@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.real.basic
 
-example : (17 * 18) % 4 = 2 :=
+theorem mathd_numbertheory_101 : (17 * 18) % 4 = 2 :=
 begin
   norm_num,
 end

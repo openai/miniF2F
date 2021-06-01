@@ -5,7 +5,8 @@ Authors: Kunhao Zheng
 -/
 import data.real.basic
 
-example : 194 % 11 = 7 :=
+theorem mathd_numbertheory_66 :
+  194 % 11 = 7 :=
 begin
   exact rfl,
 end
