@@ -11,7 +11,7 @@ open_locale big_operators
 
 theorem induction_sum_1oktkp1
   (n : ℕ) :
-  ∑ k in ( finset.range n ), 1 / ((k + 1) * (k + 2)) = n / (n + 1) :=
+  ∑ k in (finset.range n ), 1 / ((k + 1) * (k + 2)) = n / (n + 1) :=
 begin
   sorry
 end

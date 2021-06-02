@@ -15,7 +15,7 @@ begin
   have h₃ := h₁ b,
   have h₄ := h₁ 0, 
   simp at *,
-  have h₅ : b * ( 1 - a ) = 0, linarith,
+  have h₅ : b * (1 - a ) = 0, linarith,
   simp at h₅,
   cases h₅ with h₅ h₆,
   exfalso,

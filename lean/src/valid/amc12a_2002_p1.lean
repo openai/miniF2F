@@ -10,7 +10,7 @@ open_locale big_operators
 
 theorem amc12a_2002_p1
   (f : ℂ → ℂ)
-  (h₀ : ∀ x, f x = ( 2 * x + 3 ) * ( x - 4 ) + ( 2 * x + 3 ) * ( x - 6 ) )
+  (h₀ : ∀ x, f x = (2 * x + 3 ) * (x - 4 ) + (2 * x + 3 ) * (x - 6 ) )
   (h₁ : fintype (f ⁻¹' {0})) :
   ∑ y in (f⁻¹' {0}).to_finset, y = 7 / 2 :=
 begin

@@ -10,7 +10,7 @@ import analysis.mean_inequalities
 import analysis.special_functions.pow
 
 theorem algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x :
-  ∀ x > 0, 2 - real.sqrt 2 ≥ 2 - x - 1 / ( 2 * x ) :=
+  ∀ x > 0, 2 - real.sqrt 2 ≥ 2 - x - 1 / (2 * x ) :=
 begin
   intros x h,
   suffices : real.sqrt 2 ≤ x + 1 / (2 * x), linarith,
@@ -43,7 +43,7 @@ begin
 
   have h₄ : 2 * ((1 / 2)^((1:ℝ) / 2)) = real.sqrt 2, {
     rw [eq_comm, real.sqrt_eq_iff_mul_self_eq],
-    calc (2:ℝ) * (1 / (2:ℝ))^(1 / (2:ℝ)) * ((2:ℝ) * (1 / (2:ℝ))^(1 / (2:ℝ))) = (2:ℝ) * (2:ℝ) * ( (1 / (2:ℝ))^(1 / (2:ℝ)) *  (1 / (2:ℝ))^(1 / (2:ℝ))) : by {ring,}
+    calc (2:ℝ) * (1 / (2:ℝ))^(1 / (2:ℝ)) * ((2:ℝ) * (1 / (2:ℝ))^(1 / (2:ℝ))) = (2:ℝ) * (2:ℝ) * ((1 / (2:ℝ))^(1 / (2:ℝ)) *  (1 / (2:ℝ))^(1 / (2:ℝ))) : by {ring,}
       ... = (2:ℝ) * (2:ℝ) * (1 / (2:ℝ))^((1 / (2:ℝ)) + (1 / (2:ℝ))) : by {rw real.rpow_add, linarith,}
       ... = (2:ℝ) * (2:ℝ) * (1 / (2:ℝ))^(1:ℝ) : by {congr', apply add_halves,}
       ... = (2:ℝ) * (2:ℝ) * (1 / (2:ℝ)) : by {simp,}

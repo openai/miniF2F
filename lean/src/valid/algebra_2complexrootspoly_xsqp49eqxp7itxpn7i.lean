@@ -8,7 +8,7 @@ import data.real.basic
 
 theorem algebra_2complexrootspoly_xsqp49eqxp7itxpn7i
   (x : ℂ) :
-  x^2 + 49 = (x + ( 7 * complex.I)) * (x + ( -7 * complex.I)) :=
+  x^2 + 49 = (x + (7 * complex.I)) * (x + (-7 * complex.I)) :=
 begin
   ring_nf,
   ring_nf,

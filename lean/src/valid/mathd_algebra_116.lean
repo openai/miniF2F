@@ -13,7 +13,7 @@ theorem mathd_algebra_116
   k = 19/4 :=
 begin
   rw h₀ at h₁,
-  rw eq_comm.mp ( add_eq_zero_iff_neg_eq.mp h₁ ),
+  rw eq_comm.mp (add_eq_zero_iff_neg_eq.mp h₁ ),
   norm_num,
   rw pow_two,
   rw mul_sub,
