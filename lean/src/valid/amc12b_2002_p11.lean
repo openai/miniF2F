@@ -12,7 +12,7 @@ theorem amc12b_2002_p11
   (h₁ : nat.prime b)
   (h₂ : nat.prime (a + b))
   (h₃ : nat.prime (a - b)) :
-  nat.prime (a + b + (a - b + (a + b ) ) ) :=
+  nat.prime (a + b + (a - b + (a + b))) :=
 begin
   sorry
 end

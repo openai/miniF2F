@@ -8,7 +8,7 @@ import data.real.basic
 
 theorem amc12a_2002_p6
   (n : ℕ+) :
-  ∃ m, (m > n ∧ ∃ p, m * p ≤ m + p ) :=
+  ∃ m, (m > n ∧ ∃ p, m * p ≤ m + p) :=
 begin
   sorry
 end 

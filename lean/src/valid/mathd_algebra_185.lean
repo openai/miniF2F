@@ -8,7 +8,7 @@ import data.finset.basic
 
 theorem mathd_algebra_185
   (f : ℝ → ℝ)
-  (h₀ : ∀ x, f x = abs (x + 4 ) )
+  (h₀ : ∀ x, f x = abs (x + 4))
   (h₁ : fintype {x : ℝ | f x < 9}) :
   finset.card { x : ℝ | f x < 9 }.to_finset = 1 :=
 begin

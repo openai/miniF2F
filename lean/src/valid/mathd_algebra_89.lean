@@ -12,7 +12,7 @@ theorem mathd_algebra_89
 begin
   -- ring_nf,
   -- simp,
-  -- calc 49 * ((4 * b^2)^3)⁻¹ * b^6 = 49 * ((4 * b^2)^((3:ℕ):ℤ ))⁻¹ * b^6 : by {norm_cast}
+  -- calc 49 * ((4 * b^2)^3)⁻¹ * b^6 = 49 * ((4 * b^2)^((3:ℕ):ℤ))⁻¹ * b^6 : by {norm_cast}
   --                                   ... = 49 * ((4 * b^2)^(3:ℕ))⁻¹ * b^6 : by {norm_cast}
   --                                   ... = 49 * (64 * b^6)⁻¹ * b^6 : by {norm_num, left, nlinarith}
   --                                   ... = 49 * 64⁻¹ * (b^6)⁻¹ * b^6 : by {simp, left, rw mul_assoc, refine (mul_right_inj' _).mpr _, linarith, field_simp [h₀]}
