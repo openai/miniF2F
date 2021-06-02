@@ -6,7 +6,10 @@ Authors: Kunhao Zheng
 import data.real.basic
 import analysis.special_functions.pow
 
-theorem mathd_algebra_59 (b : ℝ) (h₀ : (4:ℝ) ^ b + 2 ^ 3 = 12) : b = 1 :=
+theorem mathd_algebra_59
+  (b : ℝ)
+  (h₀ : (4:ℝ) ^ b + 2 ^ 3 = 12) :
+  b = 1 :=
 begin
   have h₁ : (4:ℝ) ^ b = 4, linarith,
   by_contradiction h,

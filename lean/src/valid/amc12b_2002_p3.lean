@@ -6,7 +6,11 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.nat.prime
 
-theorem amc12b_2002_p3 (n : ℕ) (h₀ : 0 < n) (h₁ : nat.prime (n ^ 2 - 3 * n + 2) ) : n = 3 :=
+theorem amc12b_2002_p3
+  (n : ℕ)
+  (h₀ : 0 < n)
+  (h₁ : nat.prime (n ^ 2 - 3 * n + 2) ) :
+  n = 3 :=
 begin
   sorry
 end 

@@ -6,7 +6,11 @@ Authors: Kunhao Zheng
 import data.real.basic
 import data.pnat.basic
 
-theorem mathd_algebra_123 (a b : ℕ+) (h₀ : a + b = 20) (h₁ : a = 3 * b) : a - b = 10 :=
+theorem mathd_algebra_123
+  (a b : ℕ+)
+  (h₀ : a + b = 20)
+  (h₁ : a = 3 * b) :
+  a - b = 10 :=
 begin
   rw h₁ at h₀,
   rw h₁,
