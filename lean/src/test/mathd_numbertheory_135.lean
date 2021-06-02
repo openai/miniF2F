@@ -7,7 +7,7 @@ import data.real.basic
 
 theorem mathd_numbertheory_135
   (n a b c: ℕ)
-  (h₀ : n = 3 ^ 17 + 3 ^ 10)
+  (h₀ : n = 3^17 + 3^10)
   (h₁ : 11 ∣ (n + 1))
   (h₂ : odd a ∧ odd c)
   (h₃ : ¬ 3 ∣ b)

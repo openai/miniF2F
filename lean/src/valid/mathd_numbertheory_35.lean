@@ -9,7 +9,9 @@ import data.nat.basic
 import data.finset.basic
 open_locale big_operators
 
-theorem mathd_numbertheory_35 (h₀ : fintype { n : ℕ | n ∣ (nat.sqrt 196)}) : ∑ k in { n : ℕ | n ∣ (nat.sqrt 196)}.to_finset, k = 24 :=
+theorem mathd_numbertheory_35
+  (h₀ : fintype { n : ℕ | n ∣ (nat.sqrt 196)}) :
+  ∑ k in { n : ℕ | n ∣ (nat.sqrt 196)}.to_finset, k = 24 :=
 begin
   sorry
 end 

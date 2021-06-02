@@ -11,7 +11,7 @@ open_locale big_operators
 theorem algebra_amgm_sum1toneqn_prod1tonleq1
   (a : ℕ → nnreal)
   (n : ℕ)
-  (h₀ : ∑ x in finset.range n, a x = n ) :
+  (h₀ : ∑ x in finset.range n, a x = n) :
   ∏ x in finset.range n, a x ≤ 1 :=
 begin
   sorry

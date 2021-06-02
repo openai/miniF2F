@@ -51,7 +51,7 @@ begin
   rw k₃,
   rw k₄,
   rw k₅,
-  suffices : (4:ℝ) ^ 2 * (4:ℝ) = 4 ^ 3, {
+  suffices : (4:ℝ)^2 * (4:ℝ) = 4^3, {
     rw this,
     rw k₇,
     refine real.pow_nat_rpow_nat_inv k₁ k₂,

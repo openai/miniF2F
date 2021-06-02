@@ -5,9 +5,11 @@ Authors: Kunhao Zheng
 -/
 import data.real.basic
 
-theorem algebra_sqineq_36azm9asqle36zsq (z a : ℝ) : 36 * (a * z) - 9 * a ^ 2 ≤ 36 * z ^ 2 :=
+theorem algebra_sqineq_36azm9asqle36zsq
+  (z a : ℝ) :
+  36 * (a * z) - 9 * a^2 ≤ 36 * z^2 :=
 begin
-  suffices : 4 * (a * z) - a ^ 2 ≤ 4 * z ^ 2, nlinarith,
-  suffices : 0 ≤ (a - 2 * z) ^ 2, nlinarith,
+  suffices : 4 * (a * z) - a^2 ≤ 4 * z^2, nlinarith,
+  suffices : 0 ≤ (a - 2 * z)^2, nlinarith,
   exact pow_two_nonneg (a - 2 * z),
 end

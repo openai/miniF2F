@@ -6,7 +6,13 @@ Authors: Kunhao Zheng
 import data.nat.basic
 import data.nat.prime
 
-theorem amc12b_2002_p11 (a b : ℕ) (h₀ : nat.prime a) (h₁ : nat.prime b) (h₂ : nat.prime (a + b)) (h₃ : nat.prime (a - b)) : nat.prime ( a + b + ( a - b + ( a + b ) ) ) :=
+theorem amc12b_2002_p11
+  (a b : ℕ)
+  (h₀ : nat.prime a)
+  (h₁ : nat.prime b)
+  (h₂ : nat.prime (a + b))
+  (h₃ : nat.prime (a - b)) :
+  nat.prime (a + b + (a - b + (a + b))) :=
 begin
   sorry
 end

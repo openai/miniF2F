@@ -8,7 +8,9 @@ import data.finset.basic
 import algebra.big_operators.basic
 open_locale big_operators
 
-theorem induction_sum_odd (n : ℕ) : ∑ k in ( finset.range n), 2 * k + 1 = n ^ 2 :=
+theorem induction_sum_odd
+  (n : ℕ) :
+  ∑ k in (finset.range n), 2 * k + 1 = n^2 :=
 begin
   sorry
 end 

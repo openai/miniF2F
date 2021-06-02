@@ -7,7 +7,7 @@ import data.nat.basic
 import data.real.basic
 
 theorem mathd_numbertheory_198 :
-  (5 ^ 2005) % 100 = 25 :=
+  (5^2005) % 100 = 25 :=
 begin
   sorry
 end
