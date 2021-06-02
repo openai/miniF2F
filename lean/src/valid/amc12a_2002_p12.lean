@@ -9,7 +9,7 @@ import data.nat.prime
 theorem amc12a_2002_p12
   (f : ℝ → ℝ)
   (k : ℝ)
-  (h₀ : ∀ x, f x = x ^ 2 - 63 * x + k)
+  (h₀ : ∀ x, f x = x^2 - 63 * x + k)
   (h₁ : set.subset (f ⁻¹' {0}) { x : ℝ | ∃ n : ℕ, ↑n = x ∧ nat.prime n}) :
   k = 122 :=
 begin
