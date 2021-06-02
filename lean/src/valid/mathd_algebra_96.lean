@@ -1,7 +1,7 @@
 /-
 Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
+Authors: Kunhao Zheng, OpenAI GPT-f
 -/
 import data.real.basic
 import analysis.special_functions.exp_log
@@ -14,5 +14,5 @@ theorem mathd_algebra_96
   (h₃ : real.log z - real.log x = -7) :
   a = -8 :=
 begin
-  sorry
+  nlinarith [h₁, h₂, h₃],
 end
