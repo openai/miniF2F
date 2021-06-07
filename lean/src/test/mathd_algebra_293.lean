@@ -7,7 +7,7 @@ import data.real.basic
 import data.real.nnreal
 import data.real.sqrt
 
-theorem mathd_algebra_289
+theorem mathd_algebra_293
   (x : nnreal) :
   real.sqrt (60 * x) * real.sqrt (12 * x) * real.sqrt (63 * x) = 36 * x * real.sqrt (35 * x) :=
 begin

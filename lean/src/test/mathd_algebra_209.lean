@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.real.basic
 import data.equiv.basic
 
-theorem mathd_algebra_188
+theorem mathd_algebra_209
   (σ : equiv ℝ ℝ)
   (h₀ : σ.2 2 = 10)
   (h₁ : σ.2 10 = 1)
