@@ -13,9 +13,5 @@ theorem induction_sum_1oktkp1
   (n : ℕ) :
   ∑ k in (finset.range n), (1:ℝ) / ((k + 1) * (k + 2)) = n / (n + 1) :=
 begin
-  simp [nat.div_eq_of_lt (nat.lt_succ_self _)],
-  rintro i -,
-  symmetry,
-  rw mul_comm,
-  dec_trivial,
+  sorry
 end
