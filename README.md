@@ -64,6 +64,14 @@ The `metamath` folder is released under the MIT License.
 
 (WIP)
 
+## Code of Conduct
+
+MiniF2F is meant to serve as a shared and useful resource for the machine learning community working
+on formal mathematics. It is still a TODO to determine how we'll exchange respective results on the
+benchmark in a way that is the most useful to the community.
+
+In the meantime, if you're using miniF2F and are discovering new proofs (manually or automatically)
+please contribute them back to the benchmark.
 
 ## Indicative TODO (contributions welcome)
 
