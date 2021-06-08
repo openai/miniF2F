@@ -4,14 +4,13 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
 import data.real.basic
-import data.nat.basic
 import data.finset.basic
 import algebra.big_operators.basic
 open_locale big_operators
 
-theorem induction_sum_1oktkp1
-  (n : ℕ) :
-  ∑ k in (finset.range n), (1:ℝ) / ((k + 1) * (k + 2)) = n / (n + 1) :=
+theorem mathd_algebra_215
+  (h₀ : fintype {x : ℝ | (x + 3)^2 = 121}) :
+  ∑ k in {x : ℝ | (x + 3)^2 = 121}.to_finset, k = -6 :=
 begin
   sorry
 end

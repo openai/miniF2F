@@ -4,14 +4,12 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
 import data.real.basic
-import data.nat.basic
 import data.finset.basic
 import algebra.big_operators.basic
 open_locale big_operators
 
-theorem induction_sum_1oktkp1
-  (n : ℕ) :
-  ∑ k in (finset.range n), (1:ℝ) / ((k + 1) * (k + 2)) = n / (n + 1) :=
+theorem amc12a_2021_p9 :
+  ∏ k in finset.range 7, (2^(2^k) + 3^(2^k)) = 3^128 - 2^128 :=
 begin
   sorry
 end
