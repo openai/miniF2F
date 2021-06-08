@@ -13,5 +13,11 @@ theorem mathd_algebra_395
   (h₁ : σ.1 (x + 1) = σ.2 x) :
   x = 47 / 24 :=
 begin
-  sorry
+  field_simp [h₀, mul_add, add_mul, sub_add_cancel, mul_assoc, add_comm],
+  have := congr_arg σ.to_fun h₁,
+  rw h₀ at this,
+  rw h₀ at this,
+  symmetry,
+  norm_num at this,
+  linarith,
 end

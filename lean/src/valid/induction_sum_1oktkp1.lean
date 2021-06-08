@@ -1,7 +1,7 @@
 /-
 Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
+Authors: Kunhao Zheng, OpenAI GPT-f
 -/
 import data.real.basic
 import data.nat.basic
@@ -13,5 +13,9 @@ theorem induction_sum_1oktkp1
   (n : ℕ) :
   ∑ k in (finset.range n), 1 / ((k + 1) * (k + 2)) = n / (n + 1) :=
 begin
-  sorry
+  simp [nat.div_eq_of_lt (nat.lt_succ_self _)],
+  rintro i -,
+  symmetry,
+  rw mul_comm,
+  dec_trivial,
 end
