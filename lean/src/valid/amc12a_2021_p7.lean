@@ -1,7 +1,7 @@
 /-
 Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Stanislas Polu
+Authors: Stanislas Polu, OpenAI GPT-f
 -/
 import data.real.basic
 
@@ -10,5 +10,6 @@ theorem amc12a_2021_p7
   (y : ℝ) :
   1 ≤ ((x * y) - 1)^2 + (x + y)^2 :=
 begin
-  sorry
+  ring_nf,
+  nlinarith,
 end
