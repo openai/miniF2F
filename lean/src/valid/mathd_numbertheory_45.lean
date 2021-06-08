@@ -12,5 +12,3 @@ begin
   simp only [nat.gcd_comm],
   norm_num,
 end
-
-
