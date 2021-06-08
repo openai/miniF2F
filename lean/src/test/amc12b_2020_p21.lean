@@ -9,7 +9,7 @@ import data.finset.basic
 import algebra.big_operators.basic
 open_locale big_operators
 
-theorem amc12a_2020_p21
+theorem amc12b_2020_p21
   (h₀ : fintype {n : ℕ+ | (↑n + (1000:ℝ)) / (70:ℝ) = floor (real.sqrt n)}) :
   finset.card {n : ℕ+ | (↑n + (1000:ℝ)) / (70:ℝ) = floor (real.sqrt n)}.to_finset = 6 :=
 begin
