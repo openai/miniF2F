@@ -12,5 +12,11 @@ theorem mathd_algebra_263
   (h₁ : real.sqrt (19 + 3 * y) = 7) :
   y = 10 :=
 begin
-  sorry
+  revert y h₀ h₁,
+  intros x hx,
+  rw real.sqrt_eq_iff_sq_eq hx,
+  swap,
+  norm_num,
+  intro h,
+  nlinarith,
 end

@@ -1,7 +1,7 @@
 /-
 Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
+Authors: Kunhao Zheng, OpenAI GPT-f
 -/
 import data.real.basic
 import data.nat.basic
@@ -15,5 +15,8 @@ theorem mathd_algebra_289
   (h₃ : t^2 - m * t + n = 0) :
   m^n + n^m + k^t + t^k = 20 :=
 begin
-  sorry
+  revert t m n h₀ h₁ h₂ h₃,
+  rintros m n ⟨h₁, h₂⟩ h₃ h; clear h,
+  { exfalso, exact h₃.2.ne_zero rfl },
+  simp [h₃.left, h₃.right],
 end

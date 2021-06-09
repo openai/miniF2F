@@ -1,7 +1,7 @@
 /-
 Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
+Authors: Kunhao Zheng, OpenAI GPT-f
 -/
 import data.real.basic
 import data.real.nnreal
@@ -16,5 +16,8 @@ theorem mathd_algebra_342
   (h₁ : ∑ k in (finset.range 10), (a + k * d) = 210) :
   a = 42/5 :=
 begin
-  sorry
+  revert h₀ h₁,
+  simp [finset.sum_range_succ, mul_comm d],
+  intros,
+  linarith,
 end

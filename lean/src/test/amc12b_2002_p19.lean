@@ -13,5 +13,5 @@ theorem amc12b_2002_p19
   (h₃ : c * (a + b) = 170) :
   a * b * c = 720 :=
 begin
-  sorry
+  nlinarith,
 end

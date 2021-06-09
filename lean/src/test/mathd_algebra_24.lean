@@ -10,5 +10,5 @@ theorem mathd_algebra_24
   (h₀ : x / 50 = 40) :
   x = 2000 :=
 begin
-  sorry
+  nlinarith,
 end
