@@ -10,11 +10,5 @@ theorem mathd_numbertheory_227
   (h₀ : ↑x / (4:ℝ) + y / 6 = (x + y) / n) :
   n = 5 :=
 begin
-  revert h₀ h₁,
-  intros hx,
-  simp [hx],
-  intro h,
-  have := hx (σ.symm x),
-  norm_num at this,
-  linarith,
+  sorry
 end
