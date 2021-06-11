@@ -4,14 +4,11 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng, OpenAI GPT-f
 -/
 import data.real.basic
-import data.equiv.basic
 
-theorem mathd_algebra_422
-  (x : ℝ)
-  (σ : equiv ℝ ℝ)
-  (h₀ : ∀ x, σ.1 x = 5 * x - 12)
-  (h₁ : σ.2 x = σ.1 (x + 1)) :
-  x = 47/24 :=
+theorem mathd_numbertheory_227
+  (x y n : ℕ)
+  (h₀ : ↑x / (4:ℝ) + y / 6 = (x + y) / n) :
+  n = 5 :=
 begin
   revert h₀ h₁,
   intros hx,
