@@ -6,7 +6,7 @@ Authors: Kunhao Zheng
 import data.real.basic
 import data.equiv.basic
 
-theorem mathd_algebra_395
+theorem mathd_algebra_422
   (x : ℝ)
   (σ : equiv ℝ ℝ)
   (h₀ : ∀ x, σ.1 x = 5 * x - 12) 
