@@ -1,12 +1,1 @@
-$(
-  @{
-    mathd-numbertheory-232.0 @e |- ( ph -> Y e. NN0 ) $@
-    mathd-numbertheory-232.1 @e |- ( ph -> Z e. NN0 ) $@
-    mathd-numbertheory-232.2 @e |- ( ph -> ( ( X x. 3 ) mod ; 3 1 ) = 1 ) $@
-    mathd-numbertheory-232.3 @e |- ( ph -> ( ( Y x. 5 ) mod ; 3 1 ) = 1 ) $@
-    mathd-numbertheory-232.4 @e |- ( ph -> ( ( Z x. ( X + Y ) ) mod ; 3 1 ) = 1 ) $@
-    @( (Contributed by Kunhao Zheng, 9-Jun-2021.) @)
-    mathd-numbertheory-232 @p |- ( ph -> ( Z mod ; 3 1 ) = ; 2 9 ) @=
-      ? @.
-  @}
-$)
+[[ |- ( ph -> A e. NN0 ) |- ( ph -> B e. NN0 ) |- ( ph -> C e. NN0 ) |- Y = ( Z/nZ ` ; 3 1 ) |- I = ( invr ` Y ) |- R = ( ZZring ~QG ( ( RSpan ` ZZring ) ` { ; 3 1 } ) ) |- ( ph -> ( I ` [ 3 ] R ) = [ A ] R ) |- ( ph -> ( I ` [ 6 ] R ) = [ B ] R ) |- ( ph -> ( I ` [ ( A + B ) ] R ) = [ C ] R ) ]] |- ( ph -> [ C ] R = [ ; 2 9 ] R )
