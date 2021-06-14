@@ -8,8 +8,8 @@ import data.nat.basic
 
 theorem mathd_algebra_69
   (r s : ℕ+)
-  (h₀ : r * s = 450)
-  (h₁ : (r + 5) * (s - 3) = 450) :
+  (h₀ : ↑r * ↑s = (450:ℤ))
+  (h₁ : (↑r + 5) * (↑s - 3) = (450:ℤ)) :
   r = 25 :=
 begin
   sorry

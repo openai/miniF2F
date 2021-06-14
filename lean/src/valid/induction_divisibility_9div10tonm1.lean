@@ -7,8 +7,8 @@ import data.real.basic
 import data.nat.basic
 
 theorem induction_divisibility_9div10tonm1
-  (n : ℕ) :
-  9 ∣(10^n - 1) :=
+  (n : ℕ+) :
+  9 ∣(10^(n:ℕ) - 1) :=
 begin
   sorry
 end

@@ -12,7 +12,7 @@ open_locale big_operators
 theorem mathd_algebra_158
   (a : ℕ)
   (h₀ : even a)
-  (h₁ : ∑ k in finset.range 8, (2 * k + 1) - ∑ k in finset.range 5, (a + 2 * k) = 4) :
+  (h₁ : ↑∑ k in finset.range 8, (2 * k + 1) - ↑∑ k in finset.range 5, (a + 2 * k) = (4:ℤ)) :
   a = 8 :=
 begin
   sorry
