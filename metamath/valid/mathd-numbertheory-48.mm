@@ -1,1 +1,8 @@
-[[ |- ( ph -> B e. NN0 ) |- ( ph -> 0 < B ) |- ( ph -> ( ( ( 3 x. ( B ^ 2 ) ) + ( 2 x. B ) ) + 1 ) = ; 5 7 ) ]] |- ( ph -> B = 4 )
+$(
+${
+  mathd-numbertheory-48.0 $e |- ( ph -> B e. NN0 ) $.
+  mathd-numbertheory-48.1 $e |- ( ph -> 0 < B ) $.
+  mathd-numbertheory-48.2 $e |- ( ph -> ( ( ( 3 x. ( B ^ 2 ) ) + ( 2 x. B ) ) + 1 ) = ; 5 7 ) $.
+  mathd-numbertheory-48 $p |- ( ph -> B = 4 ) $=
+$}
+$)

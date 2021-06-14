@@ -1,1 +1,7 @@
-[[ |- ( ph -> N e. NN0 ) |- ( ph -> ( N mod 7 ) = 5 ) ]] |- ( ph -> ( ( 5 x. N ) mod 7 ) = 4 )
+$(
+${
+  mathd-numbertheory-335.0 $e |- ( ph -> N e. NN0 ) $.
+  mathd-numbertheory-335.1 $e |- ( ph -> ( N mod 7 ) = 5 ) $.
+  mathd-numbertheory-335 $p |- ( ph -> ( ( 5 x. N ) mod 7 ) = 4 ) $=
+$}
+$)

@@ -1,1 +1,7 @@
-[[ |- ( ph -> N e. NN0 ) |- ( ph -> ( ( 2 x. N ) mod ; 4 7 ) = ; 1 5 ) ]] |- ( ph -> ( N mod ; 4 7 ) = ; 3 1 )
+$(
+${
+  mathd-numbertheory-99.0 $e |- ( ph -> N e. NN0 ) $.
+  mathd-numbertheory-99.1 $e |- ( ph -> ( ( 2 x. N ) mod ; 4 7 ) = ; 1 5 ) $.
+  mathd-numbertheory-99 $p |- ( ph -> ( N mod ; 4 7 ) = ; 3 1 ) $=
+$}
+$)
