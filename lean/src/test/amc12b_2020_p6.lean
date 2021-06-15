@@ -9,7 +9,7 @@ import data.nat.factorial
 theorem amc12b_2020_p6
   (n : ℕ)
   (h₀ : 9 ≤ n) :
-  ∃ x : ℕ, x^2 = (nat.factorial (n + 2) - nat.factorial (n + 1)) / nat.factorial n :=
+  ∃ x : ℕ, (x:ℝ)^2 = (nat.factorial (n + 2) - nat.factorial (n + 1)) / nat.factorial n :=
 begin
   sorry
 end

@@ -8,7 +8,7 @@ import data.real.basic
 theorem mathd_algebra_125
   (x y : ℕ+)
   (h₀ : 5 * x = y)
-  (h₁ : (x - 3) + (y - 3) = 30) :
+  (h₁ : (↑x - (3:ℤ)) + (y - (3:ℤ)) = 30) :
   x = 6 :=
 begin
   sorry

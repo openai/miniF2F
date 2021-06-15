@@ -17,7 +17,7 @@ theorem amc12a_2020_p7
   (h₄ : (a 4)^3 = 125)
   (h₅ : (a 5)^3 = 216)
   (h₆ : (a 6)^3 = 343) :
-  ∑ k in finset.range 7, (6 * (a k)^2) - (2 * ∑ k in finset.range 6, (a k)^2) = 658 :=
+  ↑∑ k in finset.range 7, (6 * (a k)^2) - ↑(2 * ∑ k in finset.range 6, (a k)^2) = (658:ℤ) :=
 begin
   sorry
 end

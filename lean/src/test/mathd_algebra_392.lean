@@ -9,8 +9,8 @@ import data.nat.basic
 theorem mathd_algebra_392
   (n : ℕ)
   (h₀ : even n)
-  (h₁ : (n - 2)^2 + n^2 + (n + 2)^2 = 12296) :
-  ((n - 2) * n * (n + 2)) / 8 = 32736 :=
+  (h₁ : (↑n - 2)^2 + ↑n^2 + (↑n + 2)^2 = (12296:ℤ)) :
+  ((↑n - 2) * ↑n * (↑n + 2)) / 8 = (32736:ℤ) :=
 begin
   sorry
 end

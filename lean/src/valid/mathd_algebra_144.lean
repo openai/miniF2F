@@ -8,8 +8,8 @@ import data.real.basic
 
 theorem mathd_algebra_144
   (a b c d : ℕ+)
-  (h₀ : c - b = d)
-  (h₁ : b - a = d)
+  (h₀ : (c:ℤ) - (b:ℤ) = (d:ℤ))
+  (h₁ : (b:ℤ) - (a:ℤ) = (d:ℤ))
   (h₂ : a + b + c = 60)
   (h₃ : a + b > c) :
   d < 10 :=
