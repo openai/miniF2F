@@ -24,13 +24,3 @@ qed
 
 
 end
-
-
-(*
-theorem amc12b_2003_p17
-  (x y : \<real>)
-  (h₀ : 0 < x \<and> 0 < y)
-  (h₁ : real.log (x * y^3) = 1)
-  (h₂ : real.log (x^2 * y) = 1) :
-  real.log (x * y) = 3 / 5
-*)
