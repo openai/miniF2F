@@ -19,5 +19,5 @@ begin
   -- { norm_num, },
   -- -- haveI := classical.dec,
   -- simp,
-  sorry,
+  sorry
 end

@@ -17,5 +17,5 @@ begin
   --       ... = 5 / 2 : by {norm_num,},
   -- linarith,
   -- linarith,
-  sorry,
+  sorry
 end
