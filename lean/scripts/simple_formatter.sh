@@ -1,5 +1,5 @@
 #!/bin/bash
-# usage: sh script/simple_formatter.sh src/test
+# usage: sh scripts/simple_formatter.sh src/test
 
 for FILE in $1/*.lean
 do
