@@ -14,4 +14,4 @@ theorem mathd_algebra_131
   1 / (a - 1) + 1 / (b - 1) = -1 :=
 begin
   sorry
-end  
+end

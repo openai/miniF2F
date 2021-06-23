@@ -18,5 +18,5 @@ begin
   rw eq_comm at h₂,
   suffices : a = 13 * b, linarith,
   have key : 5 * (a - 2 * b) = (4 * a + 3 * b), rwa (eq_div_iff (sub_ne_zero_of_ne h₁)).mp,
-  linarith, 
+  linarith,
 end

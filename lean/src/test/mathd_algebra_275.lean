@@ -14,4 +14,3 @@ begin
   revert x h,
   norm_num,
 end
-

@@ -7,7 +7,7 @@ import data.complex.basic
 import data.real.basic
 
 theorem mathd_algebra_313
-  (v i z : ℂ) 
+  (v i z : ℂ)
   (h₀ : v = i * z)
   (h₁ : v = 1 + complex.I)
   (h₂ : z = 2 - complex.I) :

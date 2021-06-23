@@ -15,4 +15,3 @@ theorem mathd_algebra_141
 begin
   sorry
 end
-

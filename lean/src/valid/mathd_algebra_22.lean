@@ -6,7 +6,6 @@ Authors: Kunhao Zheng
 import data.real.basic
 import analysis.special_functions.exp_log
 
-
 lemma log_inj_on_pos : set.inj_on real.log (set.Ioi 0) :=
 real.strict_mono_incr_on_log.inj_on
 
@@ -29,4 +28,3 @@ begin
   linarith,
   linarith,
 end
-

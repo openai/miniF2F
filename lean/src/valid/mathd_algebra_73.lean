@@ -13,4 +13,4 @@ theorem mathd_algebra_73
   x = p + q - r :=
 begin
   sorry
-end 
+end

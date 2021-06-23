@@ -9,9 +9,9 @@ import data.finset.basic
 import algebra.big_operators.basic
 open_locale big_operators
 
-theorem mathd_numbertheory_451 
+theorem mathd_numbertheory_451
   (h₀ : fintype {n : ℕ | 2010 ≤ n ∧ n ≤ 2019 ∧ ∃ m, (finset.card (nat.divisors m) = 4 ∧ ∑ p in (nat.divisors m), p = n)}) :
   ∑ k in {n : ℕ | 2010 ≤ n ∧ n ≤ 2019 ∧ ∃ m, (finset.card (nat.divisors m) = 4 ∧ ∑ p in (nat.divisors m), p = n)}.to_finset, k = 2016 :=
 begin
   sorry
-end 
+end

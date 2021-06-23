@@ -10,4 +10,4 @@ theorem mathd_numbertheory_156
   nat.gcd (n + 7) (2 * n + 1) ≤ 13 :=
 begin
   sorry
-end 
+end

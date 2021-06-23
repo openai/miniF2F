@@ -10,7 +10,7 @@ import analysis.special_functions.pow
 import algebra.big_operators.basic
 open_locale big_operators
 
-theorem amc12b_2021_p21 
+theorem amc12b_2021_p21
   (h₀ : fintype {x : ℝ | 0 < x ∧ x^((2:ℝ)^real.sqrt 2) = (real.sqrt 2)^((2:ℝ)^x)}) :
   ↑2 ≤ ∑ k in {x : ℝ | 0 < x ∧ x^((2:ℝ)^real.sqrt 2) = (real.sqrt 2)^((2:ℝ)^x)}.to_finset, k ∧ ∑ k in {x : ℝ | 0 < x ∧ x^((2:ℝ)^real.sqrt 2) = (real.sqrt 2)^((2:ℝ)^x)}.to_finset, k < 6 :=
 begin

@@ -12,4 +12,4 @@ theorem induction_nfactltnexpnm1ngt3
   nat.factorial n < n^(n - 1) :=
 begin
   sorry
-end 
+end

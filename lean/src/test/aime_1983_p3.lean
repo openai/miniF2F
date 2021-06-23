@@ -9,10 +9,10 @@ import data.finset.basic
 import algebra.big_operators.basic
 open_locale big_operators
 
-theorem aime_1983_p3 
+theorem aime_1983_p3
   (f : ℝ → ℝ)
   (h₀ : ∀ x, f x = (x^2 + (18 * x +  30) - 2 * real.sqrt (x^2 + (18 * x + 45))))
-  (h₁ : fintype (f⁻¹' {0})) : 
+  (h₁ : fintype (f⁻¹' {0})) :
   ∏ x in (f⁻¹' {0}).to_finset, x = 20 :=
 begin
   sorry

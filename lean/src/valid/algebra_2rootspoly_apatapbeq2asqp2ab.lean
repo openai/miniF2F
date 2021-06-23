@@ -5,7 +5,7 @@ Authors: Kunhao Zheng, OpenAI GPT-f
 -/
 import data.complex.basic
 
-theorem algebra_2rootspoly_apatapbeq2asqp2ab 
+theorem algebra_2rootspoly_apatapbeq2asqp2ab
   (a b : ℂ) :
   (a + a) * (a + b) = 2 * a^2 + 2 * (a * b) :=
 begin

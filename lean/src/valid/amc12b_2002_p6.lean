@@ -13,7 +13,7 @@ theorem amc12b_2002_p6
 begin
   have h₂ := h₁ a,
   have h₃ := h₁ b,
-  have h₄ := h₁ 0, 
+  have h₄ := h₁ 0,
   simp at *,
   have h₅ : b * (1 - a) = 0, linarith,
   simp at h₅,
