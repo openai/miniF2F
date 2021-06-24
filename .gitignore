@@ -1,4 +1,5 @@
 *.olean
 /_target
 /leanpkg.path
+.vscode
 minif2f.lean
