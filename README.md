@@ -20,7 +20,7 @@ the benchmark by Summer 2021.
 |   Lean    |  164 |  166  |
 | Metamath  |  164 |  166  |
 | Hol Light |   0  |    0  |
-| Isabelle  |   0  |    0  |
+| Isabelle  |   1  |   35  |
 
 ## Structure
 
@@ -62,7 +62,11 @@ The `metamath` folder is released under the MIT License.
 
 ### Isabelle
 
-(WIP)
+Each file contains the problem statement defined as a theorem
+whose name must match the file name, optionally with a proof for it as well as the necessary
+imports.
+
+The `isabelle` folder is released under the Apache License.
 
 ## Code of Conduct
 
