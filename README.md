@@ -17,8 +17,8 @@ the benchmark by Summer 2021.
 
 |           | Test | Valid |
 |:---------:|:----:|:-----:|
-|   Lean    |  164 |  166  |
-| Metamath  |  164 |  166  |
+|   Lean    |  167 |  166  |
+| Metamath  |  167 |  166  |
 | Hol Light |   0  |    0  |
 | Isabelle  |   1  |   35  |
 
@@ -45,6 +45,9 @@ Each exercise file complies to the following system-specific conventions.
 Each file (whose name use `_` instead of `-`) contains the problem statement defined as a theorem
 whose name must match the file name, optionally with a proof for it as well as the necessary
 imports. Lemmas can be added to support ground-truth proofs.
+
+Please use `lean/scripts/lint_style.py` to check all the statements pass the linter.
+You could also make use of `lean/scripts/simple_formatter.sh` to do some basic formatting.
 
 The `lean` folder is released under the Apache License (so that it is aligned with Lean's mathlib
 license).
@@ -77,11 +80,8 @@ benchmark in a way that is the most useful to the community.
 In the meantime, if you're using miniF2F and are discovering new proofs (manually or automatically)
 please contribute them back to the benchmark.
 
-For lean statement, please use `lean/scripts/lint_style.py` to check all the statements pass the linter.
-You could also make use of `lean/scripts/simple_formatter.sh` to do some basic formatting.
-
 ## Indicative TODO (contributions welcome)
 
 - [ ] Get started with Hol Light
-- [ ] Get started with Isabelle
+- [ ] Complete with Isabelle
 - [ ] Compute and share baseline pass rates (Lean's `tidy`, Isabelle's SledgeHammer, ...)
