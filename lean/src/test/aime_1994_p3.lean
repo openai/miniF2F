@@ -13,5 +13,5 @@ theorem aime_1994_p3
   (h1 : f 19 = 94):
   f (94) % 1000 = 561 :=
   begin
-    sorry,
+    sorry
   end

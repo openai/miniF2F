@@ -16,5 +16,5 @@ theorem aime_1995_p7
   (h2 : (1 - real.sin t) * (1- real.cos t) = m/n - real.sqrt k):
   k + m + n = 27 :=
   begin
-    sorry,
+    sorry
   end
