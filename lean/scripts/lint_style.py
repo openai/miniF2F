@@ -3,7 +3,7 @@
 Lint a file or files from mathlib for style.
 
 Sample usage:
-
+    under the folder of miniF2F/lean
     $ python ./scripts/lint_style.py $(find src/test -name '*.lean')
     $ python ./scripts/lint_style.py $(find src/valid -name '*.lean')
 
@@ -50,28 +50,6 @@ exceptions = []
 SCRIPTS_DIR = Path(__file__).parent.resolve()
 ROOT_DIR = SCRIPTS_DIR.parent
 RESERVED_NOTATION = ROOT_DIR / 'src/tactic/reserved_notation.lean'
-
-
-# with SCRIPTS_DIR.joinpath("style-exceptions.txt").open(encoding="utf-8") as f:
-#     for line in f:
-#         filename, _, _, _, _, errno, *_ = line.split()
-#         path = ROOT_DIR / filename
-#         if errno == "ERR_COP":
-#             exceptions += [(ERR_COP, path)]
-#         if errno == "ERR_IMP":
-#             exceptions += [(ERR_IMP, path)]
-#         if errno == "ERR_MOD":
-#             exceptions += [(ERR_MOD, path)]
-#         if errno == "ERR_LIN":
-#             exceptions += [(ERR_LIN, path)]
-#         if errno == "ERR_SAV":
-#             exceptions += [(ERR_SAV, path)]
-#         if errno == "ERR_RNT":
-#             exceptions += [(ERR_RNT, path)]
-#         if errno == "ERR_OPT":
-#             exceptions += [(ERR_OPT, path)]
-#         if errno == "ERR_AUT":
-#             exceptions += [(ERR_AUT, path)]
 
 new_exceptions = False
 
