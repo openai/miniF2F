@@ -46,8 +46,8 @@ Each file (whose name use `_` instead of `-`) contains the problem statement def
 whose name must match the file name, optionally with a proof for it as well as the necessary
 imports. Lemmas can be added to support ground-truth proofs.
 
-Please use `lean/scripts/lint_style.py` to check all the statements pass the linter.
-You could also make use of `lean/scripts/simple_formatter.sh` to do some basic formatting.
+Please use `lean/scripts/lint_style.py` to check all the statements pass the linter. You can also
+make use of `lean/scripts/simple_formatter.sh` to enforce a few basic formatting rules.
 
 The `lean` folder is released under the Apache License (so that it is aligned with Lean's mathlib
 license).
