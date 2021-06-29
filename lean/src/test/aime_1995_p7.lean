@@ -9,12 +9,12 @@ import analysis.special_functions.trigonometric
 import data.pnat.basic
 
 theorem aime_1995_p7
-  ( k m n : ℕ+ )
-  (t : ℝ )
+  (k m n : ℕ+)
+  (t : ℝ)
   (h0 : nat.gcd m n = 1)
-  (h1 : (1 + real.sin t ) * (1 + real.cos t) = 5/4)
+  (h1 : (1 + real.sin t) * (1 + real.cos t) = 5/4)
   (h2 : (1 - real.sin t) * (1- real.cos t) = m/n - real.sqrt k):
   k + m + n = 27 :=
-  begin
-    sorry
-  end
+begin
+  sorry
+end
