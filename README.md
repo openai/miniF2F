@@ -83,5 +83,5 @@ please contribute them back to the benchmark.
 ## Indicative TODO (contributions welcome)
 
 - [ ] Get started with Hol Light
-- [ ] Complete with Isabelle
+- [ ] Complete Isabelle formalization
 - [ ] Compute and share baseline pass rates (Lean's `tidy`, Isabelle's SledgeHammer, ...)
