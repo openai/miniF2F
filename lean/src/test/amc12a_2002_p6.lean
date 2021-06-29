@@ -19,4 +19,4 @@ begin
   rw mul_one,
   apply nat.succ_le_succ,
   exact le_of_lt (nat.lt_succ_self n),
-end 
+end

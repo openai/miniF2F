@@ -13,4 +13,4 @@ theorem induction_sum_odd
   ∑ k in (finset.range n), 2 * k + 1 = n^2 :=
 begin
   sorry
-end 
+end

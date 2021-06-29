@@ -15,7 +15,7 @@ theorem mathd_algebra_114
 begin
   rw h₀,
   have k₁ : 0 ≤ (4:ℝ), linarith,
-  have k₂ : 0 < 3, linarith, 
+  have k₂ : 0 < 3, linarith,
   have k₃ : (64:ℝ) = 4^(3:ℝ), {
     suffices : (64:ℝ) = 4^((3:ℕ):ℝ), {
       rw this,

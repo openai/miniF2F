@@ -12,4 +12,4 @@ theorem amc12_2000_p1
   i+m+o ≤ 671 :=
 begin
   sorry
-end 
+end

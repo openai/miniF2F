@@ -14,4 +14,4 @@ begin
   rw [h₀, h₁],
   ring,
   linarith,
-end 
+end

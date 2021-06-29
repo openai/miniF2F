@@ -17,4 +17,3 @@ theorem amc12a_2020_p25
 begin
   sorry
 end
-

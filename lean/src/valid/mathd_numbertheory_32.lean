@@ -13,4 +13,4 @@ theorem mathd_numbertheory_32
   ∑ k in { n : ℕ | n ∣ 36}.to_finset, k = 91 :=
 begin
   sorry
-end 
+end

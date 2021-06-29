@@ -14,4 +14,4 @@ theorem mathd_numbertheory_221
   finset.card {x : ℕ | 0 < x ∧ x < 1000 ∧ finset.card (nat.divisors x) = 3}.to_finset = 11 :=
 begin
   sorry
-end 
+end

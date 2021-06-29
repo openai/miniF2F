@@ -9,7 +9,7 @@ import data.finset.basic
 open_locale big_operators
 
 theorem induction_sumkexp3eqsumksqsq
-  (n : ℕ) : 
+  (n : ℕ) :
   ∑ k in finset.range n, k^3 = (∑ k in finset.range n, k^2)^2 :=
 begin
   sorry

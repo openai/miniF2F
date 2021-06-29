@@ -15,4 +15,4 @@ theorem mathd_algebra_149
   ∑ k in (f⁻¹' {10}).to_finset, k = 6 :=
 begin
   sorry
-end  
+end

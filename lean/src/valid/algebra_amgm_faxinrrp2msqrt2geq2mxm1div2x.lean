@@ -34,7 +34,7 @@ begin
     exact real.rpow_pos_of_pos (by norm_num) _,
   },
   rw [h₂, ←nnreal.coe_le_coe, nnreal.coe_of_real, nnreal.coe_add, nnreal.coe_mul, nnreal.coe_mul, nnreal.coe_of_real, nnreal.coe_of_real] at h₀,
-  
+
   have h₃ : 2 * ((1 / 2)^((1:ℝ) / 2)) ≤ 2 * (↑((1:nnreal) / 2) * x + ↑((1:nnreal) / 2) * (1 / (2 * x))), {
     refine (mul_le_mul_left _).mpr _,
     linarith,
@@ -60,7 +60,7 @@ begin
     rw h₆,
     ring,
   },
-  
+
   rwa [←h₄, ←h₅],
   apply div_nonneg_iff.mpr,
   left,

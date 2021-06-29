@@ -13,4 +13,4 @@ theorem mathd_numbertheory_22
   b = 3 ∨ b = 1 :=
 begin
   sorry
-end 
+end

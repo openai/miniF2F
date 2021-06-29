@@ -13,4 +13,4 @@ theorem mathd_algebra_51
   b - a = 15 :=
 begin
   linarith,
-end 
+end

@@ -14,4 +14,4 @@ theorem mathd_numbertheory_35
   ∑ k in { n : ℕ | n ∣ (nat.sqrt 196)}.to_finset, k = 24 :=
 begin
   sorry
-end 
+end

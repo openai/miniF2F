@@ -9,7 +9,7 @@ import data.finset.basic
 import algebra.big_operators.basic
 open_locale big_operators
 
-theorem mathd_numbertheory_303 
+theorem mathd_numbertheory_303
 (h₀ : fintype {n : ℕ | 2 ≤ n ∧ 171 ≡ 80 [MOD n] ∧ 468 ≡ 13 [MOD n]}) :
   ∑ k in {n : ℕ | 2 ≤ n ∧ 171 ≡ 80 [MOD n] ∧ 468 ≡ 13 [MOD n]}.to_finset, k = 111 :=
 begin

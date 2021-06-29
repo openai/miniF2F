@@ -16,4 +16,4 @@ theorem amc12a_2002_p21
   ∀ n, ∑ k in finset.range(n), u k > 10000 → 1999 ≤ n :=
 begin
   sorry
-end 
+end

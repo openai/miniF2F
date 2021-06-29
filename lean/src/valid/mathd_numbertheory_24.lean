@@ -14,4 +14,4 @@ begin
   norm_num,
   rw finset.sum_eq_multiset_sum,
   norm_num,
-end 
+end

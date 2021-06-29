@@ -16,4 +16,4 @@ begin
   simp [h₀],
   intro,
   nlinarith,
-end 
+end

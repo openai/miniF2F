@@ -17,4 +17,4 @@ begin
   rw nat.prime.dvd_mul,
   { tauto },
   assumption,
-end 
+end

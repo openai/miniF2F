@@ -10,7 +10,6 @@ import data.real.sqrt
 import data.complex.basic
 import algebra.algebra.basic
 
-
 theorem mathd_algebra_184
   (a b : nnreal)
   (h₀ : 0 < a ∧ 0 < b)
@@ -40,17 +39,16 @@ begin
     rw h₁ at h₂,
     exact (eq_div_iff key₁).mp h₂,
   },
-  
-  
+
   have key₃ : b = 3,
   {
-    have key₅ : (6 : nnreal) ≠ 0, 
+    have key₅ : (6 : nnreal) ≠ 0,
     {
       refine nnreal.ne_iff.mp _,
       norm_num,
     },
     calc b = nnreal.sqrt (b * b) : by { rw eq_comm, apply nnreal.sqrt_mul_self}
-          ... = nnreal.sqrt ((6*b*b)/6) : by {refine congr_arg ⇑nnreal.sqrt _, ring, refine (eq_div_iff _).mpr _, 
+          ... = nnreal.sqrt ((6*b*b)/6) : by {refine congr_arg ⇑nnreal.sqrt _, ring, refine (eq_div_iff _).mpr _,
           {exact key₅},
           rw mul_comm,
           }
@@ -62,4 +60,3 @@ begin
   rw h₁,
   ring,
 end
-

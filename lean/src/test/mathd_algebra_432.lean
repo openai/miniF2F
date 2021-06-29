@@ -10,4 +10,4 @@ theorem mathd_algebra_432
   (x + 3) * (2 * x - 6) = 2 * x^2 - 18 :=
 begin
   linarith,
-end 
+end

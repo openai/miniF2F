@@ -77,6 +77,9 @@ benchmark in a way that is the most useful to the community.
 In the meantime, if you're using miniF2F and are discovering new proofs (manually or automatically)
 please contribute them back to the benchmark.
 
+For lean statement, please use `lean/scripts/lint_style.py` to check all the statements pass the linter.
+You could also make use of `lean/scripts/simple_formatter.sh` to do some basic formatting.
+
 ## Indicative TODO (contributions welcome)
 
 - [ ] Get started with Hol Light

@@ -10,9 +10,8 @@ theorem amc12b_2002_p3
   (n : ℕ)
   (h₀ : 0 < n)
   -- note: we use this over (n^2 - 3 * n + 2) because nat subtraction truncates the latter at 1 and 2
-  (h₁ : nat.prime (n^2 + 2 - 3 * n)) : 
+  (h₁ : nat.prime (n^2 + 2 - 3 * n)) :
   n = 3 :=
 begin
   sorry
-end 
-
+end
