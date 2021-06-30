@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
 import data.nat.basic
+import analysis.special_functions.pow
 
 theorem induction_divisibility_3div2tooddnp1
   (n : ℕ) :
