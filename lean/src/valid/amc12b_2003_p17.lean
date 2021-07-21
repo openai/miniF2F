@@ -3,8 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import analysis.special_functions.exp_log
-import data.real.basic
+import minif2f_import
 
 theorem amc12b_2003_p17
   (x y : ℝ)

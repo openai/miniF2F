@@ -3,8 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kudzo Ahegbebu
 -/
-import data.real.basic
-import data.int.modeq
+import minif2f_import
 
 theorem aime_1994_p3
   (x : ℤ)
