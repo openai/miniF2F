@@ -4,7 +4,6 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng, David Renshaw
 -/
 import minif2f_import
-
 open_locale big_operators
 
 -- Sum a sequence by grouping adjacent terms.
@@ -30,7 +29,7 @@ begin
   have h₂ : ∀ k, k ∈ finset.range 49 → u (2 * k + 1 + 1) = u (2 * k + 1) + 1 :=
   by { intros k hk, exact h₀ (2 * k + 1) },
 
-  have h₃: ∑ (x : ℕ) in finset.range 49, (1:ℚ) = 49 := by simp,
+  have h₃: ∑ (x : ℕ) in finset.range 49, (1:ℚ) = 49 := by simp only [mul_one, nat.cast_bit0, finset.sum_const, nsmul_eq_mul, nat.cast_bit1, finset.card_range, nat.cast_one],
 
   have h98 : 98 = 2 * 49 := by norm_num,
 
