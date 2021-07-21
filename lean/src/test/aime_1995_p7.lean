@@ -3,10 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kudzo Ahegbebu
 -/
-import data.real.basic
-import data.real.sqrt
-import analysis.special_functions.trigonometric
-import data.pnat.basic
+import minif2f_import
 
 theorem aime_1995_p7
   (k m n : ℕ+)

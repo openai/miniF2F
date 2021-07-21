@@ -3,10 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng, David Renshaw, OpenAI GPT-f
 -/
-import data.nat.basic
-import data.nat.modeq
-import data.pnat.basic
-import order.bounds
+import minif2f_import
 
 theorem mathd_numbertheory_64 :
   is_least { x : ℕ+ | 30 * x ≡ 42 [MOD 47] } 39 :=

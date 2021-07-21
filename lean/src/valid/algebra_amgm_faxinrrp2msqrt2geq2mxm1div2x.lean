@@ -3,11 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import data.real.sqrt
-import data.real.basic
-import data.real.nnreal
-import analysis.mean_inequalities
-import analysis.special_functions.pow
+import minif2f_import
 
 theorem algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x :
   ∀ x > 0, 2 - real.sqrt 2 ≥ 2 - x - 1 / (2 * x) :=

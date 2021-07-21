@@ -3,8 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng, OpenAI GPT-f
 -/
-import data.nat.parity
-import data.nat.basic
+import minif2f_import
 open_locale nat
 
 theorem induction_ineq_nsqlefactn
