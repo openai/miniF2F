@@ -9,7 +9,7 @@ theorem induction_1pxpownlt1pnx
   (x : ℝ)
   (n : ℕ+)
   (h₀ : -1 < x) :
-  (1 + x)^(n:ℕ) ≤ (1 + n*x) :=
+  (1 + ↑n*x) ≤ (1 + x)^(n:ℕ) :=
 begin
   sorry
 end
