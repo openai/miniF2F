@@ -3,10 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import tactic.basic
-import data.real.basic
-import analysis.special_functions.pow
-import data.nat.basic
+import minif2f_import
 
 theorem mathd_algebra_114
   (a : ℝ)
@@ -15,7 +12,7 @@ theorem mathd_algebra_114
 begin
   rw h₀,
   have k₁ : 0 ≤ (4:ℝ), linarith,
-  have k₂ : 0 < 3, linarith, 
+  have k₂ : 0 < 3, linarith,
   have k₃ : (64:ℝ) = 4^(3:ℝ), {
     suffices : (64:ℝ) = 4^((3:ℕ):ℝ), {
       rw this,

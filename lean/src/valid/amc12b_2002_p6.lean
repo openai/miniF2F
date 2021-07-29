@@ -3,7 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import data.real.basic
+import minif2f_import
 
 theorem amc12b_2002_p6
   (a b : ℝ)
@@ -13,7 +13,7 @@ theorem amc12b_2002_p6
 begin
   have h₂ := h₁ a,
   have h₃ := h₁ b,
-  have h₄ := h₁ 0, 
+  have h₄ := h₁ 0,
   simp at *,
   have h₅ : b * (1 - a) = 0, linarith,
   simp at h₅,

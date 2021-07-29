@@ -3,7 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import data.nat.basic
+import minif2f_import
 
 theorem amc12_2000_p1
   (i m o : ℕ)
@@ -12,4 +12,4 @@ theorem amc12_2000_p1
   i+m+o ≤ 671 :=
 begin
   sorry
-end 
+end

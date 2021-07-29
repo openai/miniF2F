@@ -3,11 +3,10 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import data.complex.basic
-import data.real.basic
+import minif2f_import
 
 theorem mathd_algebra_313
-  (v i z : ℂ) 
+  (v i z : ℂ)
   (h₀ : v = i * z)
   (h₁ : v = 1 + complex.I)
   (h₂ : z = 2 - complex.I) :

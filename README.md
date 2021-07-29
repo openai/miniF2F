@@ -17,10 +17,10 @@ the benchmark by Summer 2021.
 
 |           | Test | Valid |
 |:---------:|:----:|:-----:|
-|   Lean    |  164 |  166  |
-| Metamath  |  164 |  166  |
+|   Lean    |  167 |  166  |
+| Metamath  |  167 |  166  |
 | Hol Light |   0  |    0  |
-| Isabelle  |   0  |    0  |
+| Isabelle  |   1  |   35  |
 
 ## Structure
 
@@ -46,6 +46,9 @@ Each file (whose name use `_` instead of `-`) contains the problem statement def
 whose name must match the file name, optionally with a proof for it as well as the necessary
 imports. Lemmas can be added to support ground-truth proofs.
 
+Please use `lean/scripts/lint_style.py` to check all the statements pass the linter. You can also
+make use of `lean/scripts/simple_formatter.sh` to enforce a few basic formatting rules.
+
 The `lean` folder is released under the Apache License (so that it is aligned with Lean's mathlib
 license).
 
@@ -62,7 +65,11 @@ The `metamath` folder is released under the MIT License.
 
 ### Isabelle
 
-(WIP)
+Each file contains the problem statement defined as a theorem
+whose name must match the file name, optionally with a proof for it as well as the necessary
+imports.
+
+The `isabelle` folder is released under the Apache License.
 
 ## Code of Conduct
 
@@ -76,5 +83,5 @@ please contribute them back to the benchmark.
 ## Indicative TODO (contributions welcome)
 
 - [ ] Get started with Hol Light
-- [ ] Get started with Isabelle
+- [ ] Complete Isabelle formalization
 - [ ] Compute and share baseline pass rates (Lean's `tidy`, Isabelle's SledgeHammer, ...)

@@ -3,8 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng, OpenAI GPT-f
 -/
-import data.nat.basic
-import data.real.basic
+import minif2f_import
 
 theorem amc12a_2002_p6
   (n : ℕ+) :
@@ -19,4 +18,4 @@ begin
   rw mul_one,
   apply nat.succ_le_succ,
   exact le_of_lt (nat.lt_succ_self n),
-end 
+end

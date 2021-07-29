@@ -3,13 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import tactic.suggest
-import data.real.basic
-import data.real.nnreal
-import data.real.sqrt
-import data.complex.basic
-import algebra.algebra.basic
-
+import minif2f_import
 
 theorem mathd_algebra_184
   (a b : nnreal)
@@ -40,17 +34,16 @@ begin
     rw h₁ at h₂,
     exact (eq_div_iff key₁).mp h₂,
   },
-  
-  
+
   have key₃ : b = 3,
   {
-    have key₅ : (6 : nnreal) ≠ 0, 
+    have key₅ : (6 : nnreal) ≠ 0,
     {
       refine nnreal.ne_iff.mp _,
       norm_num,
     },
     calc b = nnreal.sqrt (b * b) : by { rw eq_comm, apply nnreal.sqrt_mul_self}
-          ... = nnreal.sqrt ((6*b*b)/6) : by {refine congr_arg ⇑nnreal.sqrt _, ring, refine (eq_div_iff _).mpr _, 
+          ... = nnreal.sqrt ((6*b*b)/6) : by {refine congr_arg ⇑nnreal.sqrt _, ring, refine (eq_div_iff _).mpr _,
           {exact key₅},
           rw mul_comm,
           }
@@ -62,4 +55,3 @@ begin
   rw h₁,
   ring,
 end
-

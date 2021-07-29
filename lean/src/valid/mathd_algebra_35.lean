@@ -3,7 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import data.real.basic
+import minif2f_import
 
 theorem mathd_algebra_35
   (p q : ℝ → ℝ)
@@ -14,4 +14,4 @@ begin
   rw [h₀, h₁],
   ring,
   linarith,
-end 
+end

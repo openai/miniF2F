@@ -3,9 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import data.nat.basic
-import data.finset.basic
-import algebra.big_operators.basic
+import minif2f_import
 open_locale big_operators
 
 theorem amc12a_2002_p21
@@ -16,4 +14,4 @@ theorem amc12a_2002_p21
   ∀ n, ∑ k in finset.range(n), u k > 10000 → 1999 ≤ n :=
 begin
   sorry
-end 
+end

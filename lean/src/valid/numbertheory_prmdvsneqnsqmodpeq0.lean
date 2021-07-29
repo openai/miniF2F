@@ -3,8 +3,7 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng, OpenAI GPT-f
 -/
-import data.int.basic
-import data.nat.prime
+import minif2f_import
 
 theorem numbertheory_prmdvsneqnsqmodpeq0
   (n : ℤ)
@@ -17,4 +16,4 @@ begin
   rw nat.prime.dvd_mul,
   { tauto },
   assumption,
-end 
+end

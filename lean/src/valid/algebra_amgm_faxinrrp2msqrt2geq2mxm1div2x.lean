@@ -3,20 +3,16 @@ Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng
 -/
-import data.real.sqrt
-import data.real.basic
-import data.real.nnreal
-import analysis.mean_inequalities
-import analysis.special_functions.pow
+import minif2f_import
 
 theorem algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x :
   ∀ x > 0, 2 - real.sqrt 2 ≥ 2 - x - 1 / (2 * x) :=
 begin
   intros x h,
   suffices : real.sqrt 2 ≤ x + 1 / (2 * x), linarith,
-  have h₀ := (nnreal.geom_mean_le_arith_mean2_weighted (1/2) (1/2) (nnreal.of_real x) (nnreal.of_real (1/(2 * x)))) _,
+  have h₀ := (nnreal.geom_mean_le_arith_mean2_weighted (1/2) (1/2) (real.to_nnreal x) (real.to_nnreal (1/(2 * x)))) _,
   norm_num at h₀,
-  rw [← nnreal.mul_rpow, ← nnreal.of_real_mul] at h₀,
+  rw [← nnreal.mul_rpow, ← real.to_nnreal_mul] at h₀,
 
   have h₁ : x * (1 / (2 * x)) = 1 / 2, {
     rw [mul_div_comm, one_mul, div_eq_div_iff],
@@ -26,15 +22,15 @@ begin
   },
   rw h₁ at h₀,
 
-  have h₂ : nnreal.of_real (1/2)^((1:ℝ)/2) = nnreal.of_real ((1/2)^((1:ℝ)/2)), {
+  have h₂ : real.to_nnreal (1/2)^((1:ℝ)/2) = real.to_nnreal ((1/2)^((1:ℝ)/2)), {
     refine nnreal.coe_eq.mp _,
-    rw [nnreal.coe_of_real, nnreal.coe_rpow, nnreal.coe_of_real],
+    rw [real.coe_to_nnreal, nnreal.coe_rpow, real.coe_to_nnreal],
     linarith,
     apply le_of_lt,
     exact real.rpow_pos_of_pos (by norm_num) _,
   },
-  rw [h₂, ←nnreal.coe_le_coe, nnreal.coe_of_real, nnreal.coe_add, nnreal.coe_mul, nnreal.coe_mul, nnreal.coe_of_real, nnreal.coe_of_real] at h₀,
-  
+  rw [h₂, ←nnreal.coe_le_coe, real.coe_to_nnreal, nnreal.coe_add, nnreal.coe_mul, nnreal.coe_mul, real.coe_to_nnreal, real.coe_to_nnreal] at h₀,
+
   have h₃ : 2 * ((1 / 2)^((1:ℝ) / 2)) ≤ 2 * (↑((1:nnreal) / 2) * x + ↑((1:nnreal) / 2) * (1 / (2 * x))), {
     refine (mul_le_mul_left _).mpr _,
     linarith,
@@ -60,7 +56,7 @@ begin
     rw h₆,
     ring,
   },
-  
+
   rwa [←h₄, ←h₅],
   apply div_nonneg_iff.mpr,
   left,
