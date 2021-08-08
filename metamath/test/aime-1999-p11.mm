@@ -1,0 +1,1 @@
+[[ |- ( ph -> M e. QQ ) |- ( ph -> sum_ k e. ( 1 ... ; 3 5 ) ( sin ` ( ( ( 5 x. k ) / ; ; 1 8 0 ) x. _pi ) ) = ( tan ` ( ( M / ; ; 1 8 0 ) x. _pi ) ) ) |- ( ph -> ( ( denom ` M ) / ( numer ` M ) ) < ; 9 0 ) ]] |- ( ph -> ( ( denom ` M ) + ( numer ` M ) ) = ; ; 1 7 7 )

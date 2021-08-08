@@ -1,0 +1,1 @@
+[[ |- ( ph -> F : ( NN X. NN ) --> RR ) |- ( ph -> X e. NN ) |- ( ph -> Y e. NN ) |- ( ph -> ( X F X ) = X ) |- ( ph -> ( X F Y ) = ( Y F X ) ) |- ( ph -> ( ( X + Y ) x. ( X F Y ) ) = ( Y x. ( X F ( X + Y ) ) ) ) ]] |- ( ph -> ( ; 1 4 F ; 5 2 ) = ; ; 3 6 4 )

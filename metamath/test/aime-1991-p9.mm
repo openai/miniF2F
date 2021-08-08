@@ -1,0 +1,1 @@
+[[ |- ( ph -> X e. RR ) |- ( ph -> M e. QQ ) |- ( ph -> ( ( 1 / ( cos ` X ) ) + ( tan ` X ) ) = ( ; 2 2 / 7 ) ) |- ( ph -> ( ( 1 / ( sin ` X ) ) + ( 1 / ( tan ` X ) ) ) = M ) ]] |- ( ph -> ( ( denom ` M ) + ( numer ` M ) ) = ; 4 4 )
