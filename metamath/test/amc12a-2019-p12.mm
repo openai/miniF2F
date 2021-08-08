@@ -1,0 +1,1 @@
+[[ |- ( ph -> X e. RR ) |- ( ph -> Y e. RR ) |- ( ph -> X =/= 1 ) |- ( ph -> Y =/= 1 ) |- ( ph -> ( 2 logb X ) = ( Y logb ; 1 6 ) ) |- ( ph -> ( X x. Y ) = ; 6 4 ) ]] |- ( ph -> ( 2 logb ( X / Y ) ) = ; 2 0 )

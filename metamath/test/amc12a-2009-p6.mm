@@ -1,0 +1,1 @@
+[[ |- ( ph -> M e. RR ) |- ( ph -> N e. RR ) |- ( ph -> P e. RR ) |- ( ph -> Q e. RR ) |- ( ph -> P = ( 2 ^c M ) ) |- ( ph -> Q = ( 3 ^c N ) ) ]] |- ( ph -> ( ( P ^c ( 2 x. N ) ) x. ( Q ^c M ) ) = ( ; 1 2 ^c ( M x. N ) ) )
