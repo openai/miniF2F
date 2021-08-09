@@ -1,0 +1,1 @@
+[[ |- ( ph -> A e. RR ) |- ( ph -> B e. RR ) |- ( ph -> C e. RR ) |- ( ph -> D e. RR ) |- ( ph -> S e. RR ) |- ( ph -> S = ( ( ( ( A / ( ( A + B ) + D ) ) + ( B / ( ( A + B ) + C ) ) ) + ( C / ( ( B + C ) + D ) ) ) + ( D / ( ( A + C ) + D ) ) ) ) ]] |- ( ph -> ( 1 < S /\ S < 2 ) )

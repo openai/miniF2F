@@ -1,0 +1,1 @@
+[[ |- ( ph -> K e. NN ) |- ( ph -> M e. NN ) |- ( ph -> N e. NN ) |- C = ( s e. NN0 |-> ( s x. ( s + 1 ) ) ) |- ( ph -> ( ( K + M ) + 1 ) e. Prime ) |- ( ph -> ( N + 1 ) < ( ( K + M ) + 1 ) ) ]] |- ( ph -> prod_ k e. ( 1 ... N ) ( C ` k ) || prod_ k e. ( 1 ... N ) ( ( C ` ( M + k ) ) - ( C ` K ) ) )
