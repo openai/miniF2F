@@ -12,6 +12,6 @@ $(
     aime-1983-p1.9 @e |- ( ph -> ( ( X x. ( Y x. Z ) ) logb W ) = ; 1 2 ) $@
     $@ (Contributed by Kudzo Ahegbebu, 28-Jun-2021.) $@
     aime-1983-p1 @p |- ( ph -> ( Z logb W ) = ; 6 0 ) @=
-     ? @.
+       ? @.
   @}
 $)
