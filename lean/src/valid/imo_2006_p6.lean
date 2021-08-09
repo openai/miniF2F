@@ -5,9 +5,9 @@ Authors: Kunhao Zheng
 -/
 import minif2f_import
 
-theorem imo_1959_q1
-  (n : ℕ+) :
-  nat.gcd (21*n + 4) (14*n + 3) = 1 :=
+theorem imo_2006_p6
+  (a b c : ℝ) :
+  (a * b * (a^2 - b^2)) + (b * c * (b^2 - c^2)) + (c * a * (c^2 - a^2)) ≤ (9 * real.sqrt 2) / 32 * (a^2 + b^2 + c^2)^2 :=
 begin
   sorry
 end

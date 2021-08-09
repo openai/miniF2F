@@ -5,9 +5,9 @@ Authors: Kunhao Zheng
 -/
 import minif2f_import
 
-theorem imo_2019_q1
-  (f : ℤ → ℤ) :
-  (∀ a b, f (2 * a) + (2 * f b) = f (f (a + b)) ↔ (∀ z, f z = 0 \/ ∃ c, ∀ z, f z = 2 * z + c)) :=
+theorem imo_1959_p1
+  (n : ℕ+) :
+  nat.gcd (21*n + 4) (14*n + 3) = 1 :=
 begin
   sorry
 end
