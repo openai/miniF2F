@@ -1,0 +1,1 @@
+[[ |- ( ph -> K e. RR ) |- ( ph -> M e. Prime ) |- ( ph -> N e. Prime ) |- F = ( x e. RR |-> ( ( ( x ^ 2 ) - ( ; 1 2 x. x ) ) + K ) ) |- ( ph -> ( F ` M ) = 0 ) |- ( ph -> ( F ` N ) = 0 ) ]] |- ( ph -> K = ; 3 5 )
