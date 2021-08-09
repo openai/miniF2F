@@ -1,0 +1,1 @@
+[[ |- ( ph -> X e. RR+ ) |- ( ph -> Y e. RR+ ) |- ( ph -> Z e. RR+ ) |- ( ph -> M e. QQ ) |- ( ph -> ( ( X x. Y ) x. Z ) = 1 ) |- ( ph -> ( X + ( 1 / Z ) ) = 5 ) |- ( ph -> ( Y + ( 1 / X ) ) = ; 2 9 ) |- ( ph -> ( Z + ( 1 / Y ) ) = M ) |- ( ph -> 0 < M ) ]] |- ( ph -> ( ( denom ` M ) + ( numer ` M ) ) = 5 )

@@ -1,0 +1,1 @@
+[[ |- ( ph -> A : NN --> RR ) |- ( ph -> N e. NN ) |- ( ( ph /\ n e. NN ) -> ( abs ` ( A ` n ) ) < 1 ) |- ( ph -> sum_ k e. ( 1 ... N ) ( abs ` ( A ` k ) ) = ( ; 1 9 + ( abs ` sum_ k e. ( 1 ... N ) ( A ` k ) ) ) ) ]] |- ( ph -> ; 2 0 <_ N )
