@@ -1,1 +1,1 @@
-[[ |- ( ph -> A e. RR+ ) |- ( ph -> F : RR --> RR ) |- ( ph -> X e. RR ) |- ( ph -> ( F ` ( X + A ) ) = ( ( 1 / 2 ) + ( sqrt ` ( ( F ` X ) - ( ( F ` X ) ^ 2 ) ) ) ) ) |- ( ph -> E. b e. RR+ A. x e. RR ( F ` ( X + b ) ) = ( F ` X ) ) ]]
+[[ |- ( ph -> A e. RR+ ) |- ( ph -> F : RR --> RR ) |- ( ph -> X e. RR ) |- ( ph -> ( F ` ( X + A ) ) = ( ( 1 / 2 ) + ( sqrt ` ( ( F ` X ) - ( ( F ` X ) ^ 2 ) ) ) ) ) ]] |- ( ph -> E. b e. RR+ A. x e. RR ( F ` ( X + b ) ) = ( F ` X ) )
