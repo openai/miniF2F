@@ -1,1 +1,8 @@
-[[ |- ( ph -> X e. RR+ ) |- ( ph -> Y e. RR+ ) |- ( ph -> Z e. RR+ ) ]] |- ( ph -> ( 9 / ( ( X + Y ) + Z ) ) <_ ( ( ( 2 / ( X + Y ) ) + ( 2 / ( Y + Z ) ) ) + ( 2 / ( Z + X ) ) ) )
+$(
+${
+  algebra-9onxpypzleqsum2onxpy.0 $e |- ( ph -> X e. RR+ ) $.
+  algebra-9onxpypzleqsum2onxpy.1 $e |- ( ph -> Y e. RR+ ) $.
+  algebra-9onxpypzleqsum2onxpy.2 $e |- ( ph -> Z e. RR+ ) $.
+  algebra-9onxpypzleqsum2onxpy $p |- ( ph -> ( 9 / ( ( X + Y ) + Z ) ) <_ ( ( ( 2 / ( X + Y ) ) + ( 2 / ( Y + Z ) ) ) + ( 2 / ( Z + X ) ) ) ) $=
+$}
+$)

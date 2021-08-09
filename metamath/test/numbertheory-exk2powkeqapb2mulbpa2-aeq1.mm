@@ -1,1 +1,8 @@
-[[ |- ( ph -> A e. NN ) |- ( ph -> B e. NN ) |- ( ph -> E. k e. NN ( 2 ^ k ) = ( ( A + ( B ^ 2 ) ) x. ( B + ( A ^ 2 ) ) ) ) ]] |- ( ph -> A = 1 )
+$(
+${
+  numbertheory-exk2powkeqapb2mulbpa2-aeq1.0 $e |- ( ph -> A e. NN ) $.
+  numbertheory-exk2powkeqapb2mulbpa2-aeq1.1 $e |- ( ph -> B e. NN ) $.
+  numbertheory-exk2powkeqapb2mulbpa2-aeq1.2 $e |- ( ph -> E. k e. NN ( 2 ^ k ) = ( ( A + ( B ^ 2 ) ) x. ( B + ( A ^ 2 ) ) ) ) $.
+  numbertheory-exk2powkeqapb2mulbpa2-aeq1 $p |- ( ph -> A = 1 ) $=
+$}
+$)

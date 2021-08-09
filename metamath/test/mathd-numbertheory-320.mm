@@ -1,1 +1,8 @@
-[[ |- ( ph -> N e. NN0 ) |- ( ph -> N < ; ; 1 0 1 ) |- ( ph -> ; ; 1 0 1 || ( ; ; ; ; ; 1 2 3 4 5 6 - N ) ) ]] |- ( ph -> N = ; 3 4 )
+$(
+${
+  mathd-numbertheory-320.0 $e |- ( ph -> N e. NN0 ) $.
+  mathd-numbertheory-320.1 $e |- ( ph -> N < ; ; 1 0 1 ) $.
+  mathd-numbertheory-320.2 $e |- ( ph -> ; ; 1 0 1 || ( ; ; ; ; ; 1 2 3 4 5 6 - N ) ) $.
+  mathd-numbertheory-320 $p |- ( ph -> N = ; 3 4 ) $=
+$}
+$)

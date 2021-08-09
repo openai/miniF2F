@@ -1,1 +1,13 @@
-[[ |- ( ph -> A e. RR ) |- ( ph -> B e. RR ) |- ( ph -> C e. RR ) |- ( ph -> D e. RR ) |- ( ph -> ( 4 ^c A ) = 5 ) |- ( ph -> ( 5 ^c B ) = 6 ) |- ( ph -> ( 6 ^c C ) = 7 ) |- ( ph -> ( 7 ^c C ) = 8 ) ]] |- ( ph -> ( ( ( A x. B ) x. C ) x. D ) = ( 3 / 2 ) )
+$(
+${
+  mathd-algebra-598.0 $e |- ( ph -> A e. RR ) $.
+  mathd-algebra-598.1 $e |- ( ph -> B e. RR ) $.
+  mathd-algebra-598.2 $e |- ( ph -> C e. RR ) $.
+  mathd-algebra-598.3 $e |- ( ph -> D e. RR ) $.
+  mathd-algebra-598.4 $e |- ( ph -> ( 4 ^c A ) = 5 ) $.
+  mathd-algebra-598.5 $e |- ( ph -> ( 5 ^c B ) = 6 ) $.
+  mathd-algebra-598.6 $e |- ( ph -> ( 6 ^c C ) = 7 ) $.
+  mathd-algebra-598.7 $e |- ( ph -> ( 7 ^c C ) = 8 ) $.
+  mathd-algebra-598 $p |- ( ph -> ( ( ( A x. B ) x. C ) x. D ) = ( 3 / 2 ) ) $=
+$}
+$)

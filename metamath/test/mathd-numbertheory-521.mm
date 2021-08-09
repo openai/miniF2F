@@ -1,1 +1,9 @@
-[[ |- ( ph -> M e. Even ) |- ( ph -> N e. Even ) |- ( ph -> ( M - N ) = 2 ) |- ( ph -> ( M x. N ) = ; ; 2 8 8 ) ]] |- ( ph -> M = ; 1 8 )
+$(
+${
+  mathd-numbertheory-521.0 $e |- ( ph -> M e. Even ) $.
+  mathd-numbertheory-521.1 $e |- ( ph -> N e. Even ) $.
+  mathd-numbertheory-521.2 $e |- ( ph -> ( M - N ) = 2 ) $.
+  mathd-numbertheory-521.3 $e |- ( ph -> ( M x. N ) = ; ; 2 8 8 ) $.
+  mathd-numbertheory-521 $p |- ( ph -> M = ; 1 8 ) $=
+$}
+$)
