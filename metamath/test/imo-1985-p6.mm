@@ -1,0 +1,1 @@
+[[ |- ( ph -> F : ( NN X. RR+ ) --> RR ) |- ( ph -> X e. RR+ ) |- ( ph -> N e. NN ) |- ( ph -> ( 1 F X ) = X ) |- ( ph -> ( ( N + 1 ) F X ) = ( ( N F X ) x. ( ( N F X ) + ( 1 / N ) ) ) ) ]] |- ( ph -> E! a e. RR+ A. n e. NN ( 0 < ( n F a ) /\ ( n F a ) < ( ( n + 1 ) F a ) /\ ( ( n + 1 ) F a ) < 1 ) )

@@ -1,0 +1,1 @@
+[[ |- ( ph -> A e. RR+ ) |- ( ph -> B e. RR+ ) |- ( ph -> C e. RR+ ) |- ( ph -> 3 <_ ( ( ( A x. B ) + ( B x. C ) ) + ( C x. A ) ) ) ]] |- ( ph -> ( 3 / ( sqrt ` 2 ) ) <_ ( ( ( A / ( sqrt ` ( A + B ) ) ) + ( B / ( sqrt ` ( B + C ) ) ) ) + ( C / ( sqrt ` ( C + A ) ) ) ) )
