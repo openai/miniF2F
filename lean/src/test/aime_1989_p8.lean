@@ -8,4 +8,4 @@ theorem aime_1989_p8
   16 * a + 25 * b + 36 * c + 49 * d + 64 * e + 81 * f + 100 * g = 334 :=
 begin
   sorry
-end 
+end
