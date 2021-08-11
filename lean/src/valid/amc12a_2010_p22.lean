@@ -6,4 +6,4 @@ theorem amc12a_2010_p22
   49 ≤ ∑ k in finset.range 120 \ finset.range 1, abs (↑k * x - 1) :=
 begin
   sorry
-end 
+end
