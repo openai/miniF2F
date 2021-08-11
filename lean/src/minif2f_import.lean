@@ -21,6 +21,7 @@ import data.int.gcd
 import data.int.modeq
 import data.multiset.basic
 import data.nat.basic
+import data.nat.choose.basic
 import data.nat.factorial
 import data.nat.modeq
 import data.nat.parity
