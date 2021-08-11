@@ -17,10 +17,10 @@ the benchmark by Summer 2021.
 
 |           | Test | Valid |
 |:---------:|:----:|:-----:|
-|   Lean    |  167 |  166  |
+|   Lean    |  244 |  244  |
 | Metamath  |  244 |  244  |
 | Hol Light |   0  |    0  |
-| Isabelle  |   1  |   35  |
+| Isabelle  |  60  |   35  |
 
 ## Structure
 
