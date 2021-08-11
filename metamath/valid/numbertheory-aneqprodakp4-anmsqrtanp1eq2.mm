@@ -1,10 +1,1 @@
-$(
-  @{
-    numbertheory-aneqprodakp4-anmsqrtanp1eq2.0 @e |- ( ph -> A e. NN ) $@
-    numbertheory-aneqprodakp4-anmsqrtanp1eq2.1 @e |- ( ph -> B e. NN ) $@
-    numbertheory-aneqprodakp4-anmsqrtanp1eq2.2 @e |- ( ph -> E. k e. NN ( 2 ^ k ) = ( ( A + ( B ^ 2 ) ) x. ( B + ( A ^ 2 ) ) ) ) $@
-    @( (Contributed by Kunhao Zheng, 9-Aug-2021.) @)
-    numbertheory-aneqprodakp4-anmsqrtanp1eq2 @p |- ( ph -> A = 1 ) @=
-      ? @.
-  @}
-$)
+[[ |- ( ph -> A : NN0 --> RR ) |- ( ph -> ( A ` 0 ) = 1 ) |- ( ( ph /\ n e. NN0 ) -> ( A ` ( n + 1 ) ) = ( prod_ k e. ( 0 ... n ) ( A ` k ) + 4 ) ) |- ( ph -> N e. NN ) ]] |- ( ph -> ( ( A ` N ) - ( sqrt ` ( A ` ( N + 1 ) ) ) ) = 2 )
