@@ -1,0 +1,1 @@
+[[ |- ( ph -> A e. NN ) |- ( ph -> B e. NN ) |- ( ph -> C e. NN ) |- ( ph -> D e. NN ) |- ( ph -> D < C ) |- ( ph -> C < B ) |- ( ph -> B < A ) |- ( ph -> ( ( A x. C ) + ( B x. D ) ) = ( ( ( ( B + D ) + A ) - C ) x. ( ( ( B + D ) - A ) + C ) ) ) ]] |- ( ph -> -. ( ( A x. B ) + ( C x. D ) ) e. Prime )
