@@ -11,7 +11,7 @@ theorem mathd_algebra_76
   (h₁ : ∀ n, even n → f n = n^2 - 4*n -1) :
   f 4 = -1 :=
 begin
-  suffices : f 4 = 4^2 - 4*4 - 1, rw this; ring,
+  suffices : f 4 = 4^2 - 4*4 - 1, rw this; ring_nf,
   apply h₁,
   refine even_iff_two_dvd.mpr _,
   exact two_dvd_bit0,

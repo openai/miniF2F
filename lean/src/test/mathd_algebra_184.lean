@@ -43,7 +43,7 @@ begin
       norm_num,
     },
     calc b = nnreal.sqrt (b * b) : by { rw eq_comm, apply nnreal.sqrt_mul_self}
-          ... = nnreal.sqrt ((6*b*b)/6) : by {refine congr_arg ⇑nnreal.sqrt _, ring, refine (eq_div_iff _).mpr _,
+          ... = nnreal.sqrt ((6*b*b)/6) : by {refine congr_arg ⇑nnreal.sqrt _, ring_nf, refine (eq_div_iff _).mpr _,
           {exact key₅},
           rw mul_comm,
           }
