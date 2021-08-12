@@ -13,7 +13,7 @@ theorem mathd_algebra_192
   q * e * d = 292 * complex.I :=
 begin
   rw [h₀, h₁, h₂],
-  ring,
+  ring_nf,
   rw [pow_two, complex.I_mul_I],
   ring,
 end
