@@ -94,7 +94,7 @@ version is `v1`, frozen as of August 2021 and including 244 statements (fully tr
 Metamath but still WIP on other formal systems).
 
 Each version will live in its own branch to allow later additions of translated statements or fixes
-to existing statements as needed. The `main` branch remain reserved for active development and
+to existing statements as needed. The `main` branch remains reserved for active development and
 should not be used when reporting results.
 
 ### Active version
