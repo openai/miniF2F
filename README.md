@@ -76,7 +76,7 @@ The `isabelle` folder is released under the Apache License.
 MiniF2F is meant to serve as a shared and useful resource for the machine learning community working
 on formal mathematics. 
 
-There is no obligation tied with the use and reporting of a result baed on miniF2F. But if you're
+There is no obligation tied with the use and reporting of a result based on miniF2F. But if you're
 using it and discovering new proofs (manually or automatically) please contributed them back to the
 benchmark.
 
