@@ -86,10 +86,12 @@ existing versions, bug fixes, additional proofs are all welcome.
 ## Versioning
 
 A version of miniF2F is defined by a frozen set of statements. The goal for each version is to get
-full coverage on all formal systems for that version even if that might not be the case at a given
-point. When reporting a result based on miniF2F please always specify the version you used. The
-current version is `v1`, frozen as of August 2021 and including 244 statements (fully translated to
-Lean and Metamath but still WIP on other formal systems).
+full coverage on all formal systems for that version even if that might not be the case when the
+version is frozen.
+
+When reporting a result based on miniF2F please always specify the version you used. The current
+version is `v1`, frozen as of August 2021 and including 244 statements (fully translated to Lean and
+Metamath but still WIP on other formal systems).
 
 Each version will live in its own branch to allow later additions of translated statements or fixes
 to existing statements as needed. The `main` branch remain reserved for active development and
