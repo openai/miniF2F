@@ -71,17 +71,32 @@ imports.
 
 The `isabelle` folder is released under the Apache License.
 
-## Code of Conduct
+## Code of Conduct and Contributions
 
 MiniF2F is meant to serve as a shared and useful resource for the machine learning community working
-on formal mathematics. It is still a TODO to determine how we'll exchange respective results on the
-benchmark in a way that is the most useful to the community.
+on formal mathematics. 
 
-In the meantime, if you're using miniF2F and are discovering new proofs (manually or automatically)
-please contribute them back to the benchmark.
+There is no obligation tied with the use and reporting of a result baed on miniF2F. But if you're
+using it and discovering new proofs (manually or automatically) please contributed them back to the
+benchmark.
 
-## Indicative TODO (contributions welcome)
+All contributions, such as new statements for later versions, addition of missing statements for
+existing versions, bug fixes, additional proofs are all welcome.
 
-- [ ] Get started with Hol Light
-- [ ] Complete Isabelle formalization
-- [ ] Compute and share baseline pass rates (Lean's `tidy`, Isabelle's SledgeHammer, ...)
+## Versioning
+
+A version of miniF2F is defined by a frozen set of statements. The goal for each version is to get
+full coverage on all formal systems for that version even if that might not be the case at a given
+point. When reporting a result based on miniF2F please always specify the version you used. The
+current version is `v1`, frozen as of August 2021 and including 244 statements (fully translated to
+Lean and Metamath but still WIP on other formal systems).
+
+Each version will live in its own branch to allow later additions of translated statements or fixes
+to existing statements as needed. The `main` branch remain reserved for active development and
+should not be used when reporting results.
+
+### Active version
+
+- Version: `v1`
+- Freeze date: August 2021
+- Branch: [https://github.com/openai/miniF2F/tree/v1](v1)
