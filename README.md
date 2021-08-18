@@ -101,4 +101,4 @@ should not be used when reporting results.
 
 - Version: `v1`
 - Freeze date: August 2021
-- Branch: [https://github.com/openai/miniF2F/tree/v1](v1)
+- Branch: [v1](https://github.com/openai/miniF2F/tree/v1)
