@@ -77,7 +77,7 @@ MiniF2F is meant to serve as a shared and useful resource for the machine learni
 on formal mathematics. 
 
 There is no obligation tied with the use and reporting of a result based on miniF2F. But if you're
-using it and discovering new proofs (manually or automatically) please contributed them back to the
+using it and discovering new proofs (manually or automatically) please contribute them back to the
 benchmark.
 
 All contributions, such as new statements for later versions, addition of missing statements for
