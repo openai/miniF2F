@@ -1,7 +1,7 @@
 /-
 Copyright (c) 2021 OpenAI. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
+Authors: Kunhao Zheng, Stanislas Polu, David Renshaw, OpenAI GPT-f
 -/
 import minif2f_import
 open_locale big_operators
@@ -16,11 +16,6 @@ theorem amc12a_2019_p21
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2015_p10
   (x y : ℤ)
@@ -31,11 +26,6 @@ theorem amc12a_2015_p10
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2008_p8
   (x y : ℝ)
@@ -46,11 +36,6 @@ theorem amc12a_2008_p8
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_182
   (y : ℂ) :
@@ -58,11 +43,6 @@ theorem mathd_algebra_182
 begin
   ring_nf,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aime_1984_p5
   (a b : ℝ)
@@ -72,11 +52,6 @@ theorem aime_1984_p5
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_780
   (m x : ℕ)
@@ -88,11 +63,6 @@ theorem mathd_numbertheory_780
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_116
   (k x: ℝ)
@@ -110,11 +80,6 @@ begin
   ring,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_13
   (u v : ℕ+)
@@ -127,22 +92,12 @@ theorem mathd_numbertheory_13
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_169 :
   nat.gcd (nat.factorial 20) 200000 = 40000 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2009_p9
   (a b c : ℝ)
@@ -153,11 +108,6 @@ theorem amc12a_2009_p9
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2019_p9
   (a : ℕ+ → ℚ)
@@ -168,11 +118,6 @@ theorem amc12a_2019_p9
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_13
   (a b :ℝ)
@@ -181,11 +126,6 @@ theorem mathd_algebra_13
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem induction_sum2kp1npqsqm1
   (n : ℕ) :
@@ -193,11 +133,6 @@ theorem induction_sum2kp1npqsqm1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aime_1991_p6
   (r : ℝ)
@@ -206,22 +141,12 @@ theorem aime_1991_p6
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_149 :
   ∑ k in (finset.filter (λ x, x % 8 = 5 ∧ x % 6 = 3) (finset.range 50)), k = 66 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1984_p2
   (a b : ℕ)
@@ -234,22 +159,12 @@ theorem imo_1984_p2
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2008_p4 :
   ∏ k in finset.range 502 \ finset.range 1, ((4:ℝ) * k + 4) / (4 * k) = 502 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_2006_p6
   (a b c : ℝ) :
@@ -257,22 +172,12 @@ theorem imo_2006_p6
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_462 :
   (1 / 2 + 1 / 3) * (1 / 2 - 1 / 3) = 5 / 36 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1964_p1_2
   (n : ℕ) :
@@ -280,11 +185,6 @@ theorem imo_1964_p1_2
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_221
   (h₀ : fintype {x : ℕ | 0 < x ∧ x < 1000 ∧ x.divisors.card = 3}) :
@@ -292,11 +192,6 @@ theorem mathd_numbertheory_221
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, David Renshaw, OpenAI GPT-f
--/
 
 theorem mathd_numbertheory_64 :
   is_least { x : ℕ+ | 30 * x ≡ 42 [MOD 47] } 39 :=
@@ -314,7 +209,7 @@ begin
   dec_trivial!,
 end
 
-theorem mathd_numbertheory_64_1 :
+lemma mathd_numbertheory_64_1 :
   is_least { x : ℕ+ | 30 * x ≡ 42 [MOD 47] } 39 :=
 begin
   split,
@@ -362,11 +257,6 @@ begin
     rw h₉ at h₁₀,
     exact (pnat.coe_le_coe _ _).mp h₁₀ },
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1987_p4
   (f : ℕ → ℕ) :
@@ -374,11 +264,6 @@ theorem imo_1987_p4
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_33
   (n : ℕ)
@@ -388,11 +273,6 @@ theorem mathd_numbertheory_33
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12_2001_p9
   (f : ℝ → ℝ)
@@ -408,11 +288,6 @@ begin
   -- linarith,
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1965_p1
   (x : ℝ)
@@ -424,11 +299,6 @@ theorem imo_1965_p1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_48
   (b : ℕ)
@@ -438,11 +308,6 @@ theorem mathd_numbertheory_48
 begin
   nlinarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem numbertheory_sqmod4in01d
   (a : ℤ) :
@@ -450,22 +315,12 @@ theorem numbertheory_sqmod4in01d
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_466 :
   (∑ k in (finset.range 11), k) % 9 = 1 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_48
   (q e : ℂ)
@@ -475,11 +330,6 @@ begin
   rw [h₀, h₁],
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12_2000_p15
   (f : ℂ → ℂ)
@@ -489,22 +339,12 @@ theorem amc12_2000_p15
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_132 :
   2004 % 12 = 0 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2009_p5
   (x : ℝ)
@@ -513,22 +353,12 @@ theorem amc12a_2009_p5
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_133 :
   nat.gcd 180 168 = 12 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_224
   (h₀ : fintype { n : ℕ | real.sqrt n < 7 / 2 ∧ 2 < real.sqrt n}) :
@@ -536,11 +366,6 @@ theorem mathd_algebra_224
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem induction_divisibility_3divnto3m2n
   (n : ℕ) :
@@ -548,11 +373,6 @@ theorem induction_divisibility_3divnto3m2n
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem induction_sum_1oktkp1
   (n : ℕ) :
@@ -560,11 +380,6 @@ theorem induction_sum_1oktkp1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_32
   (h₀ : fintype { n : ℕ | n ∣ 36}) :
@@ -572,11 +387,6 @@ theorem mathd_numbertheory_32
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_422
   (x : ℝ)
@@ -593,11 +403,6 @@ begin
   norm_num at this,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12b_2002_p11
   (a b : ℕ)
@@ -609,11 +414,6 @@ theorem amc12b_2002_p11
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_73
   (p q r x : ℂ)
@@ -623,11 +423,6 @@ theorem mathd_algebra_73
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_numbertheory_109
   (v : ℕ → ℕ)
@@ -641,11 +436,6 @@ begin
   { simp, },
   norm_num [finset.sum_range_succ, h₀],
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_xmysqpymzsqpzmxsqeqxyz_xpypzp6dvdx3y3z3
   (x y z : ℤ)
@@ -654,11 +444,6 @@ theorem algebra_xmysqpymzsqpzmxsqeqxyz_xpypzp6dvdx3y3z3
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1962_p4
   (x : ℝ)
@@ -667,22 +452,12 @@ theorem imo_1962_p4
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_236 :
   (1999^2000) % 5 = 1 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_numbertheory_24 :
   (∑ k in (finset.erase (finset.range 10) 0), 11^k) % 100 = 59 :=
@@ -691,11 +466,6 @@ begin
   rw finset.sum_eq_multiset_sum,
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_amgm_prod1toneq1_sum1tongeqn
   (a : ℕ → nnreal)
@@ -705,11 +475,6 @@ theorem algebra_amgm_prod1toneq1_sum1tongeqn
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_101
   (x : ℝ)
@@ -718,11 +483,6 @@ theorem mathd_algebra_101
 begin
   split; nlinarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_257
   (x : ℕ)
@@ -732,11 +492,6 @@ theorem mathd_numbertheory_257
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12_2000_p5
   (x p : ℝ)
@@ -752,11 +507,6 @@ begin
   apply abs_of_neg,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_547
   (x y : ℝ)
@@ -766,22 +516,12 @@ theorem mathd_algebra_547
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_200 :
   139 % 11 = 7 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_510
   (x y : ℝ)
@@ -791,11 +531,6 @@ theorem mathd_algebra_510
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_140
   (a b c : ℝ)
@@ -808,11 +543,6 @@ begin
   have h₃ := h₁ (-1),
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_455
   (x : ℝ)
@@ -821,11 +551,6 @@ theorem mathd_algebra_455
 begin
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_numbertheory_45 :
   (nat.gcd 6432 132) + 11 = 23 :=
@@ -833,11 +558,6 @@ begin
   simp only [nat.gcd_comm],
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aime_1994_p4
   (n : ℕ)
@@ -847,22 +567,12 @@ theorem aime_1994_p4
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_739 :
   (nat.factorial 9) % 10 = 0 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_245
   (x : ℝ)
@@ -871,11 +581,6 @@ theorem mathd_algebra_245
 begin
   field_simp [(show x ≠ 0, by simpa using h₀), mul_comm x]; ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_apb4leq8ta4pb4
   (a b : ℝ)
@@ -884,11 +589,6 @@ theorem algebra_apb4leq8ta4pb4
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_28
   (c : ℝ)
@@ -899,22 +599,12 @@ theorem mathd_algebra_28
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_543 :
   (∑ k in (nat.divisors (30^4)), 1) - 2 = 123 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_480
   (f : ℝ → ℝ)
@@ -925,11 +615,6 @@ theorem mathd_algebra_480
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_69
   (r s : ℕ+)
@@ -939,11 +624,6 @@ theorem mathd_algebra_69
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_433
   (f : ℝ → ℝ)
@@ -952,11 +632,6 @@ theorem mathd_algebra_433
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_126
   (x y : ℝ)
@@ -966,11 +641,6 @@ theorem mathd_algebra_126
 begin
   split; linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aimeII_2020_p6
   (t : ℕ+ → ℚ)
@@ -981,11 +651,6 @@ theorem aimeII_2020_p6
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2008_p2
   (x : ℝ)
@@ -994,11 +659,6 @@ theorem amc12a_2008_p2
 begin
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_35
   (p q : ℝ → ℝ)
@@ -1010,11 +670,6 @@ begin
   ring,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x :
   ∀ x > 0, 2 - real.sqrt 2 ≥ 2 - x - 1 / (2 * x) :=
@@ -1077,11 +732,6 @@ begin
   exact real.rpow_pos_of_pos (by norm_num) _,
   apply nnreal.add_halves,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_335
   (n : ℕ)
@@ -1090,11 +740,6 @@ theorem mathd_numbertheory_335
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_35
   (h₀ : fintype { n : ℕ | n ∣ (nat.sqrt 196)}) :
@@ -1102,11 +747,6 @@ theorem mathd_numbertheory_35
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Stanislas Polu, OpenAI GPT-f
--/
 
 theorem amc12a_2021_p7
   (x : ℝ)
@@ -1116,11 +756,6 @@ begin
   ring_nf,
   nlinarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_327
   (a : ℝ)
@@ -1133,11 +768,6 @@ begin
   cases h₃ with h₃ h₄,
   split; nlinarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem aime_1984_p15
   (x y z w : ℝ)
@@ -1153,11 +783,6 @@ begin
   intros h,
   intros; linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_amgm_sqrtxymulxmyeqxpy_xpygeq4
   (x y : ℝ)
@@ -1168,11 +793,6 @@ theorem algebra_amgm_sqrtxymulxmyeqxpy_xpygeq4
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2002_p21
   (u : ℕ → ℕ)
@@ -1183,11 +803,6 @@ theorem amc12a_2002_p21
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_192
   (q e d : ℂ)
@@ -1201,11 +816,6 @@ begin
   rw [pow_two, complex.I_mul_I],
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12b_2002_p6
   (a b : ℝ)
@@ -1228,22 +838,12 @@ begin
   rw h₆ at h₂,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_102 :
   (2^8) % 5 = 1 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2010_p22
   (x : ℝ) :
@@ -1251,33 +851,18 @@ theorem amc12a_2010_p22
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_81 :
   71 % 3 = 2 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_155 :
   finset.card (finset.filter (λ x, x % 19 = 7) (finset.range 1000 \ finset.range 100)) = 52 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1978_p5
   (n : ℕ)
@@ -1290,11 +875,6 @@ theorem imo_1978_p5
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2017_p7
   (f : ℕ → ℝ)
@@ -1305,11 +885,6 @@ theorem amc12a_2017_p7
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_42
   (u v : ℕ+)
@@ -1322,11 +897,6 @@ theorem mathd_numbertheory_42
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_110
   (q e : ℂ)
@@ -1339,11 +909,6 @@ begin
   rw [pow_two, complex.I_mul_I],
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Stanislas Polu, Kunhao Zheng
--/
 
 theorem amc12b_2021_p21
   (h₀ : fintype {x : ℝ | 0 < x ∧ x^((2:ℝ)^real.sqrt 2) = (real.sqrt 2)^((2:ℝ)^x)}) :
@@ -1351,11 +916,6 @@ theorem amc12b_2021_p21
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_405
   (x : ℕ)
@@ -1365,11 +925,6 @@ theorem mathd_algebra_405
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem numbertheory_sumkmulnckeqnmul2pownm1
   (n : ℕ)
@@ -1378,11 +933,6 @@ theorem numbertheory_sumkmulnckeqnmul2pownm1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_393
   (σ : equiv ℝ ℝ)
@@ -1391,11 +941,6 @@ theorem mathd_algebra_393
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12b_2004_p3
   (x y : ℕ)
@@ -1404,11 +949,6 @@ theorem amc12b_2004_p3
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_303
 (h₀ : fintype {n : ℕ | 2 ≤ n ∧ 171 ≡ 80 [MOD n] ∧ 468 ≡ 13 [MOD n]}) :
@@ -1416,22 +956,12 @@ theorem mathd_numbertheory_303
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_151 :
   ceil (real.sqrt 27) - floor (real.sqrt 26) = 1 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2011_p18
   (x y : ℝ)
@@ -1440,11 +970,6 @@ theorem amc12a_2011_p18
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_15
   (s : ℕ+ → ℕ+ → ℕ+)
@@ -1454,11 +979,6 @@ begin
   rw h₀,
   refl,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_numbertheory_211 :
   finset.card (finset.filter (λ n, 6 ∣ (4 * ↑n - (2:ℤ))) (finset.range 60)) = 20 :=
@@ -1475,22 +995,12 @@ begin
   -- simp,
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_640 :
   (91145 + 91146 + 91147 + 91148) % 4 = 2 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12b_2003_p6
   (a r : ℝ)
@@ -1502,11 +1012,6 @@ theorem amc12b_2003_p6
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_2rootsintpoly_am10tap11eqasqpam110
   (a : ℂ) :
@@ -1514,11 +1019,6 @@ theorem algebra_2rootsintpoly_am10tap11eqasqpam110
 begin
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 theorem aime_1991_p1
   (x y : ℕ)
   (h₀ : 0 < x ∧ 0 < y)
@@ -1528,11 +1028,6 @@ theorem aime_1991_p1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_43
   (a b : ℝ)
@@ -1545,11 +1040,6 @@ begin
   rw h₀ at *,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1988_p6
   (a b : ℕ)
@@ -1559,11 +1049,6 @@ theorem imo_1988_p6
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aime_1996_p5
   (a b c r s t : ℝ)
@@ -1580,11 +1065,6 @@ theorem aime_1996_p5
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_55
   (q p : ℝ)
@@ -1595,11 +1075,6 @@ begin
   rw [h₀, h₁],
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_sqineq_2at2pclta2c2p41pc
   (a c : ℝ) :
@@ -1609,11 +1084,6 @@ begin
   suffices : 0 ≤ (c - a + 2)^2, nlinarith,
   exact pow_two_nonneg (c - a + 2),
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_43
   (n : ℕ+)
@@ -1623,11 +1093,6 @@ theorem mathd_numbertheory_43
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_214
   (a : ℝ)
@@ -1641,11 +1106,6 @@ begin
   intro,
   nlinarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_96
   (x y z a : ℝ)
@@ -1657,11 +1117,6 @@ theorem mathd_algebra_96
 begin
   nlinarith [h₁, h₂, h₃],
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12_2001_p2
   (a b n : ℕ)
@@ -1680,11 +1135,6 @@ begin
   exfalso,
   simp [*, le_refl] at *,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_185
   (f : ℝ → ℝ)
@@ -1694,11 +1144,6 @@ theorem mathd_algebra_185
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_binomnegdiscrineq_10alt28asqp1
   (a : ℝ) :
@@ -1706,11 +1151,6 @@ theorem algebra_binomnegdiscrineq_10alt28asqp1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_284
   (a b : ℕ)
@@ -1720,22 +1160,12 @@ theorem mathd_numbertheory_284
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2009_p2 :
   1 + (1 / (1 + (1 / (1 + 1)))) = (5:ℝ) / 3 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_709
   (n : ℕ+)
@@ -1745,11 +1175,6 @@ theorem mathd_numbertheory_709
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2013_p8
   (x y : ℝ)
@@ -1760,11 +1185,6 @@ theorem amc12a_2013_p8
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_461
   (n : ℕ)
@@ -1773,11 +1193,6 @@ theorem mathd_numbertheory_461
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_59
   (b : ℝ)
@@ -1815,11 +1230,6 @@ begin
   },
   exact h (false.rec (b = 1) (key₂ h₁)),
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_234
   (d : ℝ)
@@ -1830,11 +1240,6 @@ begin
   rw [mul_right_comm, pow_succ, mul_comm],
   { nlinarith },
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1973_p3
   (a b : ℝ)
@@ -1843,11 +1248,6 @@ theorem imo_1973_p3
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12b_2020_p5
   (a b : ℕ+)
@@ -1857,11 +1257,6 @@ theorem amc12b_2020_p5
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem numbertheory_sqmod3in01d
   (a : ℤ) :
@@ -1869,11 +1264,6 @@ theorem numbertheory_sqmod3in01d
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_131
   (a b : ℝ)
@@ -1885,11 +1275,6 @@ theorem mathd_algebra_131
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12b_2003_p17
   (x y : ℝ)
@@ -1900,22 +1285,12 @@ theorem amc12b_2003_p17
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_536 :
   ↑3! * ((2:ℝ)^3 + real.sqrt 9) / 2 = (33:ℝ) :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 lemma log_inj_on_pos : set.inj_on real.log (set.Ioi 0) :=
 real.strict_mono_incr_on_log.inj_on
@@ -1939,11 +1314,6 @@ begin
   linarith,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem numbertheory_xsqpysqintdenomeq
   (x y : ℚ)
@@ -1952,11 +1322,6 @@ theorem numbertheory_xsqpysqintdenomeq
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aimeI_2001_p3
   (x : ℕ+ → ℤ)
@@ -1969,11 +1334,6 @@ theorem aimeI_2001_p3
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_22
   (b : ℕ)
@@ -1983,11 +1343,6 @@ theorem mathd_numbertheory_22
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aime_1987_p8
   (n : ℕ)
@@ -1997,11 +1352,6 @@ theorem aime_1987_p8
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_136
   (n : ℕ)
@@ -2009,11 +1359,6 @@ theorem mathd_numbertheory_136
 begin
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem amc12_2000_p11
   (a b : ℝ)
@@ -2025,11 +1370,6 @@ begin
   simp only [h₁, mul_comm, mul_sub],
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem amc12b_2003_p9
   (a b : ℝ)
@@ -2043,11 +1383,6 @@ begin
   intro,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_2complexrootspoly_xsqp49eqxp7itxpn7i
   (x : ℂ) :
@@ -2058,22 +1393,12 @@ begin
   rw [pow_two, pow_two, complex.I_mul_I],
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_198 :
   (5^2005) % 100 = 25 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_149
   (f : ℝ → ℝ)
@@ -2084,11 +1409,6 @@ theorem mathd_algebra_149
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_132
   (x : ℝ)
@@ -2103,11 +1423,6 @@ begin
   field_simp [h₁],
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_numbertheory_37 :
   (nat.lcm 9999 100001) = 90900909 :=
@@ -2121,11 +1436,6 @@ begin
   simp [bit1],
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aime_1983_p9
   (x : ℝ)
@@ -2141,11 +1451,6 @@ begin
   suffices : 0 ≤ (3 * y - 2)^2, nlinarith,
   exact pow_two_nonneg (3 * y - 2),
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_37
   (x y : ℝ)
@@ -2155,11 +1460,6 @@ theorem mathd_algebra_37
 begin
   nlinarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_458
   (n : ℕ)
@@ -2168,11 +1468,6 @@ theorem mathd_numbertheory_458
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2008_p15
   (k : ℕ)
@@ -2181,11 +1476,6 @@ theorem amc12a_2008_p15
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_301
   (j : ℕ+) :
@@ -2193,11 +1483,6 @@ theorem mathd_numbertheory_301
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2009_p15
   (n : ℕ)
@@ -2207,11 +1492,6 @@ theorem amc12a_2009_p15
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_sqineq_36azm9asqle36zsq
   (z a : ℝ) :
@@ -2221,11 +1501,6 @@ begin
   suffices : 0 ≤ (a - 2 * z)^2, nlinarith,
   exact pow_two_nonneg (a - 2 * z),
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2013_p7
   (s : ℕ → ℝ)
@@ -2236,11 +1511,6 @@ theorem amc12a_2013_p7
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_104
   (x : ℝ)
@@ -2249,22 +1519,12 @@ theorem mathd_algebra_104
 begin
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_252 :
   (nat.factorial 7) % 23 = 3 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2020_p22
   (h₀ : fintype {n : ℕ | 5∣n ∧ nat.lcm (nat.factorial 5) n = 5 * nat.gcd (nat.factorial 10) n}) :
@@ -2272,11 +1532,6 @@ finset.card {n : ℕ | 5∣n ∧ nat.lcm (nat.factorial 5) n = 5 * nat.gcd (nat.
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_493
   (f : ℝ → ℝ)
@@ -2285,11 +1540,6 @@ theorem mathd_algebra_493
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem numbertheory_nckeqnm1ckpnm1ckm1
   (n k : ℕ)
@@ -2299,11 +1549,6 @@ theorem numbertheory_nckeqnm1ckpnm1ckm1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta
   (b c d a : ℂ) :
@@ -2311,66 +1556,36 @@ theorem algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta
 begin
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_403 :
   ∑ k in (nat.proper_divisors 198), k = 270 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_190 :
   ((3:ℝ) / 8 + 7 / 8) / (4 / 5) = 25 / 16 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_269 :
   (2005^2 + 2005^0 + 2005^0 + 2005^5) % 100 = 52 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aime_1990_p2 :
   (52 + 6 * real.sqrt 43)^((3:ℝ) / 2) - (52 - 6 * real.sqrt 43)^((3:ℝ) / 2)  = 828 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_101 :
   (17 * 18) % 4 = 2 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_sqineq_4bap1lt4bsqpap1sq
   (a b : ℝ) :
@@ -2379,11 +1594,6 @@ begin
   suffices : 0 ≤ (2 * b - (a + 1))^2, nlinarith,
   exact pow_two_nonneg (2 * b - (a + 1)),
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_156
   (n : ℕ+) :
@@ -2391,11 +1601,6 @@ theorem mathd_numbertheory_156
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_451
   (σ : equiv ℝ ℝ)
@@ -2407,11 +1612,6 @@ theorem mathd_algebra_451
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_144
   (a b c d : ℕ+)
@@ -2423,11 +1623,6 @@ theorem mathd_algebra_144
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_282
   (f : ℝ → ℝ)
@@ -2437,11 +1632,6 @@ theorem mathd_algebra_282
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_410
   (x y : ℝ)
@@ -2450,11 +1640,6 @@ theorem mathd_algebra_410
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_232
   (x y z : zmod 31)
@@ -2465,11 +1650,6 @@ theorem mathd_numbertheory_232
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_77
   (a b : ℝ)
@@ -2482,11 +1662,6 @@ theorem mathd_algebra_77
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1974_p5
   (a b c d s : ℝ)
@@ -2495,11 +1670,6 @@ theorem imo_1974_p5
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aime_1988_p3
   (x : ℝ)
@@ -2509,11 +1679,6 @@ theorem aime_1988_p3
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_530
   (n k : ℕ+)
@@ -2523,11 +1688,6 @@ theorem mathd_numbertheory_530
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_109
   (a b : ℝ)
@@ -2537,11 +1697,6 @@ theorem mathd_algebra_109
 begin
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1967_p3
   (k m n : ℕ)
@@ -2554,11 +1709,6 @@ theorem imo_1967_p3
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_11
   (a b : ℝ)
@@ -2575,11 +1725,6 @@ begin
   have key : 5 * (a - 2 * b) = (4 * a + 3 * b), rwa (eq_div_iff (sub_ne_zero_of_ne h₁)).mp,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem amc12a_2003_p1
   (u v : ℕ → ℕ)
@@ -2592,11 +1737,6 @@ begin
   simp only [add_assoc],
   congr,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem numbertheory_aneqprodakp4_anmsqrtanp1eq2
   (a : ℕ → ℝ)
@@ -2606,11 +1746,6 @@ theorem numbertheory_aneqprodakp4_anmsqrtanp1eq2
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem algebra_2rootspoly_apatapbeq2asqp2ab
   (a b : ℂ) :
@@ -2618,11 +1753,6 @@ theorem algebra_2rootspoly_apatapbeq2asqp2ab
 begin
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem induction_sum_odd
   (n : ℕ) :
@@ -2630,11 +1760,6 @@ theorem induction_sum_odd
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_568
   (a : ℝ) :
@@ -2642,11 +1767,6 @@ theorem mathd_algebra_568
 begin
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_616
   (f g : ℝ → ℝ)
@@ -2656,22 +1776,12 @@ theorem mathd_algebra_616
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_690 :
   is_least {a : ℕ+ | a ≡ 2 [MOD 3] ∧ a ≡ 4 [MOD 5] ∧ a ≡ 6 [MOD 7] ∧ a ≡ 8 [MOD 9]} 314 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2016_p2
   (x : ℝ)
@@ -2680,11 +1790,6 @@ theorem amc12a_2016_p2
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_405
   (a b c : ℕ)
@@ -2699,11 +1804,6 @@ theorem mathd_numbertheory_405
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_110
   (a b : ℕ)
@@ -2714,11 +1814,6 @@ theorem mathd_numbertheory_110
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2003_p25
   (a b : ℝ)
@@ -2730,11 +1825,6 @@ theorem amc12a_2003_p25
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2010_p10
   (p q : ℝ)
@@ -2748,22 +1838,12 @@ theorem amc12a_2010_p10
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_509 :
   real.sqrt ((5 / real.sqrt 80 + real.sqrt 845 / 9 + real.sqrt 45) / real.sqrt 5) = 13 / 6 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_159
   (b : ℝ)
@@ -2775,11 +1855,6 @@ begin
   rw h₀ at h₁,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aime_1997_p12
   (x : ℝ)
@@ -2788,11 +1863,6 @@ theorem aime_1997_p12
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem aimeI_2000_p7
   (x y z : ℝ)
@@ -2807,11 +1877,6 @@ theorem aimeI_2000_p7
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 theorem aime_1988_p4
   (n : ℕ)
   (a : ℕ → ℝ)
@@ -2821,11 +1886,6 @@ theorem aime_1988_p4
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem induction_divisibility_9div10tonm1
   (n : ℕ+) :
@@ -2833,11 +1893,6 @@ theorem induction_divisibility_9div10tonm1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_126
   (x a : ℕ+)
@@ -2848,11 +1903,6 @@ theorem mathd_numbertheory_126
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_323
   (σ : equiv ℝ ℝ)
@@ -2866,11 +1916,6 @@ begin
   simp [h, σ.apply_symm_apply],
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_421
   (a b c d : ℝ)
@@ -2883,11 +1928,6 @@ theorem mathd_algebra_421
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1987_p6
   (p : ℕ)
@@ -2898,11 +1938,6 @@ theorem imo_1987_p6
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2009_p25
   (a : ℕ+ → ℝ)
@@ -2913,11 +1948,6 @@ theorem amc12a_2009_p25
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 theorem imo_1961_p1
   (x y z a b : ℝ)
   (h₀ : 0 < x ∧ 0 < y ∧ 0 < z)
@@ -2931,11 +1961,6 @@ theorem imo_1961_p1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_31
   (x : nnreal)
@@ -2946,11 +1971,6 @@ theorem mathd_algebra_31
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_manipexpr_apbeq2cceqiacpbceqm2
   (a b c : ℂ)
@@ -2961,11 +1981,6 @@ begin
   rw [← add_mul, h₀, h₁, mul_assoc, complex.I_mul_I],
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_370
   (n : ℕ)
@@ -2974,11 +1989,6 @@ theorem mathd_numbertheory_370
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_437
   (x y : ℝ)
@@ -2991,11 +2001,6 @@ theorem mathd_algebra_437
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1966_p5
   (x a : ℕ → ℝ)
@@ -3013,11 +2018,6 @@ theorem imo_1966_p5
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_89
   (b : ℝ)
@@ -3035,11 +2035,6 @@ begin
   exact pow_ne_zero 2 h₀,
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1966_p4
   (n : ℕ)
@@ -3050,11 +2045,6 @@ theorem imo_1966_p4
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_67
   (f g : ℝ → ℝ)
@@ -3065,11 +2055,6 @@ begin
   rw [h₀, h₁],
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_326
   (n : ℕ)
@@ -3078,22 +2063,12 @@ theorem mathd_numbertheory_326
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 theorem induction_divisibility_3div2tooddnp1
   (n : ℕ) :
   3 ∣ (2^(2 * n + 1) + 1) :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_123
   (a b : ℕ+)
@@ -3114,11 +2089,6 @@ begin
   calc (3:ℕ+) * 5 - 5 = 15 - 5 : by {congr,}
             ... = 10 : by {exact rfl},
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4
   (x e : ℂ)
@@ -3128,22 +2098,12 @@ theorem algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1993_p5 :
   ∃ f : ℕ+ → ℕ+, (∀ a b, (a < b) ↔ f a < f b) ∧ f 1 = 2 ∧ ∀ n, f (f n) = f n + n :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem numbertheory_prmdvsneqnsqmodpeq0
   (n : ℤ)
@@ -3157,11 +2117,6 @@ begin
   { tauto },
   assumption,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1964_p1_1
   (n : ℕ)
@@ -3170,11 +2125,6 @@ theorem imo_1964_p1_1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1990_p3
   (n : ℕ)
@@ -3184,11 +2134,6 @@ theorem imo_1990_p3
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem induction_ineq_nsqlefactn
   (n : ℕ)
@@ -3203,22 +2148,12 @@ begin
   apply nat.lt_factorial_self,
   exact nat.succ_le_succ_iff.mp h₀,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_30 :
   (33818^2 + 33819^2 + 33820^2 + 33821^2 + 33822^2) % 17 = 0 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_267
   (x : ℝ)
@@ -3237,22 +2172,12 @@ begin
   field_simp at *,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_961 :
   2003 % 11 = 1 :=
 begin
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem induction_seq_mul2pnp1
   (n : ℕ)
@@ -3263,11 +2188,6 @@ theorem induction_seq_mul2pnp1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2002_p12
   (f : ℝ → ℝ)
@@ -3278,11 +2198,6 @@ theorem amc12a_2002_p12
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_manipexpr_2erprsqpesqeqnrpnesq
   (e r : ℂ) :
@@ -3290,11 +2205,6 @@ theorem algebra_manipexpr_2erprsqpesqeqnrpnesq
 begin
   ring,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_119
   (d e : ℝ)
@@ -3304,11 +2214,6 @@ theorem mathd_algebra_119
 begin
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2020_p13
   (a b c : ℕ)
@@ -3320,11 +2225,6 @@ theorem amc12a_2020_p13
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1977_p5
   (a b q r : ℕ)
@@ -3335,11 +2235,6 @@ theorem imo_1977_p5
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem numbertheory_2dvd4expn
   (n : ℕ)
@@ -3352,11 +2247,6 @@ begin
   apply dvd_pow,
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2010_p11
   (x b : ℝ)
@@ -3367,11 +2257,6 @@ theorem amc12a_2010_p11
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2003_p24
   (a b : ℝ)
@@ -3381,11 +2266,6 @@ theorem amc12a_2003_p24
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2002_p1
   (f : ℂ → ℂ)
@@ -3395,11 +2275,6 @@ theorem amc12a_2002_p1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_206
   (a b : ℝ)
@@ -3412,11 +2287,6 @@ theorem mathd_algebra_206
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_92
   (n : ℕ)
@@ -3425,11 +2295,6 @@ theorem mathd_numbertheory_92
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_482
   (m n : ℕ)
@@ -3444,11 +2309,6 @@ theorem mathd_algebra_482
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12b_2002_p3
   (n : ℕ)
@@ -3459,11 +2319,6 @@ theorem amc12b_2002_p3
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_668
   (l r : zmod 7)
@@ -3473,11 +2328,6 @@ theorem mathd_numbertheory_668
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_251
   (x : ℝ)
@@ -3488,11 +2338,6 @@ begin
   field_simp [h₀] at h₁,
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_84 :
   floor ((9:ℝ) / 160 * 100) = 5 :=
@@ -3503,11 +2348,6 @@ begin
   norm_num,
   norm_num,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_412
   (x y : ℕ)
@@ -3517,11 +2357,6 @@ theorem mathd_numbertheory_412
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_181
   (n : ℝ)
@@ -3532,11 +2367,6 @@ begin
   linarith,
   exact sub_ne_zero.mpr h₀,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2016_p3
   (f : ℝ → ℝ → ℝ)
@@ -3545,11 +2375,6 @@ theorem amc12a_2016_p3
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_247
   (t s : ℝ)
@@ -3561,11 +2386,6 @@ theorem mathd_algebra_247
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 theorem algebra_sqineq_2unitcircatblt1
   (a b : ℝ)
   (h₀ : a^2 + b^2 = 2) :
@@ -3577,22 +2397,12 @@ begin
   have H₂ : 0 ≤ (a - b) ^ 2 := by nlinarith,
   nlinarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_629 :
   is_least {t : ℕ+ | (nat.lcm 12 t)^3 = (12 * t)^2} 18 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem amc12a_2017_p2
   (x y : ℝ)
@@ -3603,11 +2413,6 @@ theorem amc12a_2017_p2
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem algebra_amgm_sumasqdivbsqgeqsumbdiva
   (a b c : ℝ)
@@ -3616,22 +2421,12 @@ theorem algebra_amgm_sumasqdivbsqgeqsumbdiva
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_numbertheory_202 :
   (19^19 + 99^99) % 10 = 8 :=
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem imo_1979_p1
   (p q : ℕ)
@@ -3641,11 +2436,6 @@ theorem imo_1979_p1
 begin
   sorry
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng
--/
 
 theorem mathd_algebra_51
   (a b : ℝ)
@@ -3656,11 +2446,6 @@ theorem mathd_algebra_51
 begin
   linarith,
 end
-/-
-Copyright (c) 2021 OpenAI. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Kunhao Zheng, OpenAI GPT-f
--/
 
 theorem mathd_algebra_10 :
   abs ((120:ℝ) / 100 * 30 - 130 / 100 * 20) = 10 :=
