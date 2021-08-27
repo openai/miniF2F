@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng, Stanislas Polu, David Renshaw, OpenAI GPT-f
 -/
 import minif2f_import
+
 open_locale big_operators
 open_locale real
 open_locale nat
