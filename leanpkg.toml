@@ -1,6 +1,6 @@
 [package]
 name = "minif2f"
-version = "0.1"
+version = "1.0"
 lean_version = "leanprover-community/lean:3.30.0"
 path = "lean/src"
 
