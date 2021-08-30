@@ -42,9 +42,12 @@ Each exercise file complies to the following system-specific conventions.
 
 ### Lean
 
-Each file (whose name use `_` instead of `-`) contains the problem statement defined as a theorem
-whose name must match the file name, optionally with a proof for it as well as the necessary
-imports. Lemmas can be added to support ground-truth proofs.
+Since having one file per statement causes slowness in Lean parsing stage, all Lean statements are
+exceptionally aggregated in two files (`valid.lean` and `test.lean`). These files contain a list of
+the problem statements defined as `theorem`s. Optionally, proofs for these statements are provided
+as well as potential lemmas to support the ground-truth proof.
+
+No `theorem` should appear that do not correspond to a problem statement; use `lemma` instead.
 
 Please use `lean/scripts/lint_style.py` to check all the statements pass the linter. You can also
 make use of `lean/scripts/simple_formatter.sh` to enforce a few basic formatting rules.
