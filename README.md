@@ -42,7 +42,7 @@ Each exercise file complies to the following system-specific conventions.
 
 ### Lean
 
-Since having one file per statement causes slowness in Lean build, all Lean statements are
+Since having one file per statement causes slowness in Lean parsing stage, all Lean statements are
 exceptionally aggregated in two files (`valid.lean` and `test.lean`). These files contain a list of
 the problem statements defined as `theorem`s. Optionally, proofs for these statements are provided
 as well as potential lemmas to support the ground-truth proof.
