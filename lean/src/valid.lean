@@ -832,7 +832,7 @@ theorem amc12a_2017_p7
   (f : ℕ → ℝ)
   (h₀ : f 1 = 2)
   (h₁ : ∀ n, even n → f n = f (n - 1) + 1)
-  (h₁ : ∀ n, odd n → f n = f (n - 2) + 1) :
+  (h₂ : ∀ n, odd n → f n = f (n - 2) + 1) :
   f 2017 = 2018 :=
 begin
   sorry
@@ -1204,7 +1204,7 @@ end
 theorem amc12b_2020_p5
   (a b : ℕ+)
   (h₀ : (5:ℝ) / 8 * b - 2 / 3 * a = 7)
-  (h₀ : ↑b - (5:ℝ) / 8 * b - (a - 2 / 3 * a) = 7) :
+  (h₁ : ↑b - (5:ℝ) / 8 * b - (a - 2 / 3 * a) = 7) :
   a = 42 :=
 begin
   sorry
@@ -1883,6 +1883,7 @@ theorem amc12a_2009_p25
 begin
   sorry
 end
+
 theorem imo_1961_p1
   (x y z a b : ℝ)
   (h₀ : 0 < x ∧ 0 < y ∧ 0 < z)
