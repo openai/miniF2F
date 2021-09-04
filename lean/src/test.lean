@@ -637,7 +637,7 @@ begin
   sorry
 end
 
-theorem mathb_algebra_44
+theorem mathd_algebra_44
   (s t : ℝ)
   (h₀ : s = 9 - 2 * t)
   (h₁ : t = 3 * s + 1) :
@@ -1645,7 +1645,7 @@ theorem aime_1988_p8
   (f : ℕ+ → ℕ+ → ℝ)
   (h₀ : ∀ x, f x x = x)
   (h₁ : ∀ x y, f x y = f y x)
-  (h₂ : ∀ x y, f x y = y * (f x (x + y))) :
+  (h₂ : ∀ x y, (↑x + ↑y) * f x y = y * (f x (x + y))) :
   f 14 52 = 364 :=
 begin
   sorry
