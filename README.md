@@ -10,8 +10,19 @@ theorem proving systems based on the formal systems targeted, initially **Lean**
 **Isabelle**).
 
 The benchmark (released under permissive licenses (MIT for Metamath, Apache for Lean)) is a work in
-progress and contributions are welcome and encouraged through pull requests. We plan to cut a v1 of
-the benchmark by Summer 2021.
+progress and contributions are welcome and encouraged through pull requests.
+
+## Citation
+
+The benchmark is described in detail in the following pre-print:
+```
+@article{zheng2021minif2f,
+  title={MiniF2F: a cross-system benchmark for formal Olympiad-level mathematics},
+  author={Zheng, Kunhao and Han, Jesse Michael and Polu, Stanislas},
+  journal={arXiv preprint arXiv:2109.00110},
+  year={2021}
+}
+```
 
 ## Statistics
 
@@ -93,8 +104,8 @@ full coverage on all formal systems for that version even if that might not be t
 version is frozen.
 
 When reporting a result based on miniF2F please always specify the version you used. The current
-version is `v1`, frozen as of August 2021 and including 244 statements (fully translated to Lean and
-Metamath but still WIP on other formal systems).
+version is `v1`, frozen as of August 2021, including 244 statements (fully translated to Lean and
+Metamath but still WIP in other formal systems).
 
 Each version will live in its own branch to allow later additions of translated statements or fixes
 to existing statements as needed. The `main` branch remains reserved for active development and
