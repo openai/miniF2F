@@ -14,7 +14,7 @@ progress and contributions are welcome and encouraged through pull requests.
 
 ## Citation
 
-The benchmark is described in detail in the following pre-print:
+The benchmark is described in detail in the following [pre-print](https://arxiv.org/abs/2109.00110):
 ```
 @article{zheng2021minif2f,
   title={MiniF2F: a cross-system benchmark for formal Olympiad-level mathematics},
