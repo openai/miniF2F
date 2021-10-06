@@ -2211,7 +2211,7 @@ end
 theorem amc12a_2021_p25
   (n : ℕ+)
   (f : ℕ+ → ℝ)
-  (h₀ : ∀ n, f n = (∑ k in (nat.divisors n), 1) / (n^(1 / 3)))
+  (h₀ : ∀ n, f n = (∑ k in (nat.divisors n), 1)/(n^((1:ℝ)/3)))
   (h₁ : ∀ p ≠ n, f p < f n) :
   n = 2520 :=
 begin
