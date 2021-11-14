@@ -1,6 +1,6 @@
 ${
   $( (Contributed by Kunhao Zheng, 23-Apr-2021.) $)
-  mathd-numbertheory-133 $p |- ( ph -> ( ; ; 1 8 0 gcd ; ; 1 6 8 ) = ; 1 2 ) $=
+  mathd-numbertheory-188 $p |- ( ph -> ( ; ; 1 8 0 gcd ; ; 1 6 8 ) = ; 1 2 ) $=
 ( c1 c8 cdc cc0 c6 co c2 1nn0 2nn0 deccl 8nn0 c4 4nn0 0nn0 cmul ax-frege54c 
 caddc nn0cni mulid2i cgcd wceq 6nn0 cn0 nn0gcdid0 ax-mp dec0h mulid1i 4t2e8 
 wcel 4cn addid1i decm2mma 4p2e6 addcomli decaddi decm1mma oveq1i eqtri gcdi 2cn 
