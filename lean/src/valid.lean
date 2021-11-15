@@ -306,7 +306,7 @@ begin
   sorry
 end
 
-theorem mathd_numbertheory_133 :
+theorem mathd_numbertheory_188 :
   nat.gcd 180 168 = 12 :=
 begin
   norm_num,
