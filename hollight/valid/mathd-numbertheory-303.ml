@@ -1,0 +1,1 @@
+let mathd-numbertheory-303 = `(FINITE {n:num | ((2 <= n) /\ ((171 == 80) (mod n)) /\ ((468 == 13) (mod n)))}) ==> (nsum {n:num | ((2 <= n) /\ ((171 == 80) (mod n)) /\ ((468 == 13) (mod n)))} (\k. k) = 111)`;;
