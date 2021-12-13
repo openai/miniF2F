@@ -30,7 +30,7 @@ The benchmark is described in detail in the following [pre-print](https://arxiv.
 |:---------:|:----:|:-----:|
 |   Lean    |  244 |  244  |
 | Metamath  |  244 |  244  |
-| Hol Light |   0  |    0  |
+| Hol Light |  165 |  165  |
 | Isabelle  |  60  |   35  |
 
 ## Structure
@@ -73,9 +73,12 @@ statement is commented (using Metamath convention) if provided without proof.
 
 The `metamath` folder is released under the MIT License.
 
-### Hol Light
+### HOL Light
 
-(WIP)
+Each file contains the problem statement defined as a HOL Light term
+whose name must match the file name.
+
+The `hollight` folder is released under the FreeBSD License.
 
 ### Isabelle
 
