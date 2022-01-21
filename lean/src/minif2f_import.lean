@@ -27,10 +27,12 @@ import data.nat.basic
 import data.nat.choose.basic
 import data.nat.digits
 import data.nat.factorial.basic
+import data.nat.fib
 import data.nat.modeq
 import data.nat.parity
 import data.nat.prime
 import data.pnat.basic
+import data.pnat.prime
 import data.polynomial
 import data.polynomial.basic
 import data.polynomial.eval
@@ -40,6 +42,7 @@ import data.real.ennreal
 import data.real.irrational
 import data.real.nnreal
 import data.real.sqrt
+import data.real.golden_ratio
 import data.sym.sym2
 import data.zmod.basic
 import geometry.euclidean.basic
