@@ -30,7 +30,7 @@ begin
   intro hneq,
   apply_fun (coe : ℤ → zmod 7) at hneq,
   push_cast at hneq,
-  have : (2003 : zmod 7 ) = (1 : zmod 7),
+  have : (2003 : zmod 7) = (1 : zmod 7),
     dec_trivial,
   rw this at hneq,
   have : (7 : zmod 7) = (0 : zmod 7),
