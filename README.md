@@ -53,8 +53,14 @@ Each exercise file complies to the following system-specific conventions.
 
 ### Lean
 
-To install the project for lean make sure you have `elan` installed, then in the directory where
-you want the project installed run `leanproject get openai/minif2f`.
+To install the project make sure you have [elan](https://github.com/leanprover/elan) installed,
+then in the directory where you want the project installed run:
+
+```
+git clone https://github.com/openai/miniF2F
+leanpkg configure
+leanpkg build
+```
 
 Since having one file per statement causes slowness in Lean parsing stage, all Lean statements are
 exceptionally aggregated in two files (`valid.lean` and `test.lean`). These files contain a list of
