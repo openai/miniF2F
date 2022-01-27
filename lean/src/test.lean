@@ -272,7 +272,7 @@ theorem mathd_algebra_459
   ↑d.denom + d.num = 28 :=
 begin
   have h₄: d = 13/15, linarith,
-  sorry,
+  sorry
 end
 
 theorem induction_12dvd4expnp1p20
