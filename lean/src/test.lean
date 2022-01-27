@@ -272,7 +272,7 @@ theorem mathd_algebra_459
   ↑d.denom + d.num = 28 :=
 begin
   have h₄: d = 13/15, linarith,
-  sorry
+  sorry,
 end
 
 theorem induction_12dvd4expnp1p20
@@ -298,7 +298,7 @@ theorem mathd_algebra_137
   x = 575 :=
 begin
   have h₁ : ↑x = (575:ℝ), linarith,
-  sorry
+  assumption_mod_cast, 
 end
 
 theorem imo_1997_p5
