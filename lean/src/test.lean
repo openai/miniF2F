@@ -298,7 +298,7 @@ theorem mathd_algebra_137
   x = 575 :=
 begin
   have h₁ : ↑x = (575:ℝ), linarith,
-  sorry
+  assumption_mod_cast, 
 end
 
 theorem imo_1997_p5
