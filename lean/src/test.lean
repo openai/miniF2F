@@ -275,16 +275,16 @@ begin
   sorry
 end
 
-lemma dvd_of_dvd_add_mul_left (a b n : ℕ) : a ∣ b + a * n → a ∣ b :=
-begin
-  refine (nat.dvd_add_left _).mp,
-  exact dvd_mul_right a n,
-end
-
 theorem induction_12dvd4expnp1p20
   (n : ℕ) :
   12 ∣ 4^(n+1) + 20 :=
 begin
+  have dvd_of_dvd_add_mul_left : ∀ (a b n : ℕ), a ∣ b + a * n → a ∣ b :=
+  begin
+    intros a b n,
+    refine (nat.dvd_add_left _).mp,
+    exact (dvd_mul_right a n),
+  end,
   induction n with k IH,
   { dec_trivial },
   {
