@@ -537,13 +537,14 @@ begin
     refl,
   },
   {
-    calc (∑ (k : ℕ) in finset.range j.succ, k)^2 = ((∑ (k : ℕ) in finset.range j, k) + j )^2 : by rw finset.sum_range_succ  -- rewrite summation
-   ... = (∑ (k : ℕ) in finset.range j, k)^2 + 2 * (∑ (k : ℕ) in finset.range j, k) * j + j^2 : by rw add_sq _ _ -- (a + b)^2
-   ... = (∑ (k : ℕ) in finset.range j, k)^2 + 2 * (j * (j-1)/2) * j + j^2 : by rw finset.sum_range_id j -- sum = j*(j-1)/2
-   ... = (∑ (k : ℕ) in finset.range j, k^3) + 2 * (j * (j-1)/2) * j + j^2 : by rw IH
-   ... = (∑ (k : ℕ) in finset.range j, k^3) + j^2 * (j-1) + j^2 : by ring_nf -- 2 * ( ... )/2 = ( ... )
-   ... = (∑ (k : ℕ) in finset.range j, k^3) + j^3 : by ring_nf -- (j +1)^2 (j+1) = (j+1)^3
-   ... = (∑ (k : ℕ) in finset.range j.succ, k^3) : by rw ← finset.sum_range_succ, -- by the definition of summation
+    calc (∑ (k : ℕ) in finset.range j.succ, k)^2 = ((∑ (k : ℕ) in finset.range j, k) + j )^2 : by rw finset.sum_range_succ
+   ... = (∑ (k : ℕ) in finset.range j, k)^2 + 2 * (∑ (k : ℕ) in finset.range j, k) * j + j^2 : by rw add_sq _ _ 
+   ... = (∑ (k : ℕ) in finset.range j, k)^2 +  (∑ (k : ℕ) in finset.range j, k) * 2 * j + j^2 : by ring
+   ... = (∑ (k : ℕ) in finset.range j, k)^2 + (j * (j-1)) * j + j^2 : by rw finset.sum_range_id_mul_two j
+   ... = (∑ (k : ℕ) in finset.range j, k^3) + (j * (j-1)) * j + j^2 : by rw IH
+   ... = (∑ (k : ℕ) in finset.range j, k^3) + j^2 * (j-1) + j^2 : by ring_nf
+   ... = (∑ (k : ℕ) in finset.range j, k^3) + j^3 : by cases j ; [norm_num, ring_nf]
+   ... = (∑ (k : ℕ) in finset.range j.succ, k^3) : by rw ← finset.sum_range_succ,
   }
 end
 
