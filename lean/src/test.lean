@@ -311,7 +311,7 @@ theorem mathd_algebra_137
   x = 575 :=
 begin
   have h₁ : ↑x = (575:ℝ), linarith,
-  assumption_mod_cast, 
+  assumption_mod_cast,
 end
 
 theorem imo_1997_p5
@@ -537,8 +537,8 @@ begin
     refl,
   },
   {
-    calc (∑ (k : ℕ) in finset.range j.succ, k)^2 = ((∑ (k : ℕ) in finset.range j, k) + j )^2 : by rw finset.sum_range_succ
-   ... = (∑ (k : ℕ) in finset.range j, k)^2 + 2 * (∑ (k : ℕ) in finset.range j, k) * j + j^2 : by rw add_sq _ _ 
+    calc (∑ (k : ℕ) in finset.range j.succ, k)^2 = ((∑ (k : ℕ) in finset.range j, k) + j)^2 : by rw finset.sum_range_succ
+   ... = (∑ (k : ℕ) in finset.range j, k)^2 + 2 * (∑ (k : ℕ) in finset.range j, k) * j + j^2 : by rw add_sq _ _
    ... = (∑ (k : ℕ) in finset.range j, k)^2 +  (∑ (k : ℕ) in finset.range j, k) * 2 * j + j^2 : by ring
    ... = (∑ (k : ℕ) in finset.range j, k)^2 + (j * (j-1)) * j + j^2 : by rw finset.sum_range_id_mul_two j
    ... = (∑ (k : ℕ) in finset.range j, k^3) + (j * (j-1)) * j + j^2 : by rw IH
