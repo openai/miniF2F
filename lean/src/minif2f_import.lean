@@ -1,6 +1,6 @@
 import algebra.algebra.basic
+import algebra.order.floor
 import algebra.big_operators.basic
-import algebra.floor
 import algebra.group_power.basic
 import algebra.quadratic_discriminant
 import algebra.ring.basic
@@ -10,7 +10,10 @@ import analysis.normed_space.basic
 import analysis.inner_product_space.basic
 import analysis.inner_product_space.euclidean_dist
 import analysis.normed_space.pi_Lp
-import analysis.special_functions.exp_log
+import analysis.special_functions.exp
+import analysis.special_functions.exp_deriv
+import analysis.special_functions.log
+import analysis.special_functions.log_deriv
 import analysis.special_functions.pow
 import analysis.special_functions.trigonometric.basic
 import combinatorics.simple_graph.basic

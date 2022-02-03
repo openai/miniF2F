@@ -451,7 +451,7 @@ end
 theorem aime_1997_p9
   (a : ℝ)
   (h₀ : 0 < a)
-  (h₁ : 1 / a - floor (1 / a) = a^2 - floor (a^2))
+  (h₁ : 1 / a - int.floor (1 / a) = a^2 - int.floor (a^2))
   (h₂ : 2 < a^2)
   (h₃ : a^2 < 3) :
   a^12 - 144 * (1 / a) = 233 :=
@@ -752,8 +752,8 @@ begin
 end
 
 theorem amc12b_2020_p21
-  (h₀ : fintype {n : ℕ+ | (↑n + (1000:ℝ)) / (70:ℝ) = floor (real.sqrt n)}) :
-  finset.card {n : ℕ+ | (↑n + (1000:ℝ)) / (70:ℝ) = floor (real.sqrt n)}.to_finset = 6 :=
+  (h₀ : fintype {n : ℕ+ | (↑n + (1000:ℝ)) / (70:ℝ) = int.floor (real.sqrt n)}) :
+  finset.card {n : ℕ+ | (↑n + (1000:ℝ)) / (70:ℝ) = int.floor (real.sqrt n)}.to_finset = 6 :=
 begin
   sorry
 end
@@ -1244,7 +1244,7 @@ end
 theorem mathd_algebra_153
   (n : ℝ)
   (h₀ : n = 1 / 3) :
-  floor (10 * n) + floor (100 * n) + floor (1000 * n) + floor (10000 * n) = 3702 :=
+  nat.floor (10 * n) + nat.floor (100 * n) + nat.floor (1000 * n) + nat.floor (10000 * n) = 3702 :=
 begin
   sorry
 end
@@ -1287,7 +1287,8 @@ end
 theorem amc12a_2021_p9 :
   ∏ k in finset.range 7, (2^(2^k) + 3^(2^k)) = 3^128 - 2^128 :=
 begin
-  norm_num [finset.prod_range_succ, nat.add_sub_cancel', finset.sum_range_one, one_pow],
+  simp only [finset.prod_range_succ],
+  norm_num,
 end
 
 -- Sum a sequence by grouping adjacent terms.
@@ -1905,7 +1906,7 @@ theorem amc12a_2021_p12
   (a b c d : ℝ)
   (f : ℂ → ℂ)
   (h₀ : ∀ z, f z = z^6 - 10 * z^5 + a * z^4 + b * z^3 + c * z^2 + d * z + 16)
-  (h₁ : ∀ z, f z = 0 → (z.im = 0 ∧ 0 < z.re ∧ ↑(floor z.re) = z.re)) :
+  (h₁ : ∀ z, f z = 0 → (z.im = 0 ∧ 0 < z.re ∧ ↑(int.floor z.re) = z.re)) :
   b = 88 :=
 begin
   sorry

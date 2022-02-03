@@ -137,8 +137,8 @@ end
 
 theorem aime_1991_p6
   (r : ℝ)
-  (h₀ : ∑ k in finset.range 92 \ finset.range 19, (floor (r + k / 100)) = 546) :
-  floor (100 * r) = 743 :=
+  (h₀ : ∑ k in finset.range 92 \ finset.range 19, (int.floor (r + k / 100)) = 546) :
+  int.floor (100 * r) = 743 :=
 begin
   sorry
 end
@@ -195,16 +195,15 @@ begin
 end
 
 theorem mathd_numbertheory_64 :
-  is_least { x : ℕ+ | 30 * x ≡ 42 [MOD 47] } 39 :=
+  is_least { x : ℕ | 30 * x ≡ 42 [MOD 47] } 39 :=
 begin
   fsplit,
   norm_num,
   dec_trivial!,
   rintro ⟨n, hn⟩,
   simp,
+  dec_trivial,
   intros h,
-  apply int.coe_nat_le.1,
-  norm_cast,
   norm_num,
   contrapose! h,
   dec_trivial!,
@@ -514,7 +513,7 @@ end
 theorem aime_1994_p4
   (n : ℕ)
   (h₀ : 0 < n)
-  (h₀ : ∑ k in finset.range (n + 1) \ finset.range 1, floor (real.log k / real.log 2) = 1994) :
+  (h₀ : ∑ k in finset.range (n + 1) \ finset.range 1, nat.floor (real.log k / real.log 2) = 1994) :
   n = 312 :=
 begin
   sorry
@@ -910,7 +909,7 @@ begin
 end
 
 theorem mathd_algebra_151 :
-  ceil (real.sqrt 27) - floor (real.sqrt 26) = 1 :=
+  nat.ceil (real.sqrt 27) - nat.floor (real.sqrt 26) = 1 :=
 begin
   sorry
 end
@@ -1561,8 +1560,8 @@ end
 
 theorem mathd_algebra_282
   (f : ℝ → ℝ)
-  (h₀ : ∀ x, (¬ irrational x) → f x = abs (floor x))
-  (h₁ : ∀ x, (irrational x) → f x = (ceil x)^2) :
+  (h₀ : ∀ x, (¬ irrational x) → f x = abs (int.floor x))
+  (h₁ : ∀ x, (irrational x) → f x = (int.ceil x)^2) :
   f (8^(1/3)) + f (-real.pi) + f (real.sqrt 50) + f (9/2) = 79 :=
 begin
   sorry
@@ -1667,10 +1666,7 @@ theorem amc12a_2003_p1
   (h₁ : ∀ n, v n = 2 * n + 1) :
   (∑ k in finset.range(2003), u k) - (∑ k in finset.range(2003), v k) = 2003 :=
 begin
-  apply nat.sub_eq_of_eq_add,
-  simp [finset.sum_add_distrib, h₁, h₀],
-  simp only [add_assoc],
-  congr,
+  sorry
 end
 
 theorem numbertheory_aneqprodakp4_anmsqrtanp1eq2
@@ -1794,7 +1790,7 @@ end
 theorem aime_1997_p12
   (x : ℝ)
   (h₀ : x = (∑ n in finset.range 45 \ finset.range 1, real.cos (n * π / 180)) / (∑ n in finset.range 45 \ finset.range 1, real.sin (n * π / 180))) :
-  floor (100 * x) = 241 :=
+  nat.floor (100 * x) = 241 :=
 begin
   sorry
 end
@@ -1868,7 +1864,7 @@ theorem imo_1987_p6
   (p : ℕ)
   (f : ℕ → ℕ)
   (h₀ : ∀ x, f x = x^2 + x + p)
-  (h₀ : ∀ k : ℕ, ↑k ≤ floor (real.sqrt (p / 3)) → nat.prime (f k)) :
+  (h₀ : ∀ k : ℕ, k ≤ nat.floor (real.sqrt (p / 3)) → nat.prime (f k)) :
   ∀ i ≤ p - 2, nat.prime (f i) :=
 begin
   sorry
@@ -1964,11 +1960,8 @@ begin
   field_simp,
   norm_cast,
   refine (div_eq_iff _).mpr _,
-  apply fpow_ne_zero 3 _,
-  refine mul_ne_zero_iff.mpr _,
-  split,
-  linarith,
-  exact pow_ne_zero 2 h₀,
+  { norm_num,
+    assumption },
   ring,
 end
 
@@ -2276,13 +2269,11 @@ begin
 end
 
 theorem mathd_numbertheory_84 :
-  floor ((9:ℝ) / 160 * 100) = 5 :=
+  nat.floor ((9:ℝ) / 160 * 100) = 5 :=
 begin
-  norm_num1,
-  rw floor_eq_iff,
+  rw nat.floor_eq_iff,
   split,
-  norm_num,
-  norm_num,
+  all_goals { norm_num },
 end
 
 theorem mathd_numbertheory_412
@@ -2306,7 +2297,7 @@ end
 
 theorem amc12a_2016_p3
   (f : ℝ → ℝ → ℝ)
-  (h₀ : ∀ x, ∀ y ≠ 0, f x y = x - y * floor (x / y)) :
+  (h₀ : ∀ x, ∀ y ≠ 0, f x y = x - y * int.floor (x / y)) :
   f (3 / 8) (-(2 / 5)) = -(1 / 40) :=
 begin
   sorry
