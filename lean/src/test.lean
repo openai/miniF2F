@@ -527,11 +527,24 @@ begin
   sorry
 end
 
-theorem induction_sumkexp3eqsumksqsq
+theorem induction_sumkexp3eqsumksq
   (n : ℕ) :
-  ∑ k in finset.range n, k^3 = (∑ k in finset.range n, k^2)^2 :=
+  ∑ k in finset.range n, k^3 = (∑ k in finset.range n, k)^2 :=
 begin
-  sorry
+  symmetry,
+  induction n with j IH,
+  {
+    refl,
+  },
+  {
+    calc (∑ (k : ℕ) in finset.range j.succ, k)^2 = ((∑ (k : ℕ) in finset.range j, k) + j )^2 : by rw finset.sum_range_succ  -- rewrite summation
+   ... = (∑ (k : ℕ) in finset.range j, k)^2 + 2 * (∑ (k : ℕ) in finset.range j, k) * j + j^2 : by rw add_sq _ _ -- (a + b)^2
+   ... = (∑ (k : ℕ) in finset.range j, k)^2 + 2 * (j * (j-1)/2) * j + j^2 : by rw finset.sum_range_id j -- sum = j*(j-1)/2
+   ... = (∑ (k : ℕ) in finset.range j, k^3) + 2 * (j * (j-1)/2) * j + j^2 : by rw IH
+   ... = (∑ (k : ℕ) in finset.range j, k^3) + j^2 * (j-1) + j^2 : by ring_nf -- 2 * ( ... )/2 = ( ... )
+   ... = (∑ (k : ℕ) in finset.range j, k^3) + j^3 : by ring_nf -- (j +1)^2 (j+1) = (j+1)^3
+   ... = (∑ (k : ℕ) in finset.range j.succ, k^3) : by rw ← finset.sum_range_succ, -- by the definition of summation
+  }
 end
 
 theorem numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown
