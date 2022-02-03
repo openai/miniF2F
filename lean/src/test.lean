@@ -311,7 +311,7 @@ theorem mathd_algebra_137
   x = 575 :=
 begin
   have h₁ : ↑x = (575:ℝ), linarith,
-  assumption_mod_cast, 
+  assumption_mod_cast,
 end
 
 theorem imo_1997_p5
@@ -527,11 +527,25 @@ begin
   sorry
 end
 
-theorem induction_sumkexp3eqsumksqsq
+theorem induction_sumkexp3eqsumksq
   (n : ℕ) :
-  ∑ k in finset.range n, k^3 = (∑ k in finset.range n, k^2)^2 :=
+  ∑ k in finset.range n, k^3 = (∑ k in finset.range n, k)^2 :=
 begin
-  sorry
+  symmetry,
+  induction n with j IH,
+  {
+    refl,
+  },
+  {
+    calc (∑ (k : ℕ) in finset.range j.succ, k)^2 = ((∑ (k : ℕ) in finset.range j, k) + j)^2 : by rw finset.sum_range_succ
+   ... = (∑ (k : ℕ) in finset.range j, k)^2 + 2 * (∑ (k : ℕ) in finset.range j, k) * j + j^2 : by rw add_sq _ _
+   ... = (∑ (k : ℕ) in finset.range j, k)^2 +  (∑ (k : ℕ) in finset.range j, k) * 2 * j + j^2 : by ring
+   ... = (∑ (k : ℕ) in finset.range j, k)^2 + (j * (j-1)) * j + j^2 : by rw finset.sum_range_id_mul_two j
+   ... = (∑ (k : ℕ) in finset.range j, k^3) + (j * (j-1)) * j + j^2 : by rw IH
+   ... = (∑ (k : ℕ) in finset.range j, k^3) + j^2 * (j-1) + j^2 : by ring_nf
+   ... = (∑ (k : ℕ) in finset.range j, k^3) + j^3 : by cases j ; [norm_num, ring_nf]
+   ... = (∑ (k : ℕ) in finset.range j.succ, k^3) : by rw ← finset.sum_range_succ,
+  }
 end
 
 theorem numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown
