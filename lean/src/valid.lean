@@ -513,7 +513,7 @@ end
 theorem aime_1994_p4
   (n : ℕ)
   (h₀ : 0 < n)
-  (h₀ : ∑ k in finset.range (n + 1) \ finset.range 1, nat.floor (real.log k / real.log 2) = 1994) :
+  (h₀ : ∑ k in finset.range (n + 1) \ finset.range 1, int.floor (real.log k / real.log 2) = 1994) :
   n = 312 :=
 begin
   sorry
@@ -909,7 +909,7 @@ begin
 end
 
 theorem mathd_algebra_151 :
-  nat.ceil (real.sqrt 27) - nat.floor (real.sqrt 26) = 1 :=
+  int.ceil (real.sqrt 27) - int.floor (real.sqrt 26) = 1 :=
 begin
   sorry
 end
@@ -1790,7 +1790,7 @@ end
 theorem aime_1997_p12
   (x : ℝ)
   (h₀ : x = (∑ n in finset.range 45 \ finset.range 1, real.cos (n * π / 180)) / (∑ n in finset.range 45 \ finset.range 1, real.sin (n * π / 180))) :
-  nat.floor (100 * x) = 241 :=
+  int.floor (100 * x) = 241 :=
 begin
   sorry
 end
@@ -2269,9 +2269,9 @@ begin
 end
 
 theorem mathd_numbertheory_84 :
-  nat.floor ((9:ℝ) / 160 * 100) = 5 :=
+  int.floor ((9:ℝ) / 160 * 100) = 5 :=
 begin
-  rw nat.floor_eq_iff,
+  rw int.floor_eq_iff,
   split,
   all_goals { norm_num },
 end

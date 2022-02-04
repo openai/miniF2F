@@ -1244,7 +1244,7 @@ end
 theorem mathd_algebra_153
   (n : ℝ)
   (h₀ : n = 1 / 3) :
-  nat.floor (10 * n) + nat.floor (100 * n) + nat.floor (1000 * n) + nat.floor (10000 * n) = 3702 :=
+  int.floor (10 * n) + int.floor (100 * n) + int.floor (1000 * n) + int.floor (10000 * n) = 3702 :=
 begin
   sorry
 end
