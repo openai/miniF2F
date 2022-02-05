@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Kunhao Zheng, Kudzo Ahegbebu, Stanislas Polu, David Renshaw, OpenAI GPT-f
 -/
 import minif2f_import
+import field_theory.finite.basic
 
 open_locale big_operators
 open_locale nat
@@ -1295,7 +1296,7 @@ theorem induction_pprime_pdvdapowpma
   (h₁ : nat.prime p) :
   p ∣ (a^p - a) :=
 begin
-  sorry
+  sorry,
 end
 
 theorem amc12a_2021_p9 :
@@ -1356,7 +1357,18 @@ end
 theorem mathd_numbertheory_229 :
   (5^30) % 7 = 1 :=
 begin
-  sorry
+  have five_to_thirty_is_one :
+    (5^30 : zmod 7) = 1 :=
+  begin
+    have five_to_the_six_is_one : (5^6 : zmod 7) = 1, by dec_trivial,
+    have break_power : (5^30 : zmod 7) = (5^6)^5, by norm_num,
+    rw break_power,
+    rw five_to_the_six_is_one,
+    norm_num,
+  end,
+  change 5^30 ≡ 1 [MOD 7],
+  rw ←zmod.eq_iff_modeq_nat,
+  exact_mod_cast five_to_thirty_is_one,
 end
 
 theorem mathd_numbertheory_100
