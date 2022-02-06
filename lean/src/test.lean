@@ -1319,7 +1319,7 @@ theorem induction_pprime_pdvdapowpma
   (h₁ : nat.prime p) :
   p ∣ (a^p - a) :=
 begin
-  sorry
+  sorry,
 end
 
 theorem amc12a_2021_p9 :
@@ -1462,7 +1462,12 @@ end
 theorem mathd_algebra_484 :
   real.log 27 / real.log 3 = 3 :=
 begin
-  sorry
+  rw real.log_div_log,
+  have three_to_three : (27 : ℝ) = (3 : ℝ)^(3 : ℝ), by norm_num,
+  rw three_to_three,
+  have trivial_ineq: (0 : ℝ) < (3 : ℝ), by norm_num,
+  have trivial_neq: (3: ℝ) ≠ (1 : ℝ), by norm_num,
+  exact real.logb_rpow trivial_ineq trivial_neq,
 end
 
 theorem mathd_numbertheory_551 :
