@@ -1,8 +1,8 @@
 [package]
 name = "minif2f"
 version = "1.0"
-lean_version = "leanprover-community/lean:3.38.0"
+lean_version = "leanprover-community/lean:3.39.1"
 path = "lean/src"
 
 [dependencies]
-mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "30a731ca565b92955e40274652f4c2b6f4db79f4"}
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "b72300f3455ae73c3ab9ed40fc1f80bbb9c85ba4"}
