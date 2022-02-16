@@ -48,6 +48,7 @@ import data.real.sqrt
 import data.real.golden_ratio
 import data.sym.sym2
 import data.zmod.basic
+import field_theory.finite.basic
 import geometry.euclidean.basic
 import geometry.euclidean.circumcenter
 import geometry.euclidean.monge_point
