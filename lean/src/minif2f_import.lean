@@ -66,6 +66,7 @@ import data.set.finite
 import data.sym.sym2
 import data.zmod.basic
 import dynamics.fixed_points.basic
+import field_theory.finite.basic
 import geometry.euclidean.basic
 import geometry.euclidean.circumcenter
 import geometry.euclidean.monge_point
