@@ -68,12 +68,15 @@ begin
 end
 
 theorem mathd_algebra_141
-  (a b : nnreal)
+  (a b : ℝ)
   (h₁ : (a * b)=180)
   (h₂ : 2 * (a + b)=54) :
-  nnreal.sqrt (a^2 + b^2) = 369 :=
+  (a^2 + b^2) = 369 :=
 begin
-  sorry
+  replace h₂ : (a + b) = 27 , linarith,
+  have h₃ : a^2 + b^2 = (a + b)^2 - 2 * (a * b), by ring,
+  rw [h₃, h₂, h₁],
+  norm_num,
 end
 
 theorem mathd_numbertheory_3 :
