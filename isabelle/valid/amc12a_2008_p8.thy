@@ -1,3 +1,7 @@
+(*
+  Authors: Albert Qiaochu Jiang
+*)
+
 theory amc12a_2008_p8 imports
 Complex_Main
 begin
