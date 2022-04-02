@@ -3,5 +3,5 @@ let mathd-algebra-247 = `!t:real s:real n:int.
     (s = real_of_int (n pow 2) - exp (real_of_int (n) * ln (&2)) + &1) /\
     (n = &3)
 ==>
-    (t = &1)
+    (t = &0)
 `;;

@@ -2309,7 +2309,7 @@ theorem mathd_algebra_247
   (h₀ : t = 2 * s - s^2)
   (h₁ : s = n^2 - 2^n + 1)
   (n = 3) :
-  t = 1 :=
+  t = 0 :=
 begin
   sorry
 end
