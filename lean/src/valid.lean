@@ -1088,10 +1088,11 @@ begin
 end
 
 theorem mathd_algebra_185
-  (f : ℝ → ℝ)
+  (s: finset ℤ)
+  (f : ℤ → ℤ)
   (h₀ : ∀ x, f x = abs (x + 4))
-  (h₁ : fintype {x : ℝ | f x < 9}) :
-  finset.card { x : ℝ | f x < 9 }.to_finset = 17 :=
+  (h₁ : ∀ x, x ∈ s ↔ f x < 9) :
+  s.card = 17 :=
 begin
   sorry
 end
