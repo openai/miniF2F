@@ -2235,7 +2235,8 @@ theorem mathd_algebra_482
   (h₁ : nat.prime n)
   (h₂ : ∀ x, f x = x^2 - 12 * x + k)
   (h₃ : f m = 0)
-  (h₄ : f n = 0) :
+  (h₄ : f n = 0)
+  (h₅ : m ≠ n) :
   k = 35 :=
 begin
   sorry
