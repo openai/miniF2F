@@ -1131,7 +1131,8 @@ theorem amc12a_2013_p8
   (x y : ℝ)
   (h₀ : x ≠ 0)
   (h₁ : y ≠ 0)
-  (h₂ : x + 2 / x = y + 2 / y) :
+  (h₂ : x ≠ y)
+  (h₃ : x + 2 / x = y + 2 / y) :
   x * y = 2 :=
 begin
   sorry
@@ -1221,7 +1222,8 @@ theorem mathd_algebra_131
   (f : ℝ → ℝ)
   (h₀ : ∀ x, f x = 2 * x^2 - 7 * x + 2)
   (h₁ : f a = 0)
-  (h₂ : f b = 0) :
+  (h₂ : f b = 0)
+  (h₃ : a ≠ b) :
   1 / (a - 1) + 1 / (b - 1) = -1 :=
 begin
   sorry
@@ -2233,7 +2235,8 @@ theorem mathd_algebra_482
   (h₁ : nat.prime n)
   (h₂ : ∀ x, f x = x^2 - 12 * x + k)
   (h₃ : f m = 0)
-  (h₄ : f n = 0) :
+  (h₄ : f n = 0)
+  (h₅ : m ≠ n) :
   k = 35 :=
 begin
   sorry
