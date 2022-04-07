@@ -494,7 +494,7 @@ end
 
 theorem mathd_numbertheory_227
   (x y n : ℕ+)
-  (h₁ : ↑x / (4:ℝ) + y / 6 = (x + y) / n) :
+  (h₀ : ↑x / (4:ℝ) + y / 6 = (x + y) / n) :
   n = 5 :=
 begin
   field_simp at h₁,
