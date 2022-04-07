@@ -30,8 +30,8 @@ The benchmark is described in detail in the following [pre-print](https://arxiv.
 |:---------:|:----:|:-----:|
 |   Lean    |  244 |  244  |
 | Metamath  |  244 |  244  |
+| Isabelle  |  244 |  244  |
 | Hol Light |  165 |  165  |
-| Isabelle  |  60  |   35  |
 
 ## Structure
 
