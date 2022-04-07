@@ -497,11 +497,11 @@ theorem mathd_numbertheory_227
   (h₀ : ↑x / (4:ℝ) + y / 6 = (x + y) / n) :
   n = 5 :=
 begin
-  field_simp at h₁,
+  field_simp at h₀,
   have h₂ : (6:ℝ) * x * (n - 4) = 4 * y * (6 - n), {
     field_simp,
     ring_nf,
-    linarith[h₁],
+    linarith[h₀],
   },
   have p₁ : (0:ℝ) < y, norm_num,
   have p₂ : (0:ℝ) < x, norm_num,
@@ -525,7 +525,7 @@ begin
       norm_cast,
       rw ← repl₁,
       norm_cast,
-      clear h₁ h₂ h repl₁,
+      clear h₀ h₂ h repl₁,
       suffices: (5:ℕ+) < 6, {
         exact lt_trans b₀ this,
       },
