@@ -1088,10 +1088,11 @@ begin
 end
 
 theorem mathd_algebra_185
-  (f : ℝ → ℝ)
+  (s: finset ℤ)
+  (f : ℤ → ℤ)
   (h₀ : ∀ x, f x = abs (x + 4))
-  (h₁ : fintype {x : ℝ | f x < 9}) :
-  finset.card { x : ℝ | f x < 9 }.to_finset = 17 :=
+  (h₁ : ∀ x, x ∈ s ↔ f x < 9) :
+  s.card = 17 :=
 begin
   sorry
 end
@@ -1131,7 +1132,8 @@ theorem amc12a_2013_p8
   (x y : ℝ)
   (h₀ : x ≠ 0)
   (h₁ : y ≠ 0)
-  (h₂ : x + 2 / x = y + 2 / y) :
+  (h₂ : x ≠ y)
+  (h₃ : x + 2 / x = y + 2 / y) :
   x * y = 2 :=
 begin
   sorry
@@ -1221,7 +1223,8 @@ theorem mathd_algebra_131
   (f : ℝ → ℝ)
   (h₀ : ∀ x, f x = 2 * x^2 - 7 * x + 2)
   (h₁ : f a = 0)
-  (h₂ : f b = 0) :
+  (h₂ : f b = 0)
+  (h₃ : a ≠ b) :
   1 / (a - 1) + 1 / (b - 1) = -1 :=
 begin
   sorry
@@ -1729,8 +1732,8 @@ theorem mathd_numbertheory_405
   (h₁ : t 1 = 1)
   (h₂ : ∀ n > 1, t n = t (n - 2) + t (n - 1))
   (h₃ : a ≡ 5 [MOD 16])
-  (h₃ : b ≡ 10 [MOD 16])
-  (h₃ : c ≡ 15 [MOD 16]) :
+  (h₄ : b ≡ 10 [MOD 16])
+  (h₅ : c ≡ 15 [MOD 16]) :
   (t a + t b + t c) % 7 = 5 :=
 begin
   sorry
@@ -2233,7 +2236,8 @@ theorem mathd_algebra_482
   (h₁ : nat.prime n)
   (h₂ : ∀ x, f x = x^2 - 12 * x + k)
   (h₃ : f m = 0)
-  (h₄ : f n = 0) :
+  (h₄ : f n = 0)
+  (h₅ : m ≠ n) :
   k = 35 :=
 begin
   sorry
@@ -2309,7 +2313,7 @@ theorem mathd_algebra_247
   (h₀ : t = 2 * s - s^2)
   (h₁ : s = n^2 - 2^n + 1)
   (n = 3) :
-  t = 1 :=
+  t = 0 :=
 begin
   sorry
 end

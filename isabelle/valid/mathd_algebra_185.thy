@@ -1,16 +1,15 @@
 (*
-  Authors: Wenda Li
+  Authors: Albert Qiaochu Jiang
 *)
 
-theory mathd_algebra_185 
-  imports Complex_Main "HOL-Computational_Algebra.Computational_Algebra"
-    "HOL-Number_Theory.Number_Theory"
+theory mathd_algebra_185 imports
+  Complex_Main
 begin
 
 theorem mathd_algebra_185:
-  fixes f :: "real \<Rightarrow> real"
-  assumes "\<forall> x. f x = abs (x + 4)"
-  shows "card { x :: real. f x < 9 } = 17"
+  fixes f :: "int \<Rightarrow> int"
+  assumes h0 : "\<And>x. (f x = abs (x+4))"
+  shows "card {(x::int). (f x < 9)} = 17"
   sorry
 
-end   
+end
