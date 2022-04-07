@@ -1703,10 +1703,11 @@ end
 
 theorem mathd_algebra_440
   (x : ℝ)
-  (h₀ : 2 / 3 / 3 = x / 10) :
+  (h₀ : 3 / 2 / 3 = x / 10) :
   x = 5 :=
 begin
-  sorry
+  field_simp at h₀,
+  linarith,
 end
 
 theorem mathd_numbertheory_254 :
