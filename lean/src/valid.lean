@@ -1418,7 +1418,9 @@ theorem mathd_numbertheory_301
   (j : ℕ+) :
   (3 * (7 * ↑j + 3)) % 7 = 2 :=
 begin
-  sorry
+  calc 3 * (7 * ↑j + 3) % 7 = (3 * 3 + (3 * ↑j) * 7) % 7 : by {ring_nf}
+    ... = (3 * 3) % 7 : by {apply nat.add_mul_mod_self_right}
+    ... = 2 : by {norm_num},
 end
 
 theorem amc12a_2009_p15
