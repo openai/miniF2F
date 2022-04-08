@@ -10,7 +10,7 @@ begin
 theorem mathd_numbertheory_227:
   fixes x y n ::nat
   assumes "x / 4 + y / 6 = (x + y) / n"
-    and "n\<noteq>0"
+    and "n\<noteq>0" "x\<noteq>0" "y\<noteq>0"
   shows "n = 5"
   sorry
 
