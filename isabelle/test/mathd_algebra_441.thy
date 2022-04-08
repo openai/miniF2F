@@ -7,16 +7,10 @@ theory mathd_algebra_441
   "HOL-Number_Theory.Number_Theory"
 begin
 
-
-(*
-TODO: Not right
-*)
-
-(*
 theorem mathd_algebra_441:
   fixes x :: real
   assumes "x \<noteq> 0" 
-  shows "12 / (x * x) * (x^4 / (1 * x)) * (35 / (3 * x)) = 10"
-*)
+  shows "12 / (x * x) * (x^4 / (14 * x)) * (35 / (3 * x)) = 10"
+  using assms by (auto simp:field_simps power4_eq_xxxx)
 
 end 
