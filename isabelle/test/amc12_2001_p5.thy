@@ -7,7 +7,7 @@ theory amc12_2001_p5
 begin
 
 theorem amc12_2001_p5:
-  shows "(\<Prod>x\<in>{x. x<10000 \<and> odd x}. x) 
+  shows "(\<Prod>x\<in>{x::nat. x<10000 \<and> odd x}. x) 
               = fact 10000 / ((2^5000) * fact 5000)"
   sorry
 

@@ -4,7 +4,7 @@
 
 theory imo_1987_p6 imports
 Complex_Main
-
+"HOL-Computational_Algebra.Computational_Algebra"
 begin
 
 theorem imo_1987_p6:

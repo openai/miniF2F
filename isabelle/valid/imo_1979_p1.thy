@@ -7,7 +7,7 @@ theory imo_1979_p1
 begin
 
 theorem imo_1979_p1:
-  fixes p q :: nat
+  fixes p q :: nat     
   assumes "0 < q"
     and "(\<Sum> k \<in> {1..<1320}. ((-1) ^ (k + 1) * (1 / k)))
        =  p /  q" 

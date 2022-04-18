@@ -5,7 +5,6 @@
 theory amc12a_2002_p12 imports
   Complex_Main
   "HOL-Computational_Algebra.Computational_Algebra"
-  "Symmetric_Polynomials.Vieta"
 begin
 
 theorem amc12a_2002_p12:

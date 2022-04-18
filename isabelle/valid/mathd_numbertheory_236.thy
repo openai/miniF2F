@@ -7,7 +7,7 @@ theory mathd_numbertheory_236 imports
 begin
 
 theorem mathd_numbertheory_236:
-  "(1999^2000) mod 5 = 1"
+  "(1999^2000) mod 5 = (1::nat)"
   sorry
 
 end

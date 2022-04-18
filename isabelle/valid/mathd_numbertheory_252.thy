@@ -7,7 +7,7 @@ theory mathd_numbertheory_252 imports
 begin
 
 theorem mathd_numbertheory_252:
-  "(fact 7) mod 23 = 3"
+  "(fact 7) mod 23 = (3::nat)"
   sorry
 
 end

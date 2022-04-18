@@ -9,7 +9,7 @@ begin
 
 theorem aime_1999_p11:
   fixes m :: rat
-  assumes "(\<Sum> k \<in>{0..<36}. 
+  assumes "(\<Sum> k \<in>{0::nat..<36}. 
       sin (5 * k * pi / 180)) = tan (real_of_rat m * pi / 180)"
     and "(nn,dd) = quotient_of m"
     and "dd/nn < 90" 

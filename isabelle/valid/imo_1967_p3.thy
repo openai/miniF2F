@@ -3,7 +3,7 @@
 *)
 
 theory imo_1967_p3 imports
-  Complex_Main
+  Complex_Main "HOL-Computational_Algebra.Computational_Algebra"
 begin
 
 theorem imo_1967_p3:
