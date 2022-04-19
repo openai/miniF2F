@@ -6,8 +6,6 @@ theory imo_1978_p5
   imports Complex_Main "HOL-Computational_Algebra.Computational_Algebra"
 begin
 
-term inj
-
 theorem imo_1978_p5:
   fixes n :: nat
     and p :: "nat \<Rightarrow> nat"

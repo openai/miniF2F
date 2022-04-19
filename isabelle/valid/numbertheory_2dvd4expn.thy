@@ -10,7 +10,7 @@ begin
 theorem numbertheory_2dvd4expn:
   fixes n :: nat
   assumes h0 : "n \<noteq> 0"
-  shows "2 dvd 4^n"
+  shows "(2::nat) dvd 4^n"
   sorry
 
 

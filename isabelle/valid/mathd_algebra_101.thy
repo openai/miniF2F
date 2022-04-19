@@ -18,7 +18,7 @@ proof -
   hence h4:"... = x^2 - x*5 - 7 * 2"
     by (simp add: power2_eq_square)
   have h5: "x^2 - 5*x - 14=(x-7) * (x+2)" 
-    using h2 h3 h4 by (metis (no_types, hide_lams) h2 h3 h4 mult.commute num_double 
+    using h2 h3 h4 by (metis (no_types, opaque_lifting) h2 h3 h4 mult.commute num_double 
                         numeral_times_numeral)
   have h6: "(x-7) * (x+2) \<le> 0" using h5 h0 by auto
   thus ?thesis

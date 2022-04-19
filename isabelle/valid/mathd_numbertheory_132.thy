@@ -7,8 +7,8 @@ theory mathd_numbertheory_132 imports
 begin
 
 theorem mathd_numbertheory_132:
-  "2004 mod 12 = 0"
-  sorry
+  "2004 mod 12 = (0::nat)"
+  by eval
     
   
 

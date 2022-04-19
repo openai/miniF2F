@@ -3,7 +3,7 @@
 *)
 
 theory mathd_algebra_482 imports
-Complex_Main
+Complex_Main "HOL-Computational_Algebra.Computational_Algebra"
 
 begin
 
