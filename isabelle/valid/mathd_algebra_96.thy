@@ -7,7 +7,7 @@ begin
 
 theorem mathd_algebra_96:
   fixes x y z a ::real
-  assumes "x>0" "y>0" "z>0" "a>0"
+  assumes "x>0" "y>0" "z>0" 
     and "ln x - ln y = a"
     and "ln y - ln z = 15"
     and "ln z - ln x=-7"
