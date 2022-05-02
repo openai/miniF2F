@@ -197,16 +197,7 @@ end
 theorem mathd_numbertheory_64 :
   is_least { x : ℕ | 30 * x ≡ 42 [MOD 47] } 39 :=
 begin
-  fsplit,
-  norm_num,
-  dec_trivial!,
-  rintro ⟨n, hn⟩,
-  simp,
-  dec_trivial,
-  intros h,
-  norm_num,
-  contrapose! h,
-  dec_trivial!,
+  sorry
 end
 
 theorem imo_1987_p4
@@ -230,14 +221,13 @@ theorem amc12_2001_p9
   (h₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x / y)
   (h₁ : f 500 = 3) : f 600 = 5 / 2 :=
 begin
-  -- specialize h₀ 500 _ (6/5) _,
-  -- rw h₁ at h₀,
-  -- calc f 600 = f (500 * (6/5)) : by {congr, norm_num,}
-  --       ... = 3 / (6 / 5) : by { exact h₀,}
-  --       ... = 5 / 2 : by {norm_num,},
-  -- linarith,
-  -- linarith,
-  sorry
+  specialize h₀ 500 _ (6/5) _,
+  { linarith },
+  { linarith },
+  calc f 600 = f (500 * (6/5)) : by {congr, norm_num}
+        ... = f 500 / (6 / 5) : by {rw h₀}
+        ... = 3 / (6 / 5) : by { rw h₁ }
+        ... = 5 / 2 : by {norm_num},
 end
 
 theorem imo_1965_p1
@@ -1325,7 +1315,6 @@ theorem algebra_2complexrootspoly_xsqp49eqxp7itxpn7i
   (x : ℂ) :
   x^2 + 49 = (x + (7 * complex.I)) * (x + (-7 * complex.I)) :=
 begin
-  ring_nf,
   ring_nf,
   rw [pow_two, pow_two, complex.I_mul_I],
   ring,

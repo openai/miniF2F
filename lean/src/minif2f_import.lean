@@ -31,7 +31,6 @@ import analysis.special_functions.trigonometric.complex
 import combinatorics.simple_graph.basic
 import data.complex.basic
 import data.complex.exponential
-import data.equiv.basic
 import data.finset.basic
 import data.fintype.card
 import data.int.basic
@@ -76,10 +75,11 @@ import linear_algebra.affine_space.affine_map
 import linear_algebra.affine_space.independent
 import linear_algebra.affine_space.ordered
 import linear_algebra.finite_dimensional
+import logic.equiv.basic
 import measure_theory.integral.interval_integral
 import number_theory.arithmetic_function
+import number_theory.legendre_symbol.quadratic_reciprocity
 import number_theory.primes_congruent_one
-import number_theory.quadratic_reciprocity
 import order.bounds
 import order.filter.basic
 import order.well_founded
