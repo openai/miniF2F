@@ -197,8 +197,8 @@ end
 theorem amc12a_2020_p10
   (n : ℕ)
   (h₀ : 0 < n)
-  (h₁ : real.log (real.log n / real.log 16) / real.log 2 = real.log (real.log n / real.log 4) / real.log 4) :
-  n = 256 :=
+  (h₁ : real.logb 2 (real.logb 16 n) = real.logb 4 (real.logb 4 n)) :
+  (nat.digits 10 n).sum = 13 :=
 begin
   sorry
 end
@@ -1198,7 +1198,7 @@ begin
 end
 
 theorem amc12a_2021_p14 :
-  (∑ k in (finset.Icc 1 20), (real.log (3^(k^2)) / real.log (5^k))) * ∑ k in (finset.Icc 1 100), (real.log (25^k) / real.log (9^k)) = 21000 :=
+  (∑ k in (finset.Icc 1 20), (real.logb (5^k) (3^(k^2)))) * (∑ k in (finset.Icc 1 100), (real.logb (9^k) (25^k))) = 21000 :=
 begin
   sorry
 end
