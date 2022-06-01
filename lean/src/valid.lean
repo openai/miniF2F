@@ -13,7 +13,7 @@ open_locale topological_space
 theorem amc12a_2019_p21
   (z : ℂ)
   (h₀ : z = (1 + complex.I) / real.sqrt 2) :
-  (∑ k in finset.range 13 \ finset.range 1, (z^(k^2))) * (∑ k in finset.range 13 \ finset.range 1, (1 / z^(k^2))) = 36 :=
+  (∑ k in finset.Icc 1 12, (z^(k^2))) * (∑ k in finset.Icc 1 12, (1 / z^(k^2))) = 36 :=
 begin
   sorry
 end
@@ -47,8 +47,8 @@ end
 
 theorem aime_1984_p5
   (a b : ℝ)
-  (h₀ : real.log a / real.log 8 + real.log (b^2) / real.log 4 = 5)
-  (h₁ : real.log b / real.log 8 + real.log (a^2) / real.log 4 = 7) :
+  (h₀ : real.logb 8 a + real.logb 4 (b^2) = 5)
+  (h₁ : real.logb 8 b + real.logb 4 (a^2) = 7) :
   a * b = 512 :=
 begin
   sorry
@@ -83,13 +83,12 @@ begin
 end
 
 theorem mathd_numbertheory_13
-  (u v : ℕ+)
-  (h₀ : 14 * ↑u % 100 = 46)
-  (h₁ : 14 * ↑v % 100 = 46)
-  (h₂ : u < 50)
-  (h₃ : v < 100)
-  (h₄ : 50 < v) :
-  ((u + v):ℕ) / 2 = 64 :=
+  (u v : ℕ)
+  (S : set ℕ)
+  (h₀ : ∀ (n : ℕ), n ∈ S ↔ 0 < n ∧ (14 * n) % 100 = 46)
+  (h₁ : is_least S u)
+  (h₂ : is_least (S \ {u}) v) :
+  ((u + v) : ℚ) / 2 = 64 :=
 begin
   sorry
 end
@@ -111,7 +110,7 @@ begin
 end
 
 theorem amc12a_2019_p9
-  (a : ℕ+ → ℚ)
+  (a : ℕ → ℚ)
   (h₀ : a 1 = 1)
   (h₁ : a 2 = 3 / 7)
   (h₂ : ∀ n, a (n + 2) = (a n * a (n + 1)) / (2 * a n - a (n + 1))) :
@@ -121,7 +120,7 @@ begin
 end
 
 theorem mathd_algebra_13
-  (a b :ℝ)
+  (a b : ℝ)
   (h₀ : ∀ x, (x - 3 ≠ 0 ∧ x - 5 ≠ 0) → 4 * x / (x^2 - 8 * x + 15) = a / (x - 3) + b / (x - 5)) :
   a = -6 ∧ b = 10 :=
 begin
@@ -137,7 +136,7 @@ end
 
 theorem aime_1991_p6
   (r : ℝ)
-  (h₀ : ∑ k in finset.range 92 \ finset.range 19, (int.floor (r + k / 100)) = 546) :
+  (h₀ : ∑ k in finset.Icc (19 : ℕ) 91, (int.floor (r + k / 100)) = 546) :
   int.floor (100 * r) = 743 :=
 begin
   sorry
@@ -162,7 +161,7 @@ begin
 end
 
 theorem amc12a_2008_p4 :
-  ∏ k in finset.range 502 \ finset.range 1, ((4:ℝ) * k + 4) / (4 * k) = 502 :=
+  ∏ k in finset.Icc (1 : ℕ) 501, ((4 : ℝ) * k + 4) / (4 * k) = 502 :=
 begin
   sorry
 end
@@ -175,7 +174,7 @@ begin
 end
 
 theorem mathd_algebra_462 :
-  (1 / 2 + 1 / 3) * (1 / 2 - 1 / 3) = 5 / 36 :=
+  ((1 : ℚ)/ 2 + 1 / 3) * (1 / 2 - 1 / 3) = 5 / 36 :=
 begin
   norm_num,
 end
@@ -195,7 +194,7 @@ begin
 end
 
 theorem mathd_numbertheory_64 :
-  is_least { x : ℕ | 30 * x ≡ 42 [MOD 47] } 39 :=
+  is_least {x : ℕ | 30 * x ≡ 42 [MOD 47]} 39 :=
 begin
   sorry
 end
@@ -317,14 +316,14 @@ end
 
 theorem induction_sum_1oktkp1
   (n : ℕ) :
-  ∑ k in (finset.range n), (1:ℝ) / ((k + 1) * (k + 2)) = n / (n + 1) :=
+  ∑ k in (finset.range n), (1 : ℝ) / ((k + 1) * (k + 2)) = n / (n + 1) :=
 begin
   sorry
 end
 
 theorem mathd_numbertheory_32
-  (h₀ : fintype { n : ℕ | n ∣ 36}) :
-  ∑ k in { n : ℕ | n ∣ 36}.to_finset, k = 91 :=
+  (h₀ : fintype {n : ℕ | n ∣ 36}) :
+  ∑ k in {n : ℕ | n ∣ 36}.to_finset, k = 91 :=
 begin
   sorry
 end
@@ -368,14 +367,15 @@ end
 theorem mathd_numbertheory_109
   (v : ℕ → ℕ)
   (h₀ : ∀ n, v n = 2 * n - 1) :
-  (∑ k in (finset.erase (finset.range 101) 0), v k) % 7 = 4 :=
+  (∑ k in finset.Icc 1 100, v k) % 7 = 4 :=
 begin
   norm_num,
   simp [h₀],
-  rw finset.sum_erase,
-  swap,
-  { simp, },
-  norm_num [finset.sum_range_succ, h₀],
+  have h₁ : finset.Icc 1 100 = finset.Ico 1 101, {
+    exact rfl,
+  },
+  rw h₁,
+  norm_num [finset.sum_Ico_succ_top],
 end
 
 theorem algebra_xmysqpymzsqpzmxsqeqxyz_xpypzp6dvdx3y3z3
@@ -387,9 +387,9 @@ begin
 end
 
 theorem imo_1962_p4
-  (x : ℝ)
-  (h₀ : (real.cos x)^2 + (real.cos (2 * x))^2 + (real.cos (3 * x))^2 = 1) :
-  (∃ m : ℤ, x = π / 2 + m * π) ∨ (∃ m : ℤ, x = π / 4 + m * π / 2) ∨ (∃ m : ℤ, x = π / 6 + m * π / 3) :=
+  (S : set ℝ)
+  (h₀ : S = {x : ℝ | (real.cos x)^2 + (real.cos (2 * x))^2 + (real.cos (3 * x))^2 = 1}) :
+  S = {x : ℝ | ∃ m : ℤ, (x = π / 2 + m * π) ∨ (x = π / 4 + m * π / 2) ∨ (x = π / 6 + m * π) ∨ (x = 5 * π / 6 + m * π)} :=
 begin
   sorry
 end
@@ -401,11 +401,14 @@ begin
 end
 
 theorem mathd_numbertheory_24 :
-  (∑ k in (finset.erase (finset.range 10) 0), 11^k) % 100 = 59 :=
+  (∑ k in (finset.Icc 1 9), 11^k) % 100 = 59 :=
 begin
   norm_num,
-  rw finset.sum_eq_multiset_sum,
-  norm_num,
+  have h₁ : finset.Icc 1 9 = finset.Ico 1 10, {
+    exact rfl,
+  },
+  rw h₁,
+  norm_num [finset.sum_Ico_succ_top],
 end
 
 theorem algebra_amgm_prod1toneq1_sum1tongeqn
@@ -503,7 +506,7 @@ end
 theorem aime_1994_p4
   (n : ℕ)
   (h₀ : 0 < n)
-  (h₀ : ∑ k in finset.range (n + 1) \ finset.range 1, int.floor (real.log k / real.log 2) = 1994) :
+  (h₀ : ∑ k in finset.Icc 1 n, int.floor (real.logb 2 k) = 1994) :
   n = 312 :=
 begin
   sorry
@@ -558,10 +561,10 @@ begin
 end
 
 theorem mathd_algebra_69
-  (r s : ℕ+)
-  (h₀ : ↑r * ↑s = (450:ℤ))
-  (h₁ : (↑r + 5) * (↑s - 3) = (450:ℤ)) :
-  r = 25 :=
+  (rows seats : ℕ)
+  (h₀ : rows * seats = 450)
+  (h₁ : (rows + 5) * (seats - 3) = 450) :
+  rows = 25 :=
 begin
   sorry
 end
@@ -584,7 +587,7 @@ begin
 end
 
 theorem aimeII_2020_p6
-  (t : ℕ+ → ℚ)
+  (t : ℕ → ℚ)
   (h₀ : t 1 = 20)
   (h₁ : t 2 = 21)
   (h₂ : ∀ n ≥ 3, t n = (5 * t (n - 1) + 1) / (25 * t (n - 2))) :
@@ -604,7 +607,7 @@ end
 theorem mathd_algebra_35
   (p q : ℝ → ℝ)
   (h₀ : ∀ x, p x = 2 - x^2)
-  (h₁ : ∀ x≠0, q x = 6 / x) :
+  (h₁ : ∀ x ≠ 0, q x = 6 / x) :
   p (q 2) = -7 :=
 begin
   rw [h₀, h₁],
@@ -683,15 +686,14 @@ begin
 end
 
 theorem mathd_numbertheory_35
-  (h₀ : fintype { n : ℕ | n ∣ (nat.sqrt 196)}) :
-  ∑ k in { n : ℕ | n ∣ (nat.sqrt 196)}.to_finset, k = 24 :=
+  (h₀ : fintype {n : ℕ | n ∣ (nat.sqrt 196)}) :
+  ∑ k in {n : ℕ | n ∣ (nat.sqrt 196)}.to_finset, k = 24 :=
 begin
   sorry
 end
 
 theorem amc12a_2021_p7
-  (x : ℝ)
-  (y : ℝ) :
+  (x y : ℝ) :
   1 ≤ ((x * y) - 1)^2 + (x + y)^2 :=
 begin
   ring_nf,
@@ -788,7 +790,7 @@ end
 
 theorem amc12a_2010_p22
   (x : ℝ) :
-  49 ≤ ∑ k in finset.range 120 \ finset.range 1, abs (↑k * x - 1) :=
+  49 ≤ ∑ k in finset.Icc 1 119, abs (↑k * x - 1) :=
 begin
   sorry
 end
@@ -800,19 +802,18 @@ begin
 end
 
 theorem mathd_numbertheory_155 :
-  finset.card (finset.filter (λ x, x % 19 = 7) (finset.range 1000 \ finset.range 100)) = 52 :=
+  finset.card (finset.filter (λ x, x % 19 = 7) (finset.Icc 100 999)) = 52 :=
 begin
   sorry
 end
 
 theorem imo_1978_p5
   (n : ℕ)
-  (p : ℕ+ → ℕ+)
-  (f : ℕ → ℕ+)
-  (h₀ : function.injective p)
-  (h₁ : ∀ n : ℕ+, f n = p n)
-  (h₁ : 0 < n) :
-  (∑ k in finset.range (n + 1) \ finset.range 1, (1:ℝ) / k) ≤ ∑ k in finset.range (n + 1) \ finset.range 1, (f k) / k^2 :=
+  (a : ℕ → ℕ)
+  (h₀ : ∀ (m : ℕ), 0 < a m)
+  (h₁ : ∀ (p q : ℕ), p ≠ q → a p ≠ a q)
+  (h₂ : 0 < n) :
+  (∑ k in finset.Icc 1 n, (1 : ℝ)/k) ≤ ∑ k in finset.Icc 1 n, (a k)/k^2 :=
 begin
   sorry
 end
@@ -828,12 +829,13 @@ begin
 end
 
 theorem mathd_numbertheory_42
-  (u v : ℕ+)
-  (h₀ : 27 * ↑u % 40 = 17)
-  (h₁ : 27 * ↑v % 40 = 17)
-  (h₂ : u < 40)
-  (h₃ : v < 80)
-  (h₄ : 40 < v) :
+  (u v : ℕ)
+  (h₀ : 0 < u ∧ 0 < v)
+  (h₁ : 27 * u % 40 = 17)
+  (h₂ : 27 * v % 40 = 17)
+  (h₃ : u < 40)
+  (h₄ : v < 80)
+  (h₅ : 40 < v) :
   (u + v) = 62 :=
 begin
   sorry
@@ -852,17 +854,17 @@ begin
 end
 
 theorem amc12b_2021_p21
-  (h₀ : fintype {x : ℝ | 0 < x ∧ x^((2:ℝ)^real.sqrt 2) = (real.sqrt 2)^((2:ℝ)^x)}) :
-  ↑2 ≤ ∑ k in {x : ℝ | 0 < x ∧ x^((2:ℝ)^real.sqrt 2) = (real.sqrt 2)^((2:ℝ)^x)}.to_finset, k ∧ ∑ k in {x : ℝ | 0 < x ∧ x^((2:ℝ)^real.sqrt 2) = (real.sqrt 2)^((2:ℝ)^x)}.to_finset, k < 6 :=
+  (h₀ : fintype {x : ℝ | 0 < x ∧ x^((2 : ℝ)^real.sqrt 2) = (real.sqrt 2)^((2 : ℝ)^x)}) :
+  ↑2 ≤ ∑ k in {x : ℝ | 0 < x ∧ x^((2 : ℝ)^real.sqrt 2) = (real.sqrt 2)^((2 : ℝ)^x)}.to_finset, k ∧
+  ∑ k in {x : ℝ | 0 < x ∧ x^((2 : ℝ)^real.sqrt 2) = (real.sqrt 2)^((2 : ℝ)^x)}.to_finset, k < 6 :=
 begin
   sorry
 end
 
 theorem mathd_algebra_405
-  (x : ℕ)
-  (h₀ : 0 < x)
-  (h₁ : x^2 + 4 * x + 4 < 20) :
-  x = 1 ∨ x = 2 :=
+  (S : finset ℕ)
+  (h₀ : ∀ x, x ∈ S ↔ 0 < x ∧ x^2 + 4 * x + 4 < 20) :
+  S.card = 2 :=
 begin
   sorry
 end
@@ -870,7 +872,7 @@ end
 theorem numbertheory_sumkmulnckeqnmul2pownm1
   (n : ℕ)
   (h₀ : 0 < n) :
-  ∑ k in finset.range (n + 1) \ finset.range 1, (k * nat.choose n k) = n * 2^(n - 1) :=
+  ∑ k in finset.Icc 1 n, (k * nat.choose n k) = n * 2^(n - 1) :=
 begin
   sorry
 end
@@ -913,16 +915,17 @@ begin
 end
 
 theorem mathd_algebra_15
-  (s : ℕ+ → ℕ+ → ℕ+)
-  (h₀ : ∀ a b, s a b = a^(b:ℕ) + b^(a:ℕ)) :
+  (s : ℕ → ℕ → ℕ)
+  (h₀ : ∀ a b, 0 < a ∧ 0 < b → s a b = a^(b:ℕ) + b^(a:ℕ)) :
   s 2 6 = 100 :=
 begin
   rw h₀,
   refl,
+  norm_num,
 end
 
 theorem mathd_numbertheory_211 :
-  finset.card (finset.filter (λ n, 6 ∣ (4 * ↑n - (2:ℤ))) (finset.range 60)) = 20 :=
+  finset.card (finset.filter (λ n, 6 ∣ (4 * ↑n - (2 : ℤ))) (finset.range 60)) = 20 :=
 begin
   -- apply le_antisymm,
   -- -- haveI := classical.prop_decidable,
@@ -986,7 +989,7 @@ theorem imo_1988_p6
   (a b : ℕ)
   (h₀ : 0 < a ∧ 0 < b)
   (h₁ : (a * b + 1) ∣ (a^2 + b^2)) :
-  ∃ x : ℕ, (x^2:ℝ) = (a^2 + b^2) / (a*b + 1) :=
+  ∃ x : ℕ, (x^2 : ℝ) = (a^2 + b^2) / (a * b + 1) :=
 begin
   sorry
 end
@@ -1026,11 +1029,8 @@ begin
   exact pow_two_nonneg (c - a + 2),
 end
 
-theorem mathd_numbertheory_43
-  (n : ℕ+)
-  (h₀ : 15^(n:ℕ) ∣ nat.factorial 942)
-  (h₁ : ∀ m, 15^(m:ℕ) ∣ nat.factorial 942 → m ≤ n) :
-  n = 233 :=
+theorem mathd_numbertheory_43 :
+  is_greatest {n : ℕ | 15^n ∣ nat.factorial 942} 233 :=
 begin
   sorry
 end
@@ -1104,16 +1104,17 @@ begin
 end
 
 theorem amc12a_2009_p2 :
-  1 + (1 / (1 + (1 / (1 + 1)))) = (5:ℝ) / 3 :=
+  1 + (1 / (1 + (1 / (1 + 1)))) = (5 : ℚ) / 3 :=
 begin
   norm_num,
 end
 
 theorem mathd_numbertheory_709
-  (n : ℕ+)
-  (h₀ : finset.card (nat.divisors (2*n)) = 28)
-  (h₁ : finset.card (nat.divisors (3*n)) = 30) :
-  finset.card (nat.divisors (6*n)) = 35 :=
+  (n : ℕ)
+  (h₀ : 0 < n)
+  (h₁ : finset.card (nat.divisors (2 * n)) = 28)
+  (h₂ : finset.card (nat.divisors (3 * n)) = 30) :
+  finset.card (nat.divisors (6 * n)) = 35 :=
 begin
   sorry
 end
@@ -1131,7 +1132,7 @@ end
 
 theorem mathd_numbertheory_461
   (n : ℕ)
-  (h₀ : n = finset.card (finset.filter (λ x, gcd x 8 = 1) (finset.range 8 \ finset.range 1))) :
+  (h₀ : n = finset.card (finset.filter (λ x, gcd x 8 = 1) (finset.Icc 1 7))) :
   (3^n) % 8 = 1 :=
 begin
   sorry
@@ -1139,7 +1140,7 @@ end
 
 theorem mathd_algebra_59
   (b : ℝ)
-  (h₀ : (4:ℝ)^b + 2^3 = 12) :
+  (h₀ : (4 : ℝ)^b + 2^3 = 12) :
   b = 1 :=
 begin
   have h₁ : (4:ℝ)^b = 4, linarith,
@@ -1193,9 +1194,9 @@ begin
 end
 
 theorem amc12b_2020_p5
-  (a b : ℕ+)
-  (h₀ : (5:ℝ) / 8 * b - 2 / 3 * a = 7)
-  (h₁ : ↑b - (5:ℝ) / 8 * b - (a - 2 / 3 * a) = 7) :
+  (a b : ℕ)
+  (h₀ : (5 : ℚ)/8 * b = 2/3 * a + 7)
+  (h₁ : (b : ℚ) - 5/8 * b = (a - 2/3 * a) + 7) :
   a = 42 :=
 begin
   sorry
@@ -1231,13 +1232,13 @@ begin
 end
 
 theorem mathd_algebra_536 :
-  ↑3! * ((2:ℝ)^3 + real.sqrt 9) / 2 = (33:ℝ) :=
+  ↑3! * ((2 : ℝ)^3 + real.sqrt 9) / 2 = (33 : ℝ) :=
 begin
   sorry
 end
 
 theorem mathd_algebra_22 :
-  real.log (5^4) / real.log (5^2)= 2 :=
+  real.logb (5^2) (5^4) = 2 :=
 begin
   sorry
 end
@@ -1250,8 +1251,8 @@ begin
   sorry
 end
 
-theorem aimeI_2001_p3
-  (x : ℕ+ → ℤ)
+theorem aimeII_2001_p3
+  (x : ℕ → ℤ)
   (h₀ : x 1 = 211)
   (h₂ : x 2 = 375)
   (h₃ : x 3 = 420)
@@ -1274,7 +1275,7 @@ end
 theorem aime_1987_p8
   (n : ℕ)
   (h₀ : 0 < n)
-  (h₁ : ∃! k, (8:ℝ) / 15 < n / (n + k) ∧ (n:ℝ) / (n + k) < 7 / 13) :
+  (h₁ : ∃! k, (8 : ℝ) / 15 < n / (n + k) ∧ (n : ℝ) / (n + k) < 7 / 13) :
   n ≤ 112 :=
 begin
   sorry
@@ -1351,7 +1352,7 @@ begin
 end
 
 theorem mathd_numbertheory_37 :
-  (nat.lcm 9999 100001) = 90900909 :=
+  nat.lcm 9999 100001 = 90900909 :=
 begin
  let e : empty → fin 1 → ℕ := λ _, 1,
   have : fintype.card (fin 1) = 1 := fintype.card_fin 1,
@@ -1404,7 +1405,8 @@ begin
 end
 
 theorem mathd_numbertheory_301
-  (j : ℕ+) :
+  (j : ℕ)
+  (h₀ : 0 < j) :
   (3 * (7 * ↑j + 3)) % 7 = 2 :=
 begin
   calc 3 * (7 * ↑j + 3) % 7 = (3 * 3 + (3 * ↑j) * 7) % 7 : by {ring_nf}
@@ -1415,7 +1417,7 @@ end
 theorem amc12a_2009_p15
   (n : ℕ)
   (h₀ : 0 < n)
-  (h₁ : ∑ k in finset.erase (finset.range (n + 1)) 0, (↑k * (complex.I^k)) = 48 + 49 * complex.I) :
+  (h₁ : ∑ k in finset.Icc 1 n, (↑k * (complex.I^k)) = 48 + 49 * complex.I) :
   n = 97 :=
 begin
   sorry
@@ -1455,8 +1457,8 @@ begin
 end
 
 theorem amc12a_2020_p22
-  (h₀ : fintype {n : ℕ | 5∣n ∧ nat.lcm (nat.factorial 5) n = 5 * nat.gcd (nat.factorial 10) n}) :
-finset.card {n : ℕ | 5∣n ∧ nat.lcm (nat.factorial 5) n = 5 * nat.gcd (nat.factorial 10) n}.to_finset = 1 :=
+  (h₀ : fintype {n : ℕ | 5 ∣ n ∧ nat.lcm (nat.factorial 5) n = 5 * nat.gcd (nat.factorial 10) n}) :
+  finset.card {n : ℕ | 5 ∣ n ∧ nat.lcm (nat.factorial 5) n = 5 * nat.gcd (nat.factorial 10) n}.to_finset = 1 :=
 begin
   sorry
 end
@@ -1480,7 +1482,7 @@ end
 
 theorem algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta
   (b c d a : ℂ) :
-  (a-d) * (a-c) * (a-b) = -(((a^2 - (b+c) * a) + c * b) * d) + (a^2 - (b+c) * a + c * b) * a :=
+  (a - d) * (a - c) * (a - b) = -(((a^2 - (b + c) * a) + c * b) * d) + (a^2 - (b + c) * a + c * b) * a :=
 begin
   ring,
 end
@@ -1492,7 +1494,7 @@ begin
 end
 
 theorem mathd_algebra_190 :
-  ((3:ℝ) / 8 + 7 / 8) / (4 / 5) = 25 / 16 :=
+  ((3 : ℝ) / 8 + 7 / 8) / (4 / 5) = 25 / 16 :=
 begin
   norm_num,
 end
@@ -1504,7 +1506,7 @@ begin
 end
 
 theorem aime_1990_p2 :
-  (52 + 6 * real.sqrt 43)^((3:ℝ) / 2) - (52 - 6 * real.sqrt 43)^((3:ℝ) / 2)  = 828 :=
+  (52 + 6 * real.sqrt 43)^((3 : ℝ) / 2) - (52 - 6 * real.sqrt 43)^((3 : ℝ) / 2)  = 828 :=
 begin
   sorry
 end
@@ -1524,7 +1526,8 @@ begin
 end
 
 theorem mathd_numbertheory_156
-  (n : ℕ+) :
+  (n : ℕ)
+  (h₀ : 0 < n) :
   nat.gcd (n + 7) (2 * n + 1) ≤ 13 :=
 begin
   sorry
@@ -1542,9 +1545,10 @@ begin
 end
 
 theorem mathd_algebra_144
-  (a b c d : ℕ+)
-  (h₀ : (c:ℤ) - (b:ℤ) = (d:ℤ))
-  (h₁ : (b:ℤ) - (a:ℤ) = (d:ℤ))
+  (a b c d : ℕ)
+  (h₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d)
+  (h₀ : (c : ℤ) - b = d)
+  (h₁ : (b : ℤ) - a = d)
   (h₂ : a + b + c = 60)
   (h₃ : a + b > c) :
   d < 10 :=
@@ -1602,16 +1606,17 @@ end
 theorem aime_1988_p3
   (x : ℝ)
   (h₀ : 0 < x)
-  (h₁ : real.log (real.log x / real.log 8) / real.log 2 = real.log (real.log x / real.log 2) / real.log 8) :
-  (real.log x / real.log 2)^2 = 27 :=
+  (h₁ : real.logb 2 (real.logb 8 x) = real.logb 8 (real.logb 2 x)) :
+  (real.logb 2 x)^2 = 27 :=
 begin
   sorry
 end
 
 theorem mathd_numbertheory_530
-  (n k : ℕ+)
-  (h₀ : ↑n / ↑k < (6:ℝ))
-  (h₁ : (5:ℝ) < ↑n / ↑k) :
+  (n k : ℕ)
+  (h₀ : 0 < n ∧ 0 < k)
+  (h₀ : (n : ℝ) / k < 6)
+  (h₁ : (5 : ℝ) < n / k) :
   22 ≤ (nat.lcm n k) / (nat.gcd n k) :=
 begin
   sorry
@@ -1633,7 +1638,7 @@ theorem imo_1967_p3
   (h₁ : ∀ s, c s = s * (s + 1))
   (h₂ : nat.prime (k + m + 1))
   (h₃ : n + 1 < k + m + 1) :
-  (∏ i in finset.range (n + 1) \ finset.range 1, c i) ∣ (∏ i in finset.range (n + 1) \ finset.range 1, (c (m + i) - c k)) :=
+  (∏ i in finset.Icc 1 n, c i) ∣ (∏ i in finset.Icc 1 n, (c (m + i) - c k)) :=
 begin
   sorry
 end
@@ -1641,7 +1646,7 @@ end
 theorem mathd_algebra_11
   (a b : ℝ)
   (h₀ : a ≠ b)
-  (h₁ : a ≠ 2*b)
+  (h₁ : a ≠ 2 * b)
   (h₂ : (4 * a + 3 * b) / (a - 2 * b) = 5) :
   (a + 11 * b) / (a - b) = 2 :=
 begin
@@ -1703,7 +1708,7 @@ begin
 end
 
 theorem mathd_numbertheory_690 :
-  is_least {a : ℕ+ | a ≡ 2 [MOD 3] ∧ a ≡ 4 [MOD 5] ∧ a ≡ 6 [MOD 7] ∧ a ≡ 8 [MOD 9]} 314 :=
+  is_least {a : ℕ | 0 < a ∧ a ≡ 2 [MOD 3] ∧ a ≡ 4 [MOD 5] ∧ a ≡ 6 [MOD 7] ∧ a ≡ 8 [MOD 9]} 314 :=
 begin
   sorry
 end
@@ -1783,7 +1788,7 @@ end
 
 theorem aime_1997_p12
   (x : ℝ)
-  (h₀ : x = (∑ n in finset.range 45 \ finset.range 1, real.cos (n * π / 180)) / (∑ n in finset.range 45 \ finset.range 1, real.sin (n * π / 180))) :
+  (h₀ : x = (∑ n in finset.Icc (1 : ℕ) 44, real.cos (n * π / 180)) / (∑ n in finset.Icc (1 : ℕ) 44, real.sin (n * π / 180))) :
   int.floor (100 * x) = 241 :=
 begin
   sorry
@@ -1813,17 +1818,19 @@ begin
 end
 
 theorem induction_divisibility_9div10tonm1
-  (n : ℕ+) :
-  9 ∣(10^(n:ℕ) - 1) :=
+  (n : ℕ)
+  (h₀ : 0 < n) :
+  9 ∣ (10^n - 1) :=
 begin
   sorry
 end
 
 theorem mathd_numbertheory_126
-  (x a : ℕ+)
-  (h₀ : nat.gcd a 40 = x + 3)
-  (h₁ : nat.lcm a 40 = x * (x + 3))
-  (h₂ : ∀ b : ℕ+, nat.gcd b 40 = x + 3 ∧ nat.lcm b 40 = x * (x + 3) → a ≤ b) :
+  (x a : ℕ)
+  (h₀ : 0 < x ∧ 0 < a)
+  (h₁ : nat.gcd a 40 = x + 3)
+  (h₂ : nat.lcm a 40 = x * (x + 3))
+  (h₃ : ∀ b : ℕ, 0 < b → nat.gcd b 40 = x + 3 ∧ nat.lcm b 40 = x * (x + 3) → a ≤ b) :
   a = 8 :=
 begin
   sorry
@@ -1865,10 +1872,10 @@ begin
 end
 
 theorem amc12a_2009_p25
-  (a : ℕ+ → ℝ)
+  (a : ℕ → ℝ)
   (h₀ : a 1 = 1)
   (h₁ : a 2 = 1 / real.sqrt 3)
-  (h₂ : ∀ n, a (n + 2) = (a n + a (n + 1)) / (1 - a n * a (n + 1))) :
+  (h₂ : ∀ n, 1 ≤ n → a (n + 2) = (a n + a (n + 1)) / (1 - a n * a (n + 1))) :
   abs (a 2009) = 0 :=
 begin
   sorry
@@ -1948,7 +1955,7 @@ end
 theorem mathd_algebra_89
   (b : ℝ)
   (h₀ : b ≠ 0) :
-  (7 * b^3)^2 * (4 * b^2)^(-(3:ℤ)) = 49 / 64 :=
+  (7 * b^3)^2 * (4 * b^2)^(-(3 : ℤ)) = 49/64 :=
 begin
   ring_nf,
   field_simp,
@@ -1962,9 +1969,9 @@ end
 theorem imo_1966_p4
   (n : ℕ)
   (x : ℝ)
-  (h₀ : ∀ k : ℕ+, ∀ m : ℤ, x ≠ m * π / (2^(k:ℕ)))
+  (h₀ : ∀ k : ℕ, 0 < k → ∀ m : ℤ, x ≠ m * π / (2^k))
   (h₁ : 0 < n) :
-  ∑ k in finset.range (n + 1) \ finset.range 1, (1 / real.sin ((2^k) * x)) = 1 / real.tan x - 1 / real.tan ((2^n) * x) :=
+  ∑ k in finset.Icc 1 n, (1 / real.sin ((2^k) * x)) = 1 / real.tan x - 1 / real.tan ((2^n) * x) :=
 begin
   sorry
 end
@@ -1981,11 +1988,12 @@ end
 
 theorem mathd_numbertheory_326
   (n : ℕ)
-  (h₀ : (↑n - 1) * ↑n * (↑n + 1) = (720:ℤ)) :
+  (h₀ : (↑n - 1) * ↑n * (↑n + 1) = (720 : ℤ)) :
   (n + 1) = 10 :=
 begin
   sorry
 end
+
 theorem induction_divisibility_3div2tooddnp1
   (n : ℕ) :
   3 ∣ (2^(2 * n + 1) + 1) :=
@@ -1994,23 +2002,22 @@ begin
 end
 
 theorem mathd_algebra_123
-  (a b : ℕ+)
-  (h₀ : a + b = 20)
-  (h₁ : a = 3 * b) :
+  (a b : ℕ)
+  (h₀ : 0 < a ∧ 0 < b)
+  (h₁ : a + b = 20)
+  (h₂ : a = 3 * b) :
   a - b = 10 :=
 begin
-  rw h₁ at h₀,
-  rw h₁,
-  have h₂ : 3 * (b:ℕ) + (b:ℕ) = (20:ℕ), {
-    exact subtype.mk.inj h₀,
+  rw h₂ at h₁,
+  rw h₂,
+  have h₃ : 3 * b + b = 20, {
+    exact h₁,
   },
-  have h₃ : (b:ℕ) = 5, linarith,
   have h₄ : b = 5, {
-    exact pnat.eq h₃,
+    linarith,
   },
   rw h₄,
-  calc (3:ℕ+) * 5 - 5 = 15 - 5 : by {congr,}
-            ... = 10 : by {exact rfl},
+  norm_num,
 end
 
 theorem algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4
@@ -2023,7 +2030,7 @@ begin
 end
 
 theorem imo_1993_p5 :
-  ∃ f : ℕ+ → ℕ+, (∀ a b, (a < b) ↔ f a < f b) ∧ f 1 = 2 ∧ ∀ n, f (f n) = f n + n :=
+  ∃ f : ℕ → ℕ, f 1 = 2 ∧ ∀ n, f (f n) = f n + n ∧ (∀ n, f n < f (n + 1)) :=
 begin
   sorry
 end
@@ -2116,7 +2123,7 @@ theorem amc12a_2002_p12
   (f : ℝ → ℝ)
   (k : ℝ)
   (h₀ : ∀ x, f x = x^2 - 63 * x + k)
-  (h₁ : set.subset (f ⁻¹' {0}) { x : ℝ | ∃ n : ℕ, ↑n = x ∧ nat.prime n}) :
+  (h₁ : set.subset (f ⁻¹' {0}) {x : ℝ | ∃ n : ℕ, ↑n = x ∧ nat.prime n}) :
   k = 122 :=
 begin
   sorry
@@ -2174,18 +2181,15 @@ end
 theorem amc12a_2010_p11
   (x b : ℝ)
   (h₀ : 0 < b)
-  (h₁ : (7:ℝ)^(x + 7) = 8^x)
-  (h₂ : x = real.log (7^7) / real.log b) :
-  b = 8 / 7 :=
+  (h₁ : (7 : ℝ)^(x + 7) = 8^x)
+  (h₂ : x = real.logb b (7^7)) :
+  b = 8/7 :=
 begin
   sorry
 end
 
-theorem amc12a_2003_p24
-  (a b : ℝ)
-  (h₀ : b ≤ a)
-  (h₁ : 1 < b) :
-  real.log (a / b) / real.log a + real.log (b / a) / real.log b ≤ 0 :=
+theorem amc12a_2003_p24 :
+  is_greatest {y : ℝ | ∃ (a b : ℝ), 1 < b ∧ b ≤ a ∧ y = real.logb a (a/b) + real.logb b (b/a)} 0 :=
 begin
   sorry
 end
@@ -2235,11 +2239,10 @@ begin
 end
 
 theorem amc12b_2002_p3
-  (n : ℕ)
-  (h₀ : 0 < n)
-  -- note: we use this over (n^2 - 3 * n + 2) because nat subtraction truncates the latter at 1 and 2
-  (h₁ : nat.prime (n^2 + 2 - 3 * n)) :
-  n = 3 :=
+  (S : finset ℕ)
+  -- note: we use (n^2 + 2 - 3 * n) over (n^2 - 3 * n + 2) because nat subtraction truncates the latter at 1 and 2
+  (h₀ : ∀ (n : ℕ), n ∈ S ↔ 0 < n ∧ nat.prime (n^2 + 2 - 3 * n)) :
+  S.card = 1 :=
 begin
   sorry
 end
@@ -2321,7 +2324,7 @@ begin
 end
 
 theorem mathd_numbertheory_629 :
-  is_least {t : ℕ+ | (nat.lcm 12 t)^3 = (12 * t)^2} 18 :=
+  is_least {t : ℕ | 0 < t ∧ (nat.lcm 12 t)^3 = (12 * t)^2} 18 :=
 begin
   sorry
 end
@@ -2353,7 +2356,7 @@ end
 theorem imo_1979_p1
   (p q : ℕ)
   (h₀ : 0 < q)
-  (h₁ : ∑ k in finset.range 1320 \ finset.range 1, ((-1)^(k + 1) * ((1:ℝ) / k)) = p / q) :
+  (h₁ : ∑ k in finset.Icc (1 : ℕ) 1319, ((-1)^(k + 1) * ((1 : ℝ)/k)) = p/q) :
   1979 ∣ p :=
 begin
   sorry
@@ -2370,7 +2373,7 @@ begin
 end
 
 theorem mathd_algebra_10 :
-  abs ((120:ℝ) / 100 * 30 - 130 / 100 * 20) = 10 :=
+  abs ((120 : ℝ)/100 * 30 - 130/100 * 20) = 10 :=
 begin
   norm_num,
 end
