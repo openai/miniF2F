@@ -187,8 +187,9 @@ begin
 end
 
 theorem mathd_numbertheory_221
-  (h₀ : fintype {x : ℕ | 0 < x ∧ x < 1000 ∧ x.divisors.card = 3}) :
-  finset.card {x : ℕ | 0 < x ∧ x < 1000 ∧ finset.card (nat.divisors x) = 3}.to_finset = 11 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (x : ℕ), x ∈ S ↔ 0 < x ∧ x < 1000 ∧ x.divisors.card = 3) :
+  S.card = 11 :=
 begin
   sorry
 end
@@ -301,8 +302,9 @@ begin
 end
 
 theorem mathd_algebra_224
-  (h₀ : fintype { n : ℕ | real.sqrt n < 7 / 2 ∧ 2 < real.sqrt n}) :
-  finset.card { n : ℕ | real.sqrt n < 7 / 2 ∧ 2 < real.sqrt n}.to_finset = 8 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (n : ℕ), n ∈ S ↔ real.sqrt n < 7 / 2 ∧ 2 < real.sqrt n) :
+  S.card = 8 :=
 begin
   sorry
 end
@@ -322,8 +324,9 @@ begin
 end
 
 theorem mathd_numbertheory_32
-  (h₀ : fintype {n : ℕ | n ∣ 36}) :
-  ∑ k in {n : ℕ | n ∣ 36}.to_finset, k = 91 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (n : ℕ), n ∈ S ↔ n ∣ 36) :
+  ∑ k in S, k = 91 :=
 begin
   sorry
 end
@@ -686,8 +689,9 @@ begin
 end
 
 theorem mathd_numbertheory_35
-  (h₀ : fintype {n : ℕ | n ∣ (nat.sqrt 196)}) :
-  ∑ k in {n : ℕ | n ∣ (nat.sqrt 196)}.to_finset, k = 24 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (n : ℕ), n ∣ (nat.sqrt 196)) :
+  ∑ k in S, k = 24 :=
 begin
   sorry
 end
@@ -852,9 +856,9 @@ begin
 end
 
 theorem amc12b_2021_p21
-  (h₀ : fintype {x : ℝ | 0 < x ∧ x^((2 : ℝ)^real.sqrt 2) = (real.sqrt 2)^((2 : ℝ)^x)}) :
-  ↑2 ≤ ∑ k in {x : ℝ | 0 < x ∧ x^((2 : ℝ)^real.sqrt 2) = (real.sqrt 2)^((2 : ℝ)^x)}.to_finset, k ∧
-  ∑ k in {x : ℝ | 0 < x ∧ x^((2 : ℝ)^real.sqrt 2) = (real.sqrt 2)^((2 : ℝ)^x)}.to_finset, k < 6 :=
+  (S : finset ℝ)
+  (h₀ : ∀ (x : ℝ), x ∈ S ↔ 0 < x ∧ x^((2 : ℝ)^real.sqrt 2) = (real.sqrt 2)^((2 : ℝ)^x)) :
+  ↑2 ≤ ∑ k in S, k ∧ ∑ k in S, k < 6 :=
 begin
   sorry
 end
@@ -892,8 +896,9 @@ begin
 end
 
 theorem mathd_numbertheory_303
-(h₀ : fintype {n : ℕ | 2 ≤ n ∧ 171 ≡ 80 [MOD n] ∧ 468 ≡ 13 [MOD n]}) :
-  ∑ k in {n : ℕ | 2 ≤ n ∧ 171 ≡ 80 [MOD n] ∧ 468 ≡ 13 [MOD n]}.to_finset, k = 111 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (n : ℕ), n ∈ S ↔ 2 ≤ n ∧ 171 ≡ 80 [MOD n] ∧ 468 ≡ 13 [MOD n]) :
+  ∑ k in S, k = 111 :=
 begin
   sorry
 end
@@ -1455,8 +1460,9 @@ begin
 end
 
 theorem amc12a_2020_p22
-  (h₀ : fintype {n : ℕ | 5 ∣ n ∧ nat.lcm 5! n = 5 * nat.gcd 10! n}) :
-  finset.card {n : ℕ | 5 ∣ n ∧ nat.lcm 5! n = 5 * nat.gcd 10! n}.to_finset = 1 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (n : ℕ), n ∈ S ↔ 5 ∣ n ∧ nat.lcm 5! n = 5 * nat.gcd 10! n) :
+  S.card = 1 :=
 begin
   sorry
 end
