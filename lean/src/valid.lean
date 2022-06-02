@@ -94,7 +94,7 @@ begin
 end
 
 theorem mathd_numbertheory_169 :
-  nat.gcd (nat.factorial 20) 200000 = 40000 :=
+  nat.gcd 20! 200000 = 40000 :=
 begin
   sorry
 end
@@ -513,7 +513,7 @@ begin
 end
 
 theorem mathd_numbertheory_739 :
-  (nat.factorial 9) % 10 = 0 :=
+  9! % 10 = 0 :=
 begin
   norm_num,
 end
@@ -829,14 +829,12 @@ begin
 end
 
 theorem mathd_numbertheory_42
+  (S : set ℕ)
   (u v : ℕ)
-  (h₀ : 0 < u ∧ 0 < v)
-  (h₁ : 27 * u % 40 = 17)
-  (h₂ : 27 * v % 40 = 17)
-  (h₃ : u < 40)
-  (h₄ : v < 80)
-  (h₅ : 40 < v) :
-  (u + v) = 62 :=
+  (h₀ : ∀ (a : ℕ), a ∈ S ↔ 0 < a ∧ 27 * a % 40 = 17)
+  (h₁ : is_least S u)
+  (h₂ : is_least (S \ {u}) v) :
+  u + v = 62 :=
 begin
   sorry
 end
@@ -1030,7 +1028,7 @@ begin
 end
 
 theorem mathd_numbertheory_43 :
-  is_greatest {n : ℕ | 15^n ∣ nat.factorial 942} 233 :=
+  is_greatest {n : ℕ | 15^n ∣ 942! } 233 :=
 begin
   sorry
 end
@@ -1451,14 +1449,14 @@ begin
 end
 
 theorem mathd_numbertheory_252 :
-  (nat.factorial 7) % 23 = 3 :=
+  7! % 23 = 3 :=
 begin
   sorry
 end
 
 theorem amc12a_2020_p22
-  (h₀ : fintype {n : ℕ | 5 ∣ n ∧ nat.lcm (nat.factorial 5) n = 5 * nat.gcd (nat.factorial 10) n}) :
-  finset.card {n : ℕ | 5 ∣ n ∧ nat.lcm (nat.factorial 5) n = 5 * nat.gcd (nat.factorial 10) n}.to_finset = 1 :=
+  (h₀ : fintype {n : ℕ | 5 ∣ n ∧ nat.lcm 5! n = 5 * nat.gcd 10! n}) :
+  finset.card {n : ℕ | 5 ∣ n ∧ nat.lcm 5! n = 5 * nat.gcd 10! n}.to_finset = 1 :=
 begin
   sorry
 end
@@ -2010,13 +2008,10 @@ theorem mathd_algebra_123
 begin
   rw h₂ at h₁,
   rw h₂,
-  have h₃ : 3 * b + b = 20, {
-    exact h₁,
-  },
-  have h₄ : b = 5, {
+  have h₃ : b = 5, {
     linarith,
   },
-  rw h₄,
+  rw h₃,
   norm_num,
 end
 
