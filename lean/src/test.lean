@@ -375,7 +375,7 @@ end
 theorem induction_nfactltnexpnm1ngt3
   (n : ℕ)
   (h₀ : 3 ≤ n) :
-  nat.factorial n < n^(n - 1) :=
+  n! < n^(n - 1) :=
 begin
   induction h₀ with k h₀ IH,
   { norm_num },
@@ -448,8 +448,9 @@ begin
 end
 
 theorem mathd_numbertheory_451
-  (h₀ : fintype {n : ℕ | 2010 ≤ n ∧ n ≤ 2019 ∧ ∃ m, (finset.card (nat.divisors m) = 4 ∧ ∑ p in (nat.divisors m), p = n)}) :
-  ∑ k in {n : ℕ | 2010 ≤ n ∧ n ≤ 2019 ∧ ∃ m, (finset.card (nat.divisors m) = 4 ∧ ∑ p in (nat.divisors m), p = n)}.to_finset, k = 2016 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (n : ℕ), n ∈ S ↔ 2010 ≤ n ∧ n ≤ 2019 ∧ ∃ m, ((nat.divisors m).card = 4 ∧ ∑ p in (nat.divisors m), p = n)) :
+  ∑ k in S, k = 2016 :=
 begin
   sorry
 end
@@ -794,8 +795,9 @@ begin
 end
 
 theorem mathd_algebra_215
-  (h₀ : fintype {x : ℝ | (x + 3)^2 = 121}) :
-  ∑ k in {x : ℝ | (x + 3)^2 = 121}.to_finset, k = -6 :=
+  (S : finset ℝ)
+  (h₀ : ∀ (x : ℝ), x ∈ S ↔ (x + 3)^2 = 121) :
+  ∑ k in S, k = -6 :=
 begin
   sorry
 end
@@ -858,17 +860,18 @@ begin
 end
 
 theorem amc12b_2020_p21
-  (h₀ : fintype {n : ℕ | 0 < n ∧ (↑n + (1000:ℝ)) / 70 = int.floor (real.sqrt n)}) :
-  finset.card {n : ℕ | 0 < n ∧ (↑n + (1000:ℝ)) / 70 = int.floor (real.sqrt n)}.to_finset = 6 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (n : ℕ), n ∈ S ↔ 0 < n ∧ (↑n + (1000 : ℝ)) / 70 = int.floor (real.sqrt n)) :
+  S.card = 6 :=
 begin
   sorry
 end
 
 theorem amc12a_2003_p5
-  (a m c : ℕ)
-  (h₀ : a ≤ 9 ∧ m ≤ 9 ∧ c ≤ 9)
-  (h₁ : 10*(10*(10*(10*a + m) + c) + 1) + 0 + (10*(10*(10*(10*a + m) + c) + 1) + 2) = 123422) :
-  a + m + c = 14 :=
+  (A M C : ℕ)
+  (h₀ : A ≤ 9 ∧ M ≤ 9 ∧ C ≤ 9)
+  (h₁ : nat.of_digits 10 [0,1,C,M,A] + nat.of_digits 10 [2,1,C,M,A] = 123422) :
+  A + M + C = 14 :=
 begin
   sorry
 end
@@ -1048,15 +1051,15 @@ begin
 end
 
 theorem mathd_numbertheory_135
-  (n a b c: ℕ)
+  (n A B C : ℕ)
   (h₀ : n = 3^17 + 3^10)
   (h₁ : 11 ∣ (n + 1))
-  (h₂ : [a,b,c].pairwise(≠))
-  (h₃ : {a,b,c} ⊂ finset.Icc 0 9)
-  (h₄ : odd a ∧ odd c)
-  (h₅ : ¬ 3 ∣ b)
-  (h₆ : nat.digits 10 n = [b,a,b,c,c,a,c,b,a]) :
-  10 * (10 * a + b) + c = 129 :=
+  (h₂ : [A,B,C].pairwise(≠))
+  (h₃ : {A,B,C} ⊂ finset.Icc 0 9)
+  (h₄ : odd A ∧ odd C)
+  (h₅ : ¬ 3 ∣ B)
+  (h₆ : nat.digits 10 n = [B,A,B,C,C,A,C,B,A]) :
+  100 * A + 10 * B + C = 129 :=
 begin
   sorry
 end
@@ -1156,8 +1159,9 @@ begin
 end
 
 theorem mathd_algebra_170
-  (h₀ : fintype {n : ℤ | abs (n - 2) ≤ 5 + 6 / 10}) :
-  finset.card { n : ℤ | abs (n - 2) ≤ 5 + 6 / 10}.to_finset = 11 :=
+  (S : finset ℤ)
+  (h₀ : ∀ (n : ℤ), n ∈ S ↔ abs (n - 2) ≤ 5 + 6 / 10) :
+  S.card = 11 :=
 begin
   sorry
 end
@@ -1220,13 +1224,9 @@ begin
 end
 
 theorem amc12a_2020_p4
-  (a b c d : ℕ)
-  (h₀ : 1 ≤ a ∧ a ≤ 9 ∧ even a)
-  (h₁ : 0 ≤ b ∧ b ≤ 9 ∧ even b)
-  (h₂ : 0 ≤ c ∧ c ≤ 9 ∧ even c)
-  (h₃ : 0 ≤ d ∧ d ≤ 9 ∧ even d)
-  (h₄ : fintype {n : ℕ | n = 10 * (10*(10*a + b) + c) + d ∧ 5∣n}) :
-  finset.card {n : ℕ | n = 10 * (10*(10*a + b) + c) + d ∧ 5∣n}.to_finset = 100 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (n : ℕ), n ∈ S ↔ 1000 ≤ n ∧ n ≤ 9999 ∧ (∀ (d : ℕ), d ∈ nat.digits 10 n → even d) ∧ 5 ∣ n) :
+  S.card = 100 :=
 begin
   sorry
 end
@@ -1234,7 +1234,7 @@ end
 theorem amc12b_2020_p6
   (n : ℕ)
   (h₀ : 9 ≤ n) :
-  ∃ x : ℕ, (x:ℝ)^2 = (nat.factorial (n + 2) - nat.factorial (n + 1)) / nat.factorial n :=
+  ∃ (x : ℕ), (x : ℝ)^2 = ((n + 2)! - (n + 1)!) / n! :=
 begin
   sorry
 end
@@ -1544,8 +1544,9 @@ begin
 end
 
 theorem amc12a_2003_p23
-  (h₀ : fintype {k : ℕ | 0 < k ∧ ((k * k):ℕ) ∣ (∏ i in (finset.Icc 1 9), i!)}) :
-  finset.card {k : ℕ | 0 < k ∧ ((k * k):ℕ) ∣ (∏ i in (finset.Icc 1 9), i!)}.to_finset = 672 :=
+  (S : finset ℕ)
+  (h₀ : ∀ (k : ℕ), k ∈ S ↔ 0 < k ∧ ((k * k) : ℕ) ∣ (∏ i in (finset.Icc 1 9), i!)) :
+  S.card = 672 :=
 begin
   sorry
 end
@@ -1623,7 +1624,7 @@ end
 theorem mathd_numbertheory_341
   (a b c : ℕ)
   (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)
-  (h₁ : (5^100) % 1000 = 10*(10*a + b) + c) :
+  (h₁ : nat.digits 10 ((5^100) % 1000) = [c,b,a]) :
   a + b + c = 13 :=
 begin
   sorry
@@ -1654,8 +1655,9 @@ begin
 end
 
 theorem amc12a_2020_p9
-  (h₀ : fintype {x : ℝ | 0 ≤ x ∧ x ≤ 2 * real.pi ∧ real.tan (2 * x) = real.cos (x / 2)}) :
-  finset.card { x : ℝ | 0 ≤ x ∧ x ≤ 2 * real.pi ∧ real.tan (2 * x) = real.cos (x / 2)}.to_finset = 5 :=
+  (S : finset ℝ)
+  (h₀ : ∀ (x : ℝ), x ∈ S ↔ 0 ≤ x ∧ x ≤ 2 * real.pi ∧ real.tan (2 * x) = real.cos (x / 2)) :
+  S.card = 5 :=
 begin
   sorry
 end
@@ -1670,8 +1672,9 @@ begin
 end
 
 theorem amc12a_2021_p19
-  (h₀ : fintype {x : ℝ | 0 ≤ x ∧ x ≤ real.pi ∧ real.sin (real.pi / 2 * real.cos x) = real.cos (real.pi / 2 * real.sin x)}) :
-  finset.card {x : ℝ | 0 ≤ x ∧ x ≤ real.pi ∧ real.sin (real.pi / 2 * real.cos x) = real.cos (real.pi / 2 * real.sin x)}.to_finset = 2 :=
+  (S : finset ℝ)
+  (h₀ : ∀ (x : ℝ), x ∈ S ↔ 0 ≤ x ∧ x ≤ real.pi ∧ real.sin (real.pi / 2 * real.cos x) = real.cos (real.pi / 2 * real.sin x)) :
+  S.card = 2 :=
 begin
   sorry
 end
@@ -1981,11 +1984,11 @@ end
 
 theorem amc12_2001_p21
   (a b c d : ℕ)
-  (h₀ : a*b*c*d = nat.factorial 8)
-  (h₁ : a*b + a + b = 524)
-  (h₂ : b*c + b + c = 146)
-  (h₃ : c*d + c + d = 104) :
-  ↑a - ↑d = (10:ℤ) :=
+  (h₀ : a * b * c * d = 8!)
+  (h₁ : a * b + a + b = 524)
+  (h₂ : b * c + b + c = 146)
+  (h₃ : c * d + c + d = 104) :
+  ↑a - ↑d = (10 : ℤ) :=
 begin
   sorry
 end
@@ -2006,8 +2009,9 @@ begin
 end
 
 theorem mathd_algebra_196
-  (h₀ : fintype {x : ℝ | abs (2 - x) = 3}) :
-  ∑ k in {x : ℝ | abs (2 - x) = 3}.to_finset, k = 4 :=
+  (S : finset ℝ)
+  (h₀ : ∀ (x : ℝ), x ∈ S ↔ abs (2 - x) = 3) :
+  ∑ k in S, k = 4 :=
 begin
   sorry
 end
@@ -2158,8 +2162,9 @@ begin
 end
 
 theorem amc12b_2021_p1
-  (h₀ : fintype {x : ℤ | ↑(abs x) < 3 * real.pi}):
-  finset.card {x : ℤ | ↑(abs x) < 3 * real.pi}.to_finset = 19 :=
+  (S : finset ℤ)
+  (h₀ : ∀ (x : ℤ), x ∈ S ↔ ↑(abs x) < 3 * real.pi):
+  S.card = 19 :=
 begin
   sorry
 end
@@ -2208,8 +2213,9 @@ begin
 end
 
 theorem amc12b_2021_p13
-  (h₀ : fintype {x : ℝ | 0 < x ∧ x ≤ 2 * real.pi ∧ 1 - 3 * real.sin x + 5 * real.cos (3 * x) = 0}) :
-  finset.card {x : ℝ | 0 < x ∧ x ≤ 2 * real.pi ∧ 1 - 3 * real.sin x + 5 * real.cos (3 * x) = 0}.to_finset = 6 :=
+  (S : finset ℝ)
+  (h₀ : ∀ (x : ℝ), x ∈ S ↔ 0 < x ∧ x ≤ 2 * real.pi ∧ 1 - 3 * real.sin x + 5 * real.cos (3 * x) = 0) :
+  S.card = 6 :=
 begin
   sorry
 end
@@ -2417,8 +2423,9 @@ end
 
 theorem amc12a_2020_p25
   (a : ℚ)
-  (h₀ : fintype {x : ℝ | ↑⌊x⌋ * (x - ↑⌊x⌋) = ↑a * x ^ 2})
-  (h₁ : ∑ k in {x : ℝ | ↑⌊x⌋ * (x - ↑⌊x⌋) = ↑a * x^2}.to_finset, k = 420) :
+  (S : finset ℝ)
+  (h₀ : ∀ (x : ℝ), x ∈ S ↔ ↑⌊x⌋ * (x - ↑⌊x⌋) = ↑a * x ^ 2)
+  (h₁ : ∑ k in S, k = 420) :
   ↑a.denom + a.num = 929 :=
 begin
   sorry
