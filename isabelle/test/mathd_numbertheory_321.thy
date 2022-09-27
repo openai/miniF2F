@@ -9,7 +9,7 @@ begin
 
 theorem mathd_numbertheory_321:
   fixes n::int
-  assumes "\<forall>n::int. 1\<le>n \<and> n\<le> 1399 \<and> [n*160 = 1] (mod 1399)"
+  assumes "1\<le>n \<and> n\<le> 1399 \<and> [n*160 = 1] (mod 1399)"
   shows "n = 1058"
   sorry
 
