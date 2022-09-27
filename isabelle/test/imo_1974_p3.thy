@@ -7,12 +7,6 @@ theory imo_1974_p3
   "HOL-Number_Theory.Number_Theory"
 begin
 
-lemma 
-  assumes "n=0"
-  shows "(\<Sum> k < n. ( (2 * n + 1) choose
-          (2 * k + 1)) * (2^(3 * k))) = 0"
-  using assms by auto
-
 theorem imo_1974_p3:
   fixes n ::nat 
   shows "\<not> 5 dvd (\<Sum> k < n. ( (2 * n + 1) choose
