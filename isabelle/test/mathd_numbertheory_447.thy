@@ -8,7 +8,7 @@ theory mathd_numbertheory_447 imports
 begin
 
 theorem mathd_numbertheory_447:
-  "(\<Sum> k \<in>{n. 3 dvd n \<and> 0<n \<and> n<50}. k mod 3) = (78::nat)"
+  "(\<Sum> k \<in>{n. 3 dvd n \<and> 0<n \<and> n<50}. k mod 10) = (78::nat)"
   sorry
 
 end
