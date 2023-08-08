@@ -298,7 +298,29 @@ theorem mathd_algebra_459
   (h₃ : 8 * a + 10 * b + 6 * c = 24) :
   ↑d.denom + d.num = 28 :=
 begin
-  have h₄: d = 13/15, linarith,
+  --have h₄: d = 13/15, linarith,
+  have h4: d = 13/15,
+  have h5 : a = (b + c + d)/3,
+  rw ← h0,
+  linarith,
+  rw h5 at h3,
+  have h6: b = (a+c+d)/4,
+  rw ← h1,
+  linarith,
+  rw h5 at h6,
+  have h7: b = 4*(c+d)/11,
+  linarith,
+  have h8: c = (a+b+d)/2,
+  rw ← h2,
+  linarith,
+  rw h5 at h8,
+  rw h7 at h8,
+  have h9: c = 60*d/39,
+  linarith,
+  rw h7 at h3,
+  rw h9 at h3,
+  ring_nf at h3,
+  linarith,
   sorry
 end
 
@@ -836,7 +858,7 @@ end
 theorem mathd_numbertheory_769 :
   (129^34 + 96^38) % 11 = 9 :=
 begin
-  sorry
+  norm_num,
 end
 
 theorem mathd_algebra_452
@@ -856,7 +878,49 @@ theorem mathd_numbertheory_5
   (h₂ : ∃ t, t^3 = n) :
   64 ≤ n :=
 begin
-  sorry
+    obtain ⟨x, hx⟩ := h1,
+  obtain ⟨t, ht⟩ := h2,
+  have h3: 3 ≤ t,
+    by_contradiction h3,
+    push_neg at h3,
+    {
+      interval_cases t,
+      linarith, linarith, linarith,
+    },
+  have h4: 3^3 ≤ n,
+    rw ← ht,
+    rw pow_le_iff_le_left,
+    exact h3,
+    linarith,
+  -- have h6: 27 ≤ x^2,
+  --   rw hx,
+  --   linarith,
+  have h5: 6 ≤ x,
+  {
+    by_contradiction h5x,
+    push_neg at h5x,
+    interval_cases x,
+    linarith, linarith, linarith, linarith, linarith, linarith,
+  },
+  have h6: 6^2 ≤ t^3,
+    rw ht,
+    rw ← hx,
+    rw pow_le_iff_le_left,
+    exact h5,
+    linarith,
+  have h10: 4 ≤ t,
+  {
+    by_contradiction ht4,
+    push_neg at ht4,
+    interval_cases t,
+    linarith,
+  },
+  rw ← ht,
+  have h11: 4^3 ≤ t^3,
+    rw pow_le_iff_le_left,
+    exact h10,
+    linarith,
+  linarith,
 end
 
 theorem mathd_numbertheory_207 :
