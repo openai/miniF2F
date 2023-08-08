@@ -152,7 +152,29 @@ theorem amc12b_2021_p3
   (h₀ : 2 + 1 / (1 + 1 / (2 + 2 / (3 + x))) = 144 / 53) :
   x = 3 / 4 :=
 begin
-  sorry
+  simp at h0,
+  have h1 : (1 + (2 + 2 / (3 + x))⁻¹)⁻¹ = 38/53,
+  linarith,
+  have h2 : (1 + (2 + 2 / (3 + x))⁻¹)⁻¹ = (53/38)⁻¹,
+  rw h1,
+  ring,
+  simp at h2,
+  have h3 : (2 + 2 / (3 + x))⁻¹ = (15 / 38),
+  linarith,
+  have h4 : (2 + 2 / (3 + x))⁻¹ = (38/15)⁻¹,
+  rw h3,
+  norm_num,
+  simp at h4,
+  have h5: 2 / (3 + x) = 8 / 15,
+  linarith,
+  ring_nf at h5,
+  have h6: (3 + x)⁻¹ = 4 / 15,
+  linarith,
+  have h7: (3 + x)⁻¹ = (15/4)⁻¹,
+  rw h6,
+  norm_num,
+  simp at h7,
+  linarith,
 end
 
 theorem mathd_numbertheory_299 :
