@@ -1402,7 +1402,42 @@ theorem algebra_9onxpypzleqsum2onxpy
   (h₀ : 0 < x ∧ 0 < y ∧ 0 < z) :
   9 / (x + y + z) ≤ 2 / (x + y) + 2 / (y + z) + 2 / (z + x) :=
 begin
-  sorry
+  have hxyz: 0 < x+y+z,
+    linarith,
+  ring_nf,
+  have hx: 0 < x, linarith,
+  have hy: 0 < y, linarith,
+  have hz: 0 < z, linarith,
+  have hga: 9*(x+y)*(y+z)*(z+x) ≤ 2*(x+y+z)*(y+z)*(z+x) + 2*(x+y+z)*(x+y)*(z+x) + 2*(x+y+z)*(x+y)*(y+z),
+  have hgb: 9*x^2* y + 9* x^2 *z + 9* x *y^2 + 18* x* y* z + 9* x* z^2 + 9* y^2* z + 9* y* z^2 ≤ 2* x^3 + 8* x^2* y + 8* x^2* z + 8* x* y^2 + 18* x* y* z + 8* x* z^2 + 2* y^3 + 8* y^2* z + 8* y* z^2 + 2* z^3,
+  have hgc: x^2*y + x^2 *z + x *y^2 + x* z^2 + y^2* z + y* z^2 ≤ 2* x^3 + 2* y^3 + 2* z^3,
+  have h1 : x ^ 2 * y  + x * y^2 ≤ x ^ 3 + y ^ 3,
+  exact lemma_1 x y hx hy,
+  have h2 : x ^ 2 * z  + x * z^2 ≤ x ^ 3 + z ^ 3,
+  exact lemma_1 x z hx hz,
+  have h3 : z ^ 2 * y  + z * y^2 ≤ z ^ 3 + y ^ 3,
+  exact lemma_1 z y hz hy,
+  linarith,
+  linarith,
+  linarith,
+  apply (div_le_iff hxyz).mpr,
+  rw add_mul, rw add_mul,
+  rw ← mul_le_mul_left (add_pos hx hy),
+  rw mul_add (x+y), rw mul_add (x+y),
+  rw ← mul_le_mul_left (add_pos hz hx),
+  rw mul_add (z+x), rw mul_add (z+x),
+  rw ← mul_le_mul_left (add_pos hy hz),
+  rw mul_add (y+z), rw mul_add (y+z),
+  repeat {rw ← mul_assoc},
+  have hgb: 9*(y + z)*(z + x)*(x + y) ≤ ((x + y)⁻¹*(x + y))*2*(y + z)*(z + x)*(x + y + z) + ((y + z)⁻¹*(y + z))*2*(z + x)*(x + y)*(x + y + z) + ((z + x)⁻¹*(z + x))*2*(y + z)*(x + y)*(x + y + z),
+  have h1: x+y ≠ 0, linarith,
+  rw inv_mul_cancel h1, norm_num,
+  have h2: y+z ≠ 0, linarith,
+  rw inv_mul_cancel h2, norm_num,
+  have h3: z+x ≠ 0, linarith,
+  rw inv_mul_cancel h3, norm_num,
+  linarith,
+  linarith,
 end
 
 theorem mathd_numbertheory_233
