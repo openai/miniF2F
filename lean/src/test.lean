@@ -152,7 +152,29 @@ theorem amc12b_2021_p3
   (h₀ : 2 + 1 / (1 + 1 / (2 + 2 / (3 + x))) = 144 / 53) :
   x = 3 / 4 :=
 begin
-  sorry
+  simp at h0,
+  have h1 : (1 + (2 + 2 / (3 + x))⁻¹)⁻¹ = 38/53,
+  linarith,
+  have h2 : (1 + (2 + 2 / (3 + x))⁻¹)⁻¹ = (53/38)⁻¹,
+  rw h1,
+  ring,
+  simp at h2,
+  have h3 : (2 + 2 / (3 + x))⁻¹ = (15 / 38),
+  linarith,
+  have h4 : (2 + 2 / (3 + x))⁻¹ = (38/15)⁻¹,
+  rw h3,
+  norm_num,
+  simp at h4,
+  have h5: 2 / (3 + x) = 8 / 15,
+  linarith,
+  ring_nf at h5,
+  have h6: (3 + x)⁻¹ = 4 / 15,
+  linarith,
+  have h7: (3 + x)⁻¹ = (15/4)⁻¹,
+  rw h6,
+  norm_num,
+  simp at h7,
+  linarith,
 end
 
 theorem mathd_numbertheory_299 :
@@ -276,7 +298,29 @@ theorem mathd_algebra_459
   (h₃ : 8 * a + 10 * b + 6 * c = 24) :
   ↑d.denom + d.num = 28 :=
 begin
-  have h₄: d = 13/15, linarith,
+  --have h₄: d = 13/15, linarith,
+  have h4: d = 13/15,
+  have h5 : a = (b + c + d)/3,
+  rw ← h0,
+  linarith,
+  rw h5 at h3,
+  have h6: b = (a+c+d)/4,
+  rw ← h1,
+  linarith,
+  rw h5 at h6,
+  have h7: b = 4*(c+d)/11,
+  linarith,
+  have h8: c = (a+b+d)/2,
+  rw ← h2,
+  linarith,
+  rw h5 at h8,
+  rw h7 at h8,
+  have h9: c = 60*d/39,
+  linarith,
+  rw h7 at h3,
+  rw h9 at h3,
+  ring_nf at h3,
+  linarith,
   sorry
 end
 
@@ -814,7 +858,7 @@ end
 theorem mathd_numbertheory_769 :
   (129^34 + 96^38) % 11 = 9 :=
 begin
-  sorry
+  norm_num,
 end
 
 theorem mathd_algebra_452
@@ -834,7 +878,49 @@ theorem mathd_numbertheory_5
   (h₂ : ∃ t, t^3 = n) :
   64 ≤ n :=
 begin
-  sorry
+    obtain ⟨x, hx⟩ := h1,
+  obtain ⟨t, ht⟩ := h2,
+  have h3: 3 ≤ t,
+    by_contradiction h3,
+    push_neg at h3,
+    {
+      interval_cases t,
+      linarith, linarith, linarith,
+    },
+  have h4: 3^3 ≤ n,
+    rw ← ht,
+    rw pow_le_iff_le_left,
+    exact h3,
+    linarith,
+  -- have h6: 27 ≤ x^2,
+  --   rw hx,
+  --   linarith,
+  have h5: 6 ≤ x,
+  {
+    by_contradiction h5x,
+    push_neg at h5x,
+    interval_cases x,
+    linarith, linarith, linarith, linarith, linarith, linarith,
+  },
+  have h6: 6^2 ≤ t^3,
+    rw ht,
+    rw ← hx,
+    rw pow_le_iff_le_left,
+    exact h5,
+    linarith,
+  have h10: 4 ≤ t,
+  {
+    by_contradiction ht4,
+    push_neg at ht4,
+    interval_cases t,
+    linarith,
+  },
+  rw ← ht,
+  have h11: 4^3 ≤ t^3,
+    rw pow_le_iff_le_left,
+    exact h10,
+    linarith,
+  linarith,
 end
 
 theorem mathd_numbertheory_207 :
@@ -1316,7 +1402,42 @@ theorem algebra_9onxpypzleqsum2onxpy
   (h₀ : 0 < x ∧ 0 < y ∧ 0 < z) :
   9 / (x + y + z) ≤ 2 / (x + y) + 2 / (y + z) + 2 / (z + x) :=
 begin
-  sorry
+  have hxyz: 0 < x+y+z,
+    linarith,
+  ring_nf,
+  have hx: 0 < x, linarith,
+  have hy: 0 < y, linarith,
+  have hz: 0 < z, linarith,
+  have hga: 9*(x+y)*(y+z)*(z+x) ≤ 2*(x+y+z)*(y+z)*(z+x) + 2*(x+y+z)*(x+y)*(z+x) + 2*(x+y+z)*(x+y)*(y+z),
+  have hgb: 9*x^2* y + 9* x^2 *z + 9* x *y^2 + 18* x* y* z + 9* x* z^2 + 9* y^2* z + 9* y* z^2 ≤ 2* x^3 + 8* x^2* y + 8* x^2* z + 8* x* y^2 + 18* x* y* z + 8* x* z^2 + 2* y^3 + 8* y^2* z + 8* y* z^2 + 2* z^3,
+  have hgc: x^2*y + x^2 *z + x *y^2 + x* z^2 + y^2* z + y* z^2 ≤ 2* x^3 + 2* y^3 + 2* z^3,
+  have h1 : x ^ 2 * y  + x * y^2 ≤ x ^ 3 + y ^ 3,
+  exact lemma_1 x y hx hy,
+  have h2 : x ^ 2 * z  + x * z^2 ≤ x ^ 3 + z ^ 3,
+  exact lemma_1 x z hx hz,
+  have h3 : z ^ 2 * y  + z * y^2 ≤ z ^ 3 + y ^ 3,
+  exact lemma_1 z y hz hy,
+  linarith,
+  linarith,
+  linarith,
+  apply (div_le_iff hxyz).mpr,
+  rw add_mul, rw add_mul,
+  rw ← mul_le_mul_left (add_pos hx hy),
+  rw mul_add (x+y), rw mul_add (x+y),
+  rw ← mul_le_mul_left (add_pos hz hx),
+  rw mul_add (z+x), rw mul_add (z+x),
+  rw ← mul_le_mul_left (add_pos hy hz),
+  rw mul_add (y+z), rw mul_add (y+z),
+  repeat {rw ← mul_assoc},
+  have hgb: 9*(y + z)*(z + x)*(x + y) ≤ ((x + y)⁻¹*(x + y))*2*(y + z)*(z + x)*(x + y + z) + ((y + z)⁻¹*(y + z))*2*(z + x)*(x + y)*(x + y + z) + ((z + x)⁻¹*(z + x))*2*(y + z)*(x + y)*(x + y + z),
+  have h1: x+y ≠ 0, linarith,
+  rw inv_mul_cancel h1, norm_num,
+  have h2: y+z ≠ 0, linarith,
+  rw inv_mul_cancel h2, norm_num,
+  have h3: z+x ≠ 0, linarith,
+  rw inv_mul_cancel h3, norm_num,
+  linarith,
+  linarith,
 end
 
 theorem mathd_numbertheory_233
